@@ -21,6 +21,7 @@ from bs4 import BeautifulSoup
 BASE_URL = "https://psl.noaa.gov/data/climateindices/list/"
 DOMAIN = "https://psl.noaa.gov"
 OUTPUT_DIR = Path("indices_asc")
+DEFAULT_TIMEOUT = 15  # seconds timeout to prevent hanging
 
 def create_ssl_context():
     ctx = ssl.create_default_context()
@@ -32,7 +33,7 @@ def fetch_html(url):
     headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'}
     req = urllib.request.Request(url, headers=headers)
     ctx = create_ssl_context()
-    with urllib.request.urlopen(req, context=ctx) as resp:
+    with urllib.request.urlopen(req, context=ctx, timeout=DEFAULT_TIMEOUT) as resp:
         return resp.read().decode('utf-8', errors='replace')
 
 def sanitize_filename(name):
@@ -47,7 +48,7 @@ def parse_indices_from_page(html):
     indices_list = []
     
     if not table:
-        print("Warning: Table not found in HTML. Falling back to regex link extractor.")
+        print("Warning: Table not found in HTML.")
         return indices_list
 
     rows = table.find_all('tr')
@@ -59,6 +60,9 @@ def parse_indices_from_page(html):
             
             for a in row.find_all('a', href=True):
                 href = a['href']
+                # Skip FTP or invalid schemes that hang
+                if href.startswith('ftp://'):
+                    continue
                 full_url = urljoin(DOMAIN, href)
                 link_text = a.get_text(strip=True)
                 
@@ -143,7 +147,7 @@ def main():
         
         try:
             req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
-            with urllib.request.urlopen(req, context=ctx) as resp:
+            with urllib.request.urlopen(req, context=ctx, timeout=DEFAULT_TIMEOUT) as resp:
                 raw_bytes = resp.read()
                 content = raw_bytes.decode('utf-8', errors='replace')
             
@@ -166,7 +170,7 @@ def main():
             })
             
         except Exception as e:
-            print(f"  [FAILED] {url}: {e}")
+            print(f"  [TIMEOUT/FAILED] {url}: {e}")
 
     catalog_json_path = OUTPUT_DIR / "catalog.json"
     with open(catalog_json_path, 'w', encoding='utf-8') as f:
@@ -180,7 +184,6 @@ def main():
             f.write(f'"{c["index_name"]}","{c["label"]}","{c["asc_filename"]}","{c["url"]}",{c["start_year"]},{c["end_year"]},{c["file_size_bytes"]},"{desc_clean}"\n')
 
     print(f"\nCompleted! Downloaded {len(catalog)} climate index ASC files to '{OUTPUT_DIR.resolve()}'.")
-    print(f"Catalog saved to {catalog_csv_path} and {catalog_json_path}.")
 
 if __name__ == '__main__':
     main()

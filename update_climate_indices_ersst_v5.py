@@ -14,10 +14,8 @@ from collections import defaultdict
 
 ASC_DIR = Path("indices_asc")
 ASC_DIR.mkdir(parents=True, exist_ok=True)
+DEFAULT_TIMEOUT = 15  # seconds timeout to prevent hanging
 
-# Helper to format data into standard NOAA PSL .asc matrix format:
-# Line 1: start_yr  end_yr
-# Lines: YR Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec
 def save_as_psl_asc(data_by_year, filepath, description="", missing_val=-99.90):
     years = sorted(data_by_year.keys())
     if not years:
@@ -50,7 +48,7 @@ def fetch_url(url):
     ctx.check_hostname = False
     ctx.verify_mode = ssl.CERT_NONE
     req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
-    with urllib.request.urlopen(req, context=ctx) as resp:
+    with urllib.request.urlopen(req, context=ctx, timeout=DEFAULT_TIMEOUT) as resp:
         return resp.read().decode('utf-8', errors='replace')
 
 def process_ersst_v5_el_nino_anom():

@@ -600,18 +600,6 @@
     "description": "Solar Flux (10.7cm) ftp://ftp.ngdc.noaa.gov/STP/space-weather/solar-data/solar-features/solar-radio/noontime-flux/penticton/penticton_observed/listings/listing_drao_noontime-flux-observed_monthly.txt To cite, \"The 10.7cm Solar Flux Data are provided as a service by the National Research Council of\n          Canada\".\n          They would appreciate a preprint\n          or at least a reference if you use the data URL is http://www.spaceweather.ca/solarflux/sx-4-eng.php ."
   },
   {
-    "index_name": "Solar Flux (10.7cm)*",
-    "label": "ftp://ftp.ngdc.noaa.gov/STP/space-weather/solar-data/solar-features/solar-radio/noontime-flux/penticton/penticton_observed/listings/listing_drao_noontime-flux-observed_monthly.txt",
-    "asc_filename": "Solar_Flux_(10.7cm)_listing_drao_noontime-flux-observed_monthly.asc",
-    "file_path": "indices_asc\\Solar_Flux_(10.7cm)_listing_drao_noontime-flux-observed_monthly.asc",
-    "file_size_bytes": 11137,
-    "url": "ftp://ftp.ngdc.noaa.gov/STP/space-weather/solar-data/solar-features/solar-radio/noontime-flux/penticton/penticton_observed/listings/listing_drao_noontime-flux-observed_monthly.txt",
-    "start_year": null,
-    "end_year": null,
-    "line_count": 857,
-    "description": "Solar Flux (10.7cm) ftp://ftp.ngdc.noaa.gov/STP/space-weather/solar-data/solar-features/solar-radio/noontime-flux/penticton/penticton_observed/listings/listing_drao_noontime-flux-observed_monthly.txt To cite, \"The 10.7cm Solar Flux Data are provided as a service by the National Research Council of\n          Canada\".\n          They would appreciate a preprint\n          or at least a reference if you use the data URL is http://www.spaceweather.ca/solarflux/sx-4-eng.php ."
-  },
-  {
     "index_name": "Global Mean Land/Ocean Temperature Index",
     "label": "Global Mean Land/Ocean Temperature Index",
     "asc_filename": "Global_Mean_Land_Ocean_Temperature_Index_gmsst.asc",
@@ -626,8 +614,8 @@
   {
     "index_name": "Global Mean Land/Ocean Temperature Index",
     "label": "NASA/GISS",
-    "asc_filename": "GLB.Ts+dSST.asc",
-    "file_path": "indices_asc\\GLB.Ts+dSST.asc",
+    "asc_filename": "Global_Mean_Land_Ocean_Temperature_Index_GLB.Ts+dSST.asc",
+    "file_path": "indices_asc\\Global_Mean_Land_Ocean_Temperature_Index_GLB.Ts+dSST.asc",
     "file_size_bytes": 16198,
     "url": "https://data.giss.nasa.gov/gistemp/tabledata_v3/GLB.Ts+dSST.txt",
     "start_year": null,

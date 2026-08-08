@@ -181,10 +181,6 @@ index_name,label,asc_filename,url,start_year,end_year,file_size_bytes,descriptio
           Canada"".
           They would appreciate a preprint
           or at least a reference if you use the data URL is http://www.spaceweather.ca/solarflux/sx-4-eng.php ."
-"Solar Flux (10.7cm)*","ftp://ftp.ngdc.noaa.gov/STP/space-weather/solar-data/solar-features/solar-radio/noontime-flux/penticton/penticton_observed/listings/listing_drao_noontime-flux-observed_monthly.txt","Solar_Flux_(10.7cm)_listing_drao_noontime-flux-observed_monthly.asc","ftp://ftp.ngdc.noaa.gov/STP/space-weather/solar-data/solar-features/solar-radio/noontime-flux/penticton/penticton_observed/listings/listing_drao_noontime-flux-observed_monthly.txt",None,None,11137,"Solar Flux (10.7cm) ftp://ftp.ngdc.noaa.gov/STP/space-weather/solar-data/solar-features/solar-radio/noontime-flux/penticton/penticton_observed/listings/listing_drao_noontime-flux-observed_monthly.txt To cite, ""The 10.7cm Solar Flux Data are provided as a service by the National Research Council of
-          Canada"".
-          They would appreciate a preprint
-          or at least a reference if you use the data URL is http://www.spaceweather.ca/solarflux/sx-4-eng.php ."
 "Global Mean Land/Ocean Temperature Index","Global Mean Land/Ocean Temperature Index","Global_Mean_Land_Ocean_Temperature_Index_gmsst.asc","https://psl.noaa.gov/data/correlation/gmsst.data",1948,2026,8219,"Global Mean Land/Ocean Temperature Values change over time! Data values are from NASA/GISS .
           Please read and refer to this web page plus the main web page describing various temperature indices at the
           main NASA/GISTEMP webpage . Note, the index is an anomaly index. They have comments in the datafile and the
@@ -200,7 +196,7 @@ index_name,label,asc_filename,url,start_year,end_year,file_size_bytes,descriptio
                 2.0.CO;2. Reynolds, R.W., and T.M. Smith 1994. Improved global sea surface temperature analyses. J. Climate 7,
               929-948, doi:10.1175/1520-0442(1994)007<0929:IGSSTA>2.0.CO;2 Smith, T.M., R.W. Reynolds, R.E. Livesay, and D.C. Stokes 1996. Reconstruction of historical sea surface
               temperature using empirical orthogonal functions. J. Climate 9, 1403-1420."
-"Global Mean Land/Ocean Temperature Index","NASA/GISS","GLB.Ts+dSST.asc","https://data.giss.nasa.gov/gistemp/tabledata_v3/GLB.Ts+dSST.txt",None,None,16198,"Global Mean Land/Ocean Temperature Values change over time! Data values are from NASA/GISS .
+"Global Mean Land/Ocean Temperature Index","NASA/GISS","Global_Mean_Land_Ocean_Temperature_Index_GLB.Ts+dSST.asc","https://data.giss.nasa.gov/gistemp/tabledata_v3/GLB.Ts+dSST.txt",None,None,16198,"Global Mean Land/Ocean Temperature Values change over time! Data values are from NASA/GISS .
           Please read and refer to this web page plus the main web page describing various temperature indices at the
           main NASA/GISTEMP webpage . Note, the index is an anomaly index. They have comments in the datafile and the
           writeup on obtaining an absolute global mean temperatures. Please reference the papers: Christy, J.R., R.W. Spencer, and W.D. Braswell 2000. J. Atmos. Oceanic Tech. 17, 1153. Hansen, J., R. Ruedy, M. Sato and R. Reynolds 1996. Global surface air temperature in 1995: Return to
