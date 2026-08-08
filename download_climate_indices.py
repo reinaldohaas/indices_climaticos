@@ -21,7 +21,7 @@ from bs4 import BeautifulSoup
 BASE_URL = "https://psl.noaa.gov/data/climateindices/list/"
 DOMAIN = "https://psl.noaa.gov"
 OUTPUT_DIR = Path("indices_asc")
-DEFAULT_TIMEOUT = 15  # seconds timeout to prevent hanging
+DEFAULT_TIMEOUT = 10  # 10 seconds timeout per link
 
 def create_ssl_context():
     ctx = ssl.create_default_context()
@@ -60,8 +60,8 @@ def parse_indices_from_page(html):
             
             for a in row.find_all('a', href=True):
                 href = a['href']
-                # Skip FTP or invalid schemes that hang
-                if href.startswith('ftp://'):
+                # Skip FTP or known unresponsive external domains
+                if href.startswith('ftp://') or 'data.giss.nasa.gov' in href:
                     continue
                 full_url = urljoin(DOMAIN, href)
                 link_text = a.get_text(strip=True)
