@@ -12,6 +12,7 @@ This script:
 import os
 import re
 import json
+import ssl
 import urllib.request
 from urllib.parse import urljoin
 from pathlib import Path
@@ -21,14 +22,20 @@ BASE_URL = "https://psl.noaa.gov/data/climateindices/list/"
 DOMAIN = "https://psl.noaa.gov"
 OUTPUT_DIR = Path("indices_asc")
 
+def create_ssl_context():
+    ctx = ssl.create_default_context()
+    ctx.check_hostname = False
+    ctx.verify_mode = ssl.CERT_NONE
+    return ctx
+
 def fetch_html(url):
     headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'}
     req = urllib.request.Request(url, headers=headers)
-    with urllib.request.urlopen(req) as resp:
+    ctx = create_ssl_context()
+    with urllib.request.urlopen(req, context=ctx) as resp:
         return resp.read().decode('utf-8', errors='replace')
 
 def sanitize_filename(name):
-    # Sanitize index name for filename
     clean = re.sub(r'[^\w\-\.\(\)]', '_', name)
     clean = re.sub(r'_+', '_', clean).strip('_')
     return clean
@@ -50,13 +57,11 @@ def parse_indices_from_page(html):
             name_text = cols[0].get_text(strip=True)
             desc_text = cols[1].get_text(' ', strip=True)
             
-            # Find links in this row
             for a in row.find_all('a', href=True):
                 href = a['href']
                 full_url = urljoin(DOMAIN, href)
                 link_text = a.get_text(strip=True)
                 
-                # Check if it looks like a data file
                 if any(full_url.endswith(ext) for ext in ['.data', '.ascii', '.txt', '.scaled']) or '/data/correlation/' in full_url or '/data/timeseries/' in full_url:
                     if not full_url.endswith('/') and not full_url.endswith('.html') and not full_url.endswith('.shtml') and not full_url.endswith('.gif'):
                         indices_list.append({
@@ -66,7 +71,6 @@ def parse_indices_from_page(html):
                             'url': full_url
                         })
 
-    # Deduplicate by URL
     seen_urls = set()
     unique_indices = []
     for item in indices_list:
@@ -77,9 +81,6 @@ def parse_indices_from_page(html):
     return unique_indices
 
 def parse_asc_metadata(content):
-    """
-    Extract start year, end year, missing value indicator, and notes from standard NOAA PSL .data format.
-    """
     lines = content.strip().splitlines()
     if not lines:
         return {}
@@ -90,7 +91,6 @@ def parse_asc_metadata(content):
         start_year = int(first_line[0])
         end_year = int(first_line[1])
     
-    # Try to find missing value indicator (usually -99.9 or -99.90 near end)
     missing_value = None
     for line in reversed(lines):
         line_s = line.strip()
@@ -119,12 +119,12 @@ def main():
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
     catalog = []
+    ctx = create_ssl_context()
 
     for idx in indices:
         url = idx['url']
         url_filename = url.split('/')[-1]
         
-        # Base filename in .asc format
         base_name = Path(url_filename).stem
         if base_name.endswith('.anom'):
             asc_filename = f"{base_name.replace('.anom', '_anom')}.asc"
@@ -133,7 +133,6 @@ def main():
         else:
             asc_filename = f"{base_name}.asc"
 
-        # Handle duplicate filenames by prefixing index name
         out_path = OUTPUT_DIR / asc_filename
         if out_path.exists():
             prefix = sanitize_filename(idx['name'])
@@ -144,11 +143,10 @@ def main():
         
         try:
             req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
-            with urllib.request.urlopen(req) as resp:
+            with urllib.request.urlopen(req, context=ctx) as resp:
                 raw_bytes = resp.read()
                 content = raw_bytes.decode('utf-8', errors='replace')
             
-            # Save in .asc format
             with open(out_path, 'w', encoding='utf-8') as f:
                 f.write(content)
 
@@ -170,12 +168,10 @@ def main():
         except Exception as e:
             print(f"  [FAILED] {url}: {e}")
 
-    # Save JSON catalog
     catalog_json_path = OUTPUT_DIR / "catalog.json"
     with open(catalog_json_path, 'w', encoding='utf-8') as f:
         json.dump(catalog, f, indent=2, ensure_ascii=False)
 
-    # Save CSV catalog
     catalog_csv_path = OUTPUT_DIR / "catalog.csv"
     with open(catalog_csv_path, 'w', encoding='utf-8') as f:
         f.write("index_name,label,asc_filename,url,start_year,end_year,file_size_bytes,description\n")

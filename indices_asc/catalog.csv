@@ -1,117 +1,217 @@
-asc_filename,start_year,end_year,file_size_bytes,description
-"aao.asc",1979,2026,5053,"Antarctic Oscillation (CPC) Source: NCEI ERSST v5 / NOAA CPC (Updated to 2026)"
-"AAO_aao.asc",1979,2026,4043,"from AAO Obtained at NOAA PSL"
-"ammsst.asc",1948,2024,8163,"SST AMM https://psl.noaa.gov/data/timeseries/month/AMM/ orig from https://www.aos.wisc.edu/dvimont/MModes/Data.html"
-"amon.sm.asc",1854,2026,17959,"Atlantic Multidecadal Oscillation Smoothed (ERSST v5 SSTA) Source: NCEI ERSST v5 / NOAA CPC (Updated to 2026)"
-"amon.sm.long.asc",1854,2026,17964,"Atlantic Multidecadal Oscillation Smoothed Long (ERSST v5 SSTA) Source: NCEI ERSST v5 / NOAA CPC (Updated to 2026)"
-"amon.us.asc",1854,2026,17950,"Atlantic Multidecadal Oscillation (ERSST v5 SSTA) Source: NCEI ERSST v5 / NOAA CPC (Updated to 2026)"
-"amon.us.long.asc",1854,2026,17955,"Atlantic Multidecadal Oscillation Long (ERSST v5 SSTA) Source: NCEI ERSST v5 / NOAA CPC (Updated to 2026)"
-"ao.asc",1950,2026,8037,"Arctic Oscillation (CPC) Source: NCEI ERSST v5 / NOAA CPC (Updated to 2026)"
-"AO_ao.asc",1950,2026,9002,"from https://www.cpc.ncep.noaa.gov/products/precip/CWlink/daily_ao_index/monthly.ao.index.b50.current.ascii Obtained at NOAA PSL"
-"Atlantic_Meridional_Mode_ammsst.asc",1948,2024,8163,"SST AMM https://psl.noaa.gov/data/timeseries/month/AMM/ orig from https://www.aos.wisc.edu/dvimont/MModes/Data.html"
-"Atlantic_multidecadal_OscillationLong_Version_amon.sm.asc",1948,2023,8895,"AMO smoothed/detrended from the Kaplan SST V2 Calculated at NOAA PSL1 http://www.psl.noaa.gov/data/timeseries/AMO/"
-"Atlantic_multidecadal_OscillationLong_Version_amon.sm.long.asc",1856,2023,19465,"AMO smoothed from the Kaplan SST V2 Calculated at NOAA PSL1 http://www.psl.noaa.gov/data/timeseries/AMO/"
-"Atlantic_Multidecadal_OscillationLong_Version_amon.us.asc",1948,2023,8898,"AMO unsmoothed, detrended from the Kaplan SST V2 Calculated at NOAA PSL1 http://www.psl.noaa.gov/data/timeseries/AMO/"
-"Atlantic_Multidecadal_OscillationLong_Version_amon.us.long.asc",1856,2023,19467,"AMO unsmoothed from the Kaplan SST V2 Calculated at NOAA PSL1 http://www.psl.noaa.gov/data/timeseries/AMO/"
-"Atlantic_Tripole_SST_EOF_atltri.asc",1948,2008,5600,"-9.0 ATLTRI pattern psl noaa"
-"atltri.asc",1948,2008,5600,"-9.0 ATLTRI pattern psl noaa"
-"BEST_longer_version_censo.asc",1948,2026,7217,"-9.99 BEST: Bivariate enso timeserieshttps://psl.noaa.gov/data/timeseries/month/from NOAA/PSL"
-"BEST_longer_version_censo.long.asc",1871,2003,10604,"-9.99 best index: long version http://psl.noaa.gov/data/climateindices/list/"
-"brazilrain.asc",1948,2000,3649,"Northeast Brazil Rainfall Anomaly Info at Northeast Brazil Rainfall Anomaly"
-"CAR_ersst.asc",1950,2020,7654,"CAR_ersst produced at https://psl.noaa.gov/forecasts/sstlim/ 260-300E, 10N-25N minus Pacific At NOAA PSL. Please cite forecast pubs and acquired at website YYYY/MM/DD SST is NOAA ERSST V3"
-"Caribbean_Index_(CAR)_CAR_ersst.asc",1950,2020,7654,"CAR_ersst produced at https://psl.noaa.gov/forecasts/sstlim/ 260-300E, 10N-25N minus Pacific At NOAA PSL. Please cite forecast pubs and acquired at website YYYY/MM/DD SST is NOAA ERSST V3"
-"censo.asc",1948,2026,7217,"-9.99 BEST: Bivariate enso timeserieshttps://psl.noaa.gov/data/timeseries/month/from NOAA/PSL"
-"censo.long.asc",1871,2003,10604,"-9.99 best index: long version http://psl.noaa.gov/data/climateindices/list/"
-"Central_Indian_Precipitation_(core_monsoon_region)_indiamon.asc",1948,1999,3547,"Central Indian Precipitation info at http://psl.noaa.gov/data/climateindices/list/"
-"ea.asc",1948,2026,7303,"EA/WR Index from CPC https://psl.noaa.gov/data/timeseries/month/for info"
-"EA_WR_ea.asc",1948,2026,7303,"EA/WR Index from CPC https://psl.noaa.gov/data/timeseries/month/for info"
-"ENSO_Precipitation_Index_espi.asc",1979,2023,5358,"ESPI From UMD http://eagle1.umd.edu/GPCP_ICDR/Data/ESPI.txt Stored at NOAA/PSL Values are now based on V2.3 updated with new values froim source. Recent older values subject to change"
-"eofpac.asc",1948,2008,5583,"-9.0 eofpac psl"
-"EP_NP_epo.asc",1948,2026,7304,"EP/NP Index  from CPC https://psl.noaa.gov/data/timeseries/month/for info"
-"epo.asc",1948,2026,7304,"EP/NP Index  from CPC https://psl.noaa.gov/data/timeseries/month/for info"
-"ersst5.nino.mth.91-20.asc",None,None,68006,""
-"espi.asc",1979,2023,5358,"ESPI From UMD http://eagle1.umd.edu/GPCP_ICDR/Data/ESPI.txt Stored at NOAA/PSL Values are now based on V2.3 updated with new values froim source. Recent older values subject to change"
-"glaam.asc",1958,2014,5345,"GLAAM: globally averaged angular momentum. Scaled by 1e25 For info  http://psl.noaa.gov/data/climateindices/list"
-"Globally_Integrated_Angular_Momentum_glaam.asc",1958,2014,5345,"GLAAM: globally averaged angular momentum. Scaled by 1e25 For info  http://psl.noaa.gov/data/climateindices/list"
-"gmsst.asc",1948,2026,8303,"originally from from https://data.giss.nasa.gov/gistemp/tabledata/GLB.Ts.txt https://psl.noaa.gov/data/timeseries/month/ Available at NOAA/PSL"
-"indiamon.asc",1948,1999,3547,"Central Indian Precipitation info at http://psl.noaa.gov/data/climateindices/list/"
-"iod.asc",1854,2026,17937,"Indian Ocean Dipole (DMI) (ERSST v5) Source: NCEI ERSST v5 / NOAA CPC (Updated to 2026)"
-"ipotpi.hadisst2.asc",1870,2010,14943,"TPI unfiltered (IPO Tripole Index) of Henley et al. (2015) HadISST2.1Median_of_10_rsns Please cite this data if you use it: Henley, B.J., Gergis, J., Karoly, D.J., Power, S.B., Kennedy, J., & Folland, C.K. (2015). A Tripole Index for the Interdecadal Pacific Oscillation. Climate Dynamics, 1?14. doi:10.1007/s00382-015-2525-1 See http://www.esrl.noaa.gov/psd/data/timeseries/IPOTPI/"
-"jonesnao.asc",1948,2022,7093,"NAO from CRU https://crudata.uea.ac.uk/cru/data/nao/nao.dat This time series crested at NOAA/PSL. updated irregularly. https://psl.noaa.gov/gcos_wgsp/Timeseries/NAO/ last update feb 2023. This is short (1948-->) version to match R1."
-"listing_drao_noontime-flux-observed_monthly.asc",1947,1,11994,""
-"MEI_V2_meiv2.asc",1979,2026,5652,"Multivariate ENSO Index Version 2 (MEI.v2) https://www.psl.noaa.gov/enso/mei Row values are 2 month seasons (YEAR DJ JF FM MA AM MJ JJ JA AS SO ON ND)"
-"meiv2.asc",1979,2026,5652,"Multivariate ENSO Index Version 2 (MEI.v2) https://www.psl.noaa.gov/enso/mei Row values are 2 month seasons (YEAR DJ JF FM MA AM MJ JJ JA AS SO ON ND)"
-"mjo_100e.asc",1978,2026,5171,"Madden-Julian Oscillation (MJO) 100E Monthly Average (CPC) Source: NOAA CPC (Updated to 2026)"
-"mjo_10w.asc",1978,2026,5170,"Madden-Julian Oscillation (MJO) 10W Monthly Average (CPC) Source: NOAA CPC (Updated to 2026)"
-"mjo_120e.asc",1978,2026,5171,"Madden-Julian Oscillation (MJO) 120E Monthly Average (CPC) Source: NOAA CPC (Updated to 2026)"
-"mjo_120w.asc",1978,2026,5171,"Madden-Julian Oscillation (MJO) 120W Monthly Average (CPC) Source: NOAA CPC (Updated to 2026)"
-"mjo_140e.asc",1978,2026,5171,"Madden-Julian Oscillation (MJO) 140E Monthly Average (CPC) Source: NOAA CPC (Updated to 2026)"
-"mjo_160e.asc",1978,2026,5171,"Madden-Julian Oscillation (MJO) 160E Monthly Average (CPC) Source: NOAA CPC (Updated to 2026)"
-"mjo_20e.asc",1978,2026,5170,"Madden-Julian Oscillation (MJO) 20E Monthly Average (CPC) Source: NOAA CPC (Updated to 2026)"
-"mjo_40w.asc",1978,2026,5170,"Madden-Julian Oscillation (MJO) 40W Monthly Average (CPC) Source: NOAA CPC (Updated to 2026)"
-"mjo_70e.asc",1978,2026,5170,"Madden-Julian Oscillation (MJO) 70E Monthly Average (CPC) Source: NOAA CPC (Updated to 2026)"
-"mjo_80e.asc",1978,2026,5170,"Madden-Julian Oscillation (MJO) 80E Monthly Average (CPC) Source: NOAA CPC (Updated to 2026)"
-"mjo_pentad.asc",None,None,357902,"PENTAD       20E      70E      80E     100E     120E     140E     160E     120W      40W      10W"
-"nao.asc",1950,2026,8045,"North Atlantic Oscillation (CPC) Source: NCEI ERSST v5 / NOAA CPC (Updated to 2026)"
-"NAO_(Jones)_jonesnao.asc",1948,2022,7093,"NAO from CRU https://crudata.uea.ac.uk/cru/data/nao/nao.dat This time series crested at NOAA/PSL. updated irregularly. https://psl.noaa.gov/gcos_wgsp/Timeseries/NAO/ last update feb 2023. This is short (1948-->) version to match R1."
-"NAO_nao.asc",1948,2026,7301,"NAO Index from CPC https://psl.noaa.gov/data/timeseries/month/for info"
-"nina1.asc",1854,2026,17930,"Niño 1+2 Mean SST (ERSST v5) Source: NCEI ERSST v5 / NOAA CPC (Updated to 2026)"
-"nina1_anom.asc",1854,2026,17937,"Niño 1+2 Anomaly (ERSST v5) Source: NCEI ERSST v5 / NOAA CPC / SILSO (Updated to 2026)"
-"nina3.asc",1854,2026,17928,"Niño 3 Mean SST (ERSST v5) Source: NCEI ERSST v5 / NOAA CPC (Updated to 2026)"
-"nina34.asc",1854,2026,17930,"Niño 3.4 Mean SST (ERSST v5) Source: NCEI ERSST v5 / NOAA CPC (Updated to 2026)"
-"nina34_anom.asc",1854,2026,17937,"Niño 3.4 Anomaly (ERSST v5) Source: NCEI ERSST v5 / NOAA CPC / SILSO (Updated to 2026)"
-"nina3_anom.asc",1854,2026,17935,"Niño 3 Anomaly (ERSST v5) Source: NCEI ERSST v5 / NOAA CPC / SILSO (Updated to 2026)"
-"nina4.asc",1854,2026,17928,"Niño 4 Mean SST (ERSST v5) Source: NCEI ERSST v5 / NOAA CPC (Updated to 2026)"
-"nina4_anom.asc",1854,2026,17935,"Niño 4 Anomaly (ERSST v5) Source: NCEI ERSST v5 / NOAA CPC / SILSO (Updated to 2026)"
-"Niño_1_2_nina1.asc",1948,1994,4414,"Nino1+2 Mean using NOAA OISST v2 from NCEI https://psl.noaa.gov/data/timeseries/month/for info"
-"Niño_1_2_nina1_anom.asc",1948,2026,8383,"NINA12 0N-10S 270W-280E ERSST V6 Anomaly from 1951-2000 https://psl.noaa.gov/data/timeseries/month/DS/NINO12/ units=degC"
-"Niño_3.4_nina34.asc",1948,1994,4415,"Nino 3.4 Mean using NOAA OISST v2 from NCEI https://psl.noaa.gov/data/timeseries/month/for info"
-"Niño_3.4_nina34_anom.asc",1948,2026,8382,"NINA34 5N-5S 170W-120W ERSST V6 Anomaly from 1951-2000 https://psl.noaa.gov/data/timeseries/month/DS/NINO34/ units=degC"
-"Niño_3_ersst5.nino.mth.91-20.asc",None,None,68006,""
-"Niño_3_nina3.asc",1948,1994,4413,"Nino 3 Mean using NOAA OISST v2 from NCEI https://psl.noaa.gov/data/timeseries/month/for info"
-"Niño_3_nina3_anom.asc",1948,2026,8379,"NINA3 5N-5S 150W-90W ERSST V6 Anomaly from 1951-2000 https://psl.noaa.gov/data/timeseries/month/DS/NINO3/ units=degC"
-"Niño_4_nina4.asc",1948,1994,4413,"Nino 4 Mean using NOAA OISST v2 from NCEI https://psl.noaa.gov/data/timeseries/month/for info"
-"Niño_4_nina4_anom.asc",1948,2026,8380,"NINA4 5N-5S 160E-150W ERSST V6 Anomaly from 1951-2000 https://psl.noaa.gov/data/timeseries/month/DS/NINO4/ units=degC"
-"noi.asc",1948,2026,8222,"Northern Oscillation Index info at http://psl.noaa.gov/data/timeseries/month/DS/NOI https://upwell.pfeg.noaa.gov/erddap/griddap/erdlasNoix.html http://www.pfeg.noaa.gov/products/PFEL/modeled/indices/NOIx/noix_download.html NOAA/PSL"
-"NOI_noi.asc",1948,2026,8222,"Northern Oscillation Index info at http://psl.noaa.gov/data/timeseries/month/DS/NOI https://upwell.pfeg.noaa.gov/erddap/griddap/erdlasNoix.html http://www.pfeg.noaa.gov/products/PFEL/modeled/indices/NOIx/noix_download.html NOAA/PSL"
-"North_Tropical_Atlantic_Index_(NTA)_NTA_ersst.asc",1950,2020,7654,"NTA_ersst produced at https://psl.noaa.gov/forecasts/sstlim/ 5N-17N; central Atl At NOAA PSL. Please cite forecast pubs and acquired at website YYYY/MM/DD SST is NOAA ERSST V3"
-"Northeast_Brazil_Rainfall_Anomaly_brazilrain.asc",1948,2000,3649,"Northeast Brazil Rainfall Anomaly Info at Northeast Brazil Rainfall Anomaly"
-"np.asc",1948,2024,9958,"Trenberth and Hurrell North Pacific Index (Monthly) From https://climatedataguide.ucar.edu/sites/default/ Date produced Nov 22 2024 Stored at NOAA/PSL Datasets used 10.1 from NCAR Monthly SLP https://psl.noaa.gov/data/month/DS/NP/"
-"NP_np.asc",1948,2024,9958,"Trenberth and Hurrell North Pacific Index (Monthly) From https://climatedataguide.ucar.edu/sites/default/ Date produced Nov 22 2024 Stored at NOAA/PSL Datasets used 10.1 from NCAR Monthly SLP https://psl.noaa.gov/data/month/DS/NP/"
-"NTA_ersst.asc",1950,2020,7654,"NTA_ersst produced at https://psl.noaa.gov/forecasts/sstlim/ 5N-17N; central Atl At NOAA PSL. Please cite forecast pubs and acquired at website YYYY/MM/DD SST is NOAA ERSST V3"
-"oni.asc",1950,2026,8038,"Oceanic Niño Index (CPC) Source: NCEI ERSST v5 / NOAA CPC (Updated to 2026)"
-"ONI_oni.asc",1950,2026,7289,"ONI from CPC Provided by NOAA/PSL From https://www.cpc.ncep.noaa.gov/data/indices/oni.ascii.txt As of 08/4/2026, uses NOAA ERSST V6 represents 3 month running mean of ERSST.v6 SST anomalies in the Niño 3.4 region (5N-5oS, 120o-170oW)]"
-"Pacific_Warmpool_Region_pacwarm.asc",1948,2026,10114,"PACWARMPOOL ERSSTV5 06/2025 empty Timeseries output created at NOAA PSL 60E-170E; 15S-15N area average anomalies Climo is 1991 to 2020"
-"Pacific_Warmpool_Region_pacwarmpool.ersst.asc",1854,2026,21958,"PACWARMPOOL ERSSTV5 06/2025 empty Timeseries output created at NOAA PSL 60E-170E; 15S-15N area average anomalies Climo is 1991 to 2020"
-"pacwarm.asc",1948,2026,10114,"PACWARMPOOL ERSSTV5 06/2025 empty Timeseries output created at NOAA PSL 60E-170E; 15S-15N area average anomalies Climo is 1991 to 2020"
-"pacwarmpool.ersst.asc",1854,2026,21958,"PACWARMPOOL ERSSTV5 06/2025 empty Timeseries output created at NOAA PSL 60E-170E; 15S-15N area average anomalies Climo is 1991 to 2020"
-"pdo.asc",1854,2026,17945,"Pacific Decadal Oscillation Index (ERSST v5) Source: NCEI ERSST v5 / NOAA CPC (Updated to 2026)"
-"PDO_pdo.asc",1948,2025,7607,"-9.90 PDO: pacific decadal oscillation info at https://psl.noaa.gov/data/climateindices/list/ updated 10/2025 https://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_OC_PDO.html used to be http://jisao.washington.edu/pdo/img/v1v2PDOComp.png If you have any questions about this time series, contact Nathan Mantua For question about this file, email cathy.smith@noaa.gov NOAA PSL and CIRES/CU"
-"pna.asc",1950,2026,8047,"Pacific North American Index (CPC) Source: NCEI ERSST v5 / NOAA CPC (Updated to 2026)"
-"PNA_pna.asc",1948,2026,7301,"PNA Index from CPC https://psl.noaa.gov/data/timeseries/month/for info"
-"qbo.asc",1948,2026,8238,"QBO Calculated at NOAA PSL 30mb zonal wind at the equator, zonal average For info https://psl.noaa.gov/data/timeseries/month/ units=ms-1"
-"QBO_qbo.asc",1948,2026,8238,"QBO Calculated at NOAA PSL 30mb zonal wind at the equator, zonal average For info https://psl.noaa.gov/data/timeseries/month/ units=ms-1"
-"Sahel_Rainfall_sahelrain.asc",1948,2017,5122,"Sahel Standardized Rainfall (20-8N, 20W-10E) Info at https://psl.noaa.gov/data/climateindices/list/ http://research.jisao.washington.edu/data_sets/sahel/#values re-obtained May 28 2019 Averages are in 0.1 mm, so ""-5"" is -0.05 cm precipitation anomaly with respect to 1980-2009. GPCC data was used. Please use the digital object identifier doi:10.6069/H5MW2F2Q in your citation of this index. units=.01mm"
-"sahelrain.asc",1948,2017,5122,"Sahel Standardized Rainfall (20-8N, 20W-10E) Info at https://psl.noaa.gov/data/climateindices/list/ http://research.jisao.washington.edu/data_sets/sahel/#values re-obtained May 28 2019 Averages are in 0.1 mm, so ""-5"" is -0.05 cm precipitation anomaly with respect to 1980-2009. GPCC data was used. Please use the digital object identifier doi:10.6069/H5MW2F2Q in your citation of this index. units=.01mm"
-"soi.asc",1951,2025,7839,"Southern Oscillation Index (CPC) Source: NCEI ERSST v5 / NOAA CPC (Updated to 2026)"
-"SOI_soi.asc",1948,2026,7222,"SOI Index from CPC https://psl.noaa.gov/data/timeseries/month/for info"
-"solar.asc",1948,2024,5429,"Date modified: 2024-11 SOLAR Cycle   10.7 flux Recent Values Obtained from  https://www.spaceweather.ca/forecast-prevision/solar-solaire/solarflux/sx-5-mavg-en.php This format from NOAA/PSL https://psl.noaa.gov/data/correlation/solar.data"
-"Solar_Flux_(10.7cm)_listing_drao_noontime-flux-observed_monthly.asc",1947,1,11994,""
-"Solar_Flux_(10.7cm)_solar.asc",1948,2024,5429,"Date modified: 2024-11 SOLAR Cycle   10.7 flux Recent Values Obtained from  https://www.spaceweather.ca/forecast-prevision/solar-solaire/solarflux/sx-5-mavg-en.php This format from NOAA/PSL https://psl.noaa.gov/data/correlation/solar.data"
-"ssn.asc",1749,2026,28746,"Sunspot Number (Monthly Total SSN - SILSO) Source: SILSO / NOAA (Updated to 2026)"
-"SW_Monsoon_Region_rainfall_swmonsoon.asc",1948,2010,5103,"-9.90 Area averaged NM and AZ precipitation Info at http://psl.noaa.gov/data/climateindices/"
-"swmonsoon.asc",1948,2010,5103,"-9.90 Area averaged NM and AZ precipitation Info at http://psl.noaa.gov/data/climateindices/"
-"tna.asc",1948,2026,8419,"TNAa Tropical Northern Atlantic Index SST Anom 5.5N-23.5N; 15W-57.5W Using HadISST1.1: Climo 1991-2020 NOAA/PSL https://psl.noaa.gov/data/timeseries/month/"
-"TNA_tna.asc",1948,2026,8419,"TNAa Tropical Northern Atlantic Index SST Anom 5.5N-23.5N; 15W-57.5W Using HadISST1.1: Climo 1991-2020 NOAA/PSL https://psl.noaa.gov/data/timeseries/month/"
-"tni.asc",1948,2026,8536,"TNI Nina 1.2-Nino4 standardized HadSST1.1 for entire time-series Reference: Indices of El Nino Evolution Kevin E. Trenberth, and David P. Stepaniak J. Climate, 14, 1697-1701. From NOAA PSL: See url for latest info https://psl.noaa.gov/data/climateindices/List/#TNI"
-"TNI_(Trans-Niño_Index)_tni.asc",1948,2026,8536,"TNI Nina 1.2-Nino4 standardized HadSST1.1 for entire time-series Reference: Indices of El Nino Evolution Kevin E. Trenberth, and David P. Stepaniak J. Climate, 14, 1697-1701. From NOAA PSL: See url for latest info https://psl.noaa.gov/data/climateindices/List/#TNI"
-"TPI(IPO)_ipotpi.hadisst2.asc",1870,2010,14943,"TPI unfiltered (IPO Tripole Index) of Henley et al. (2015) HadISST2.1Median_of_10_rsns Please cite this data if you use it: Henley, B.J., Gergis, J., Karoly, D.J., Power, S.B., Kennedy, J., & Folland, C.K. (2015). A Tripole Index for the Interdecadal Pacific Oscillation. Climate Dynamics, 1?14. doi:10.1007/s00382-015-2525-1 See http://www.esrl.noaa.gov/psd/data/timeseries/IPOTPI/"
-"trend.asc",1948,2019,6627,"-9.9 Trend simply a linear timeseries units="""" from psl."
-"Trend_trend.asc",1948,2019,6627,"-9.9 Trend simply a linear timeseries units="""" from psl."
-"Tropical_Pacific_SST_EOF_eofpac.asc",1948,2008,5583,"-9.0 eofpac psl"
-"tsa.asc",1948,2026,8314,"TSAa NOAA/PSL https://psl.noaa.gov/data/timeseries/month/"
-"TSA_tsa.asc",1948,2026,8314,"TSAa NOAA/PSL https://psl.noaa.gov/data/timeseries/month/"
-"whwp.asc",1948,2026,8557,"WHWPa Area anomaly scaled by 10e6 km**2 Monthly anomaly of the ocean surface area Ocean region >28.5C in the Atlantic and eastern North Pacific. Climatology is now 1991-2020. Wang, C., and D.B. Enfield, Geophys. Res. Lett., 28, 1635-1638."
-"WHWP_whwp.asc",1948,2026,8557,"WHWPa Area anomaly scaled by 10e6 km**2 Monthly anomaly of the ocean surface area Ocean region >28.5C in the Atlantic and eastern North Pacific. Climatology is now 1991-2020. Wang, C., and D.B. Enfield, Geophys. Res. Lett., 28, 1635-1638."
-"wp.asc",1948,2026,7300,"WP Index from CPC https://psl.noaa.gov/data/timeseries/month/for info"
-"WP_wp.asc",1948,2026,7300,"WP Index from CPC https://psl.noaa.gov/data/timeseries/month/for info"
+index_name,label,asc_filename,url,start_year,end_year,file_size_bytes,description
+"PNA*","PNA*","PNA_pna.asc","https://psl.noaa.gov/data/correlation/pna.data",1948,2026,7218,"Pacific North American Index: From NOAA Climate Prediction Center
+          (CPC)"
+"EP/NP","EP/NP","EP_NP_epo.asc","https://psl.noaa.gov/data/correlation/epo.data",1948,2026,7221,"East Pacific/North Pacific Oscillation: From NOAA Climate Prediction Center
+          (CPC) . This index replaces the old EP index which is no longer maintained by CPC ."
+"WP*","WP*","WP_wp.asc","https://psl.noaa.gov/data/correlation/wp.data",1948,2026,7217,"Western Pacific Index: From NOAA Climate Prediction Center (CPC)"
+"EA/WR","EA/WR","EA_WR_ea.asc","https://psl.noaa.gov/data/correlation/ea.data",1948,2026,7220,"Eastern Atlantic/Western Russia: From NOAA Climate Prediction Center (CPC)"
+"NAO*","NAO*","NAO_nao.asc","https://psl.noaa.gov/data/correlation/nao.data",1948,2026,7218,"North Atlantic Oscillation: From NOAA Climate Prediction Center (CPC)"
+"NAO (Jones)","NAO (Jones)","NAO_(Jones)_jonesnao.asc","https://psl.noaa.gov/data/correlation/jonesnao.data",1948,2022,7009,"North Atlantic Oscillation: From CRU Hurrell, J.W., 1995: Decadal trends in the North Atlantic Oscillation and
+          relationships to regional temperature and precipitation. Science 269, 676-679. Jones, P.D., Jónsson, T. and Wheeler, D., 1997: Extension to the North Atlantic Oscillation using early
+          instrumental pressure observations from Gibraltar and South-West Iceland. Int. J. Climatol. 17, 1433-1450."
+"SOI*","SOI*","SOI_soi.asc","https://psl.noaa.gov/data/correlation/soi.data",1948,2026,7139,"Southern Oscillation Index: From NOAA Climate Prediction Center (CPC)"
+"Niño 3*","Niño 3*","Niño_3_nina3_anom.asc","https://psl.noaa.gov/data/correlation/nina3.anom.data",1948,2026,8292,"Eastern Tropical Pacific SST (5N-5S,150W-90W): From NOAA Climate Prediction Center(CPC) CPC uses the NOAA ERSST V5 anomalies . Now uses https://www.cpc.ncep.noaa.gov/data/indices/ersst5.nino.mth.91-20.ascii . Mean values also available."
+"Niño 3*","https://www.cpc.ncep.noaa.gov/data/indices/ersst5.nino.mth.91-20.ascii","Niño_3_ersst5.nino.mth.91-20.asc","https://www.cpc.ncep.noaa.gov/data/indices/ersst5.nino.mth.91-20.ascii",None,None,67087,"Eastern Tropical Pacific SST (5N-5S,150W-90W): From NOAA Climate Prediction Center(CPC) CPC uses the NOAA ERSST V5 anomalies . Now uses https://www.cpc.ncep.noaa.gov/data/indices/ersst5.nino.mth.91-20.ascii . Mean values also available."
+"Niño 3*","Mean values also available.","Niño_3_nina3.asc","https://psl.noaa.gov/data/correlation/nina3.data",1948,1994,4362,"Eastern Tropical Pacific SST (5N-5S,150W-90W): From NOAA Climate Prediction Center(CPC) CPC uses the NOAA ERSST V5 anomalies . Now uses https://www.cpc.ncep.noaa.gov/data/indices/ersst5.nino.mth.91-20.ascii . Mean values also available."
+"BEST*longer
+          version","BEST*","BEST_longer_version_censo.asc","https://psl.noaa.gov/data/correlation/censo.data",1948,2026,7136,"Bivariate ENSO Timeseries Calculated from combining a standardized SOI and a standardized Niño3.4 SST timeseries. Uses the
+          dataset (HadISST1.1) is now used to calculate Niño 3.4 timeseries. Most recent data is based on the
+          NOAA OI V2 SST dataset. PSL"
+"BEST*longer
+          version","longer
+          version","BEST_longer_version_censo.long.asc","https://psl.noaa.gov/data/correlation/censo.long.data",1871,2003,10467,"Bivariate ENSO Timeseries Calculated from combining a standardized SOI and a standardized Niño3.4 SST timeseries. Uses the
+          dataset (HadISST1.1) is now used to calculate Niño 3.4 timeseries. Most recent data is based on the
+          NOAA OI V2 SST dataset. PSL"
+"TNA*","TNA*","TNA_tna.asc","https://psl.noaa.gov/data/correlation/tna.data",1948,2026,8332,"Tropical Northern Atlantic Index Anomaly of the average of the monthly SST from 5.5N to 23.5N and
+          15W to 57.5W. HadISST and NOAA OI 1x1 datasets are used to create index. Climatology is 1971-2000. Enfield, D.B., A.M. Mestas, D.A. Mayer, and L. Cid-Serrano, 1999: How
+          ubiquitous is the dipole relationship in tropical Atlantic sea surface
+          temperatures? JGR-O, 104, 7841-7848. AOML and PSL"
+"TSA*","TSA*","TSA_tsa.asc","https://psl.noaa.gov/data/correlation/tsa.data",1948,2026,8230,"Tropical Southern Atlantic Index Anomaly of the average of the monthly SST from Eq-20S and 10E-30W.
+          HadISST and NOAA OI 1x1 datasets are used to create index. Climatology is 1971-2000. Enfield, D.B., A.M. Mestas, D.A. Mayer, and L. Cid-Serrano, 1999: How
+          ubiquitous is the dipole relationship in tropical Atlantic sea surface
+          temperatures? JGR-O, 104, 7841-7848. AOML and PSL"
+"WHWP*","WHWP*","WHWP_whwp.asc","https://psl.noaa.gov/data/correlation/whwp.data",1948,2026,8469,"Western Hemisphere Warm Pool Monthly anomaly of the ocean surface area warmer than 28.5° C in the Atlantic and eastern North Pacific.
+          Based on HadISST and NOAA OI SST (for latest value).
+          Climatology is 1971-2000. Wang, C., and D.B. Enfield, 2001: The tropical Western Hemisphere warm
+          pool, Geophys. Res. Lett., 28, 1635-1638. AOML and PSL"
+"ONI","ONI","ONI_oni.asc","https://psl.noaa.gov/data/correlation/oni.data",1950,2026,7203,"Oceanic Niño Index: From NOAA Climate
+          Prediction Center (CPC) Three month running mean of NOAA ERSST.V5 SST anomalies in the Niño 3.4
+          region (5N-5S, 120-170W), based on changing base period which onsist of multiple centered 30-year base
+          periods.
+          These 30-year base periods will be used to calculate the anomalies for successive 5-year periods in the
+          historical record."
+"MEI V2","MEI V2","MEI_V2_meiv2.asc","https://psl.noaa.gov/enso/mei/data/meiv2.data",1979,2026,5599,"Multivariate ENSO Index (MEI V2) Time series is bimonthly so the Jan
+          value represents the Dec-Jan value and is centered between the months. Details and current values are PSL's MEI webpage ."
+"Niño 1+2*","Niño 1+2*","Niño_1_2_nina1_anom.asc","https://psl.noaa.gov/data/correlation/nina1.anom.data",1948,2026,8296,"Extreme Eastern Tropical Pacific
+          SST (0-10S, 90W-80W): From CPC CPC uses the
+          NOAA ERSST V5 anomalies. Now uses https://www.cpc.ncep.noaa.gov/data/indices/ersst5.nino.mth.91-20.ascii . Mean values also available."
+"Niño 1+2*","Mean values","Niño_1_2_nina1.asc","https://psl.noaa.gov/data/correlation/nina1.data",1948,2026,8274,"Extreme Eastern Tropical Pacific
+          SST (0-10S, 90W-80W): From CPC CPC uses the
+          NOAA ERSST V5 anomalies. Now uses https://www.cpc.ncep.noaa.gov/data/indices/ersst5.nino.mth.91-20.ascii . Mean values also available."
+"Niño 4*","Niño 4*","Niño_4_nina4_anom.asc","https://psl.noaa.gov/data/correlation/nina4.anom.data",1948,2026,8293,"Central Tropical Pacific SST (5N-5S)
+        (160E-150W): From CPC CPC
+          uses the NOAA ERSST V5
+          anomalies. Now uses https://www.cpc.ncep.noaa.gov/data/indices/ersst5.nino.mth.91-20.ascii . Mean values also available."
+"Niño 4*","Mean values","Niño_4_nina4.asc","https://psl.noaa.gov/data/correlation/nina4.data",1948,2026,8270,"Central Tropical Pacific SST (5N-5S)
+        (160E-150W): From CPC CPC
+          uses the NOAA ERSST V5
+          anomalies. Now uses https://www.cpc.ncep.noaa.gov/data/indices/ersst5.nino.mth.91-20.ascii . Mean values also available."
+"Niño 3.4*","Niño 3.4*","Niño_3.4_nina34_anom.asc","https://psl.noaa.gov/data/correlation/nina34.anom.data",1948,2026,8362,"East Central Tropical Pacific SST (5N-5S)(170-120W): From CPC CPC uses the NOAA ERSST V5
+          anomalies. Now uses https://www.cpc.ncep.noaa.gov/data/indices/ersst5.nino.mth.91-20.ascii . Mean values also available."
+"Niño 3.4*","Mean values","Niño_3.4_nina34.asc","https://psl.noaa.gov/data/correlation/nina34.data",1948,2026,8205,"East Central Tropical Pacific SST (5N-5S)(170-120W): From CPC CPC uses the NOAA ERSST V5
+          anomalies. Now uses https://www.cpc.ncep.noaa.gov/data/indices/ersst5.nino.mth.91-20.ascii . Mean values also available."
+"PDO","PDO","PDO_pdo.asc","https://psl.noaa.gov/data/correlation/pdo.data",1948,2025,7514,"Pacific Decadal Oscillation PDO is the
+          leading PC of monthly SST anomalies in the North Pacific Ocean. UPDATED: Using data from 1948 to 2002. Details and more information are available."
+"TPI(IPO)","TPI(IPO)","TPI(IPO)_ipotpi.hadisst2.asc","https://psl.noaa.gov/data/timeseries/IPOTPI/ipotpi.hadisst2.data",1870,2010,14794,"Tripole Index for the Interdecadal Pacific Oscillation Details and more information are available."
+"NOI","NOI","NOI_noi.asc","https://psl.noaa.gov/data/correlation/noi.data",1948,2026,8135,"Northern Oscillation Index NOI is an index of climate variability based
+          on the difference in SLP anomalies at the North Pacific High and near Darwin Australia. Schwing, F.B., T.
+          Murphree,
+          and P.M. Green. 2002. The Northern Oscillation Index (NOI): a new climate
+          index for the northeast Pacific. Progress in Oceanography 53: 115-139. The time series and more
+            information are available."
+"NP","NP","NP_np.asc","https://psl.noaa.gov/data/correlation/np.data",1948,2024,9873,"North Pacific Pattern NP is the
+          area-weighted sea level pressure over the region 30N-65N,
+          160E-140W. Time
+            series source Trenberth and Hurrell (1994): Climate Dynamics 9:303-319."
+"TNI
+          (Trans-Niño Index)","TNI
+          (Trans-Niño Index)","TNI_(Trans-Niño_Index)_tni.asc","https://psl.noaa.gov/data/correlation/tni.data",1948,2026,8446,"Indices of El Niño Evolution Calculated at PSL. For longer timeseries, go to http://psl.noaa.gov/Pressure/Timeseries/TNI/ Kevin E. Trenberth and
+          David P. Stepaniak: J. Climate , 14 , 1697-1701."
+"Trend","Trend","Trend_trend.asc","https://psl.noaa.gov/data/correlation/trend.data",1948,2019,6549,"A Linear Time Series (1,2,3,...) NOT the linear trend
+          of the variable"
+"AO","AO","AO_ao.asc","https://psl.noaa.gov/data/correlation/ao.data",1950,2026,8922,"Arctic Oscillation From CPC Note: values are now from CPC as they update their data
+            through the present The loading pattern of AO (AAO) is defined as the first leading mode from the EOF analysis of
+          monthly mean height anomalies at 1000-hPa (NH) or 700-hPa (SH). Note that year-round monthly mean anomaly data
+          has been used to obtain the loading patterns. Since the AO and AAO have the largest variability during the
+          cold sesaon (variance of AO/AAO), the loading patterns primarily capture characteristics of the cold season
+          patterns. Daily and monthly AO (AAO) indices are constructed by projecting the daily and monthly mean 1000-hPa (700-hPa)
+          height anomalies onto the leading EOF mode. Both time series are normalized by the standard deviation of the
+          monthly index (1979-2000 base period). Since the loading pattern of AO (AAO) is obtained using the monthly
+          mean height anomaly dataset, the index corresponding to each loading pattern becomes one when it is normalized
+          by the standard deviation of the monthly index. Values and
+            description"
+"AAO","AAO","AAO_aao.asc","https://psl.noaa.gov/data/correlation/aao.data",1979,2026,3991,"Antarctic Oscillation Values
+            and
+            references Data from NOAA CPC"
+"Pacific Warmpool Region","Pacific Warmpool Region","Pacific_Warmpool_Region_pacwarm.asc","https://psl.noaa.gov/data/correlation/pacwarm.data",1948,2026,10027,"Pacific Warmpool Area Average Definition: area averaged SST: 60E-170E, 15S-15N
+          Dataset: NOAA ERSSTV5 1948-present Climatology: 1981-2020 Also available: Long version (1854-present) . Reference:
+          Martin P. Hoerling, Jon Eischeid, and Judith Perlwitz, 2010: Regional Precipitation Trends: Distinguishing
+          Natural Variability from Anthropogenic Forcing. J. Climate, Vol. 23, 2131-2145."
+"Pacific Warmpool Region","Long version (1854-present)","Pacific_Warmpool_Region_pacwarmpool.ersst.asc","https://psl.noaa.gov/gcos_wgsp/Timeseries/Data/pacwarmpool.ersst.data",1854,2026,21777,"Pacific Warmpool Area Average Definition: area averaged SST: 60E-170E, 15S-15N
+          Dataset: NOAA ERSSTV5 1948-present Climatology: 1981-2020 Also available: Long version (1854-present) . Reference:
+          Martin P. Hoerling, Jon Eischeid, and Judith Perlwitz, 2010: Regional Precipitation Trends: Distinguishing
+          Natural Variability from Anthropogenic Forcing. J. Climate, Vol. 23, 2131-2145."
+"Tropical Pacific SST EOF","Tropical Pacific SST EOF","Tropical_Pacific_SST_EOF_eofpac.asc","https://psl.noaa.gov/data/correlation/eofpac.data",1948,2008,5519,"1st EOF of SST (20N-20S, 120E-60W) GISST 1948-1949 Reconstructed Reynolds 1950-1981 OI 1982-present Reference:
+          Martin P. Hoerling, Arun Kumar, and Taiyi Xu, 2001: Robustness of the nonlinear
+          climate response to ENSO's extreme phases. Journal of Climate, Vol.14, No.6,
+          1277-1293"
+"Atlantic Tripole SST EOF","Atlantic Tripole SST EOF","Atlantic_Tripole_SST_EOF_atltri.asc","https://psl.noaa.gov/data/correlation/atltri.data",1948,2008,5536,"1st EOF of SST (10N-70N, 0-80W) GISST 1948-1949 Reconstructed Reynolds 1950-1981 r
+          OI 1982-present Deser, Clara, Michael S. Timlin, 1997: Atmosphere-Ocean Interaction on Weekly Timescales in the North
+          Atlantic and Pacific. Journal of Climate: Vol. 10, No. 3, pp.393-408."
+"Atlantic Multidecadal OscillationLong Version","Atlantic Multidecadal Oscillation","Atlantic_Multidecadal_OscillationLong_Version_amon.us.asc","https://psl.noaa.gov/data/correlation/amon.us.data",1948,2023,8817,"AMO, unsmoothed Note: this index is newly computed from a new dataset. Please use it and note that it supersedes the old
+          indices. The data is calculated
+          from the Kalplan SST. See the AMO webpage for more details. Enfield, D.B., A. M. Mestas-Nunez and P.J. Trimble, 2001: The Atlantic multidecadal oscillation and it's
+          relation to rainfall and river flows in the continental U.S.. Geophysical Research Letters, Vol. 28,
+          2077-2080."
+"Atlantic Multidecadal OscillationLong Version","Long Version","Atlantic_Multidecadal_OscillationLong_Version_amon.us.long.asc","https://psl.noaa.gov/data/correlation/amon.us.long.data",1856,2023,19294,"AMO, unsmoothed Note: this index is newly computed from a new dataset. Please use it and note that it supersedes the old
+          indices. The data is calculated
+          from the Kalplan SST. See the AMO webpage for more details. Enfield, D.B., A. M. Mestas-Nunez and P.J. Trimble, 2001: The Atlantic multidecadal oscillation and it's
+          relation to rainfall and river flows in the continental U.S.. Geophysical Research Letters, Vol. 28,
+          2077-2080."
+"Atlantic Meridional Mode","Atlantic Meridional Mode","Atlantic_Meridional_Mode_ammsst.asc","https://psl.noaa.gov/data/timeseries/monthly/AMM/ammsst.data",1948,2024,8080,"AMM Note: this index is computed from a new dataset. See the AMM webpage for more details. 2004 Chiang, J. C. H., and D. J. Vimont: Analogous meridional modes of atmosphere-ocean variability in the
+          tropical Pacific and tropical Atlantic. J. Climate,17(21), 4143-4158."
+"North Tropical Atlantic Index (NTA)","North Tropical Atlantic Index (NTA)","North_Tropical_Atlantic_Index_(NTA)_NTA_ersst.asc","https://psl.noaa.gov/data/correlation/NTA_ersst.data",1950,2020,7575,"NTA:North Tropical Atlantic SST Index ( Source dataset changed: old version available ).The timeseries of SST anomalies averaged
+          over 60W to 20W, 6N to 18N and 20W to 10W, 6N to 10N map . Data is obtained from the ERSST V3b dataset. Anomalies
+          were calculated relative to the 1981-2010 climatology, smoothed by three months running mean procedure and
+          projected onto 20 leading EOFs. Month of data is the center of the 3 months that are smoothed. More
+          information and the indexes forecasted values are available . Penland, C., and L. Matrosova, 1998: ""Prediction of tropical Atlantic sea surface temperatures using Linear
+          Inverse Modeling,"" J. Climate, March, 483-496 pp."
+"Caribbean Index (CAR)","Caribbean Index (CAR)","Caribbean_Index_(CAR)_CAR_ersst.asc","https://psl.noaa.gov/data/correlation/CAR_ersst.data",1950,2020,7575,"CAR:Caribbean SST Index The timeseries of SST anomalies averaged over the the Caribbean . Data is obtained from the NOAA ERSST V3b
+          dataset. Anomalies were calculated relative to the 1981-2010 climatology, smoothed by three months running
+          mean procedure and projected onto 20 leading EOFs. More information and the indexes forecasted values are available . Penland, C., and L. Matrosova, 1998: ""Prediction of tropical Atlantic sea surface temperatures using Linear
+          Inverse Modeling,"" J. Climate, March, 483-496 pp."
+"Atlantic multidecadal OscillationLong Version","Atlantic multidecadal Oscillation","Atlantic_multidecadal_OscillationLong_Version_amon.sm.asc","https://psl.noaa.gov/data/correlation/amon.sm.data",1948,2023,8814,"AMO, smoothed Note: this index is newly computed from a new dataset. Please use it and note that it supersedes the old
+          indices. The data is calculated
+          from the Kalplan SST. See the AMO webpage for more details. Enfield, D.B., A. M. Mestas-Nunez and P.J. Trimble, 2001: The Atlantic multidecadal oscillation and it's
+          relation to rainfall and river flows in the continental U.S.. Geophysical Research Letters, Vol. 28,
+          2077-2080."
+"Atlantic multidecadal OscillationLong Version","Long Version","Atlantic_multidecadal_OscillationLong_Version_amon.sm.long.asc","https://psl.noaa.gov/data/correlation/amon.sm.long.data",1856,2023,19292,"AMO, smoothed Note: this index is newly computed from a new dataset. Please use it and note that it supersedes the old
+          indices. The data is calculated
+          from the Kalplan SST. See the AMO webpage for more details. Enfield, D.B., A. M. Mestas-Nunez and P.J. Trimble, 2001: The Atlantic multidecadal oscillation and it's
+          relation to rainfall and river flows in the continental U.S.. Geophysical Research Letters, Vol. 28,
+          2077-2080."
+"QBO*","QBO*","QBO_qbo.asc","https://psl.noaa.gov/data/correlation/qbo.data",1948,2026,8152,"Quasi-Biennial Oscillation Calculated at PSL (from the zonal average of the 30mb zonal wind at the equator as computed from the NCEP/NCAR
+          Reanalysis)."
+"Globally Integrated Angular Momentum*","Globally Integrated Angular Momentum*","Globally_Integrated_Angular_Momentum_glaam.asc","https://psl.noaa.gov/data/correlation/glaam.data.scaled",1958,2014,5283,"Globally Integrated Angular Momentum Data is not being updated after Feb 2014. It is not known when or if it will be
+            updated (due
+            to resource issues). .Note that time series is scaled by 1e25. Values
+            are
+            3-month running means except for the last month which is a 2-month average . Weickmann, K.M., W.A. Robinson and M.C. Penland, 2000: Stochastic and
+          oscillatory forcing of global atmospheric angular momentum. J. Geophys. Res., 105 , D12, 15543-15557."
+"ENSO Precipitation Index","ENSO Precipitation Index","ENSO_Precipitation_Index_espi.asc","https://psl.noaa.gov/data/correlation/espi.data",1979,2023,5304,"ENSO Precipitation Index http://precip.gsfc.nasa.gov/ESPItable.html Please
+          cite ""ENSO Indices Based on Patterns
+          of Satellite-Derived Precipitation"" Curtis and Adler in J. of Climate, 13,2786 (2000). Time series
+          that uses rainfall data in the
+          Tropical Pacific to describe ENSO events."
+"Central Indian Precipitation (core monsoon
+          region)","Central Indian Precipitation (core monsoon
+          region)","Central_Indian_Precipitation_(core_monsoon_region)_indiamon.asc","https://psl.noaa.gov/data/correlation/indiamon.data",1948,1999,3490,"Central Indian Precipitation http://www.tropmet.res.in/ Please cite the Indian Institute of
+          Tropical Meteorology.
+          CORE-MONSOON INDIA RAINFALL (1871-1999) 7 SUB 776,942 SQ.KM."
+"Sahel Rainfall","Sahel Rainfall","Sahel_Rainfall_sahelrain.asc","https://psl.noaa.gov/data/correlation/sahelrain.data",1948,2017,5041,"Sahel Standardized Rainfall (20-8N, 20W-10E) http://jisao.washington.edu/data_sets/sahel/ From
+          Mitchell:
+          The averaging region is based on the rotated principal component analysis of average June through September
+          African rainfall presented
+          in Janowiak (1988, J. Climate, 1, 240-255). Stations within 20-8N, 20W-10E are obtained from the National
+          Center for Atmospheric
+          Research World Monthly Surface Station Climatology (WMSSC), and 14 retained which had complete or almost
+          complete records for
+          1950-93. See link for stations."
+"SW Monsoon Region rainfall","SW Monsoon Region rainfall","SW_Monsoon_Region_rainfall_swmonsoon.asc","https://psl.noaa.gov/data/correlation/swmonsoon.data",1948,2010,5036,"Area Averaged Precipitation for Arizona and New Mexico Calculated using NCDC's climate division dataset. Monthly precipitation values for each of the climate
+          divisions in Arizona and New
+          Mexico are are averaged to produce a single monthly value. Reference:
+          personal communication, Catherine Smith. Also, NCDC, 1994, Time Bias Corrected Divisional
+          Temperature-Precipitation-Drought Index. Documentation for dataset TD-9640.
+          Available from DBMB, NCDC, NOAA, Federal Building, 37 Battery Park Ave. Asheville, NC 28801-2733. 12pp."
+"Northeast Brazil Rainfall Anomaly","Northeast Brazil Rainfall Anomaly","Northeast_Brazil_Rainfall_Anomaly_brazilrain.asc","https://psl.noaa.gov/data/correlation/brazilrain.data",1948,2000,3592,"Northeast Brazil Rainfall Anomaly http://jisao.washington.edu/data_sets/brazil/ From Mitchell: The northeast Brazil rainfall index is calculated from data for Fortaleza (3.7S, 38.5W) and
+          Quixeramobim
+          (5.3S, 39.3W) Brazil obtained from the NCAR World Monthly Surface Station Climatology. Climatological mean is
+          for 1950-79."
+"Solar Flux (10.7cm)*","Solar Flux (10.7cm)*","Solar_Flux_(10.7cm)_solar.asc","https://psl.noaa.gov/data/correlation/solar.data",1948,2024,5344,"Solar Flux (10.7cm) ftp://ftp.ngdc.noaa.gov/STP/space-weather/solar-data/solar-features/solar-radio/noontime-flux/penticton/penticton_observed/listings/listing_drao_noontime-flux-observed_monthly.txt To cite, ""The 10.7cm Solar Flux Data are provided as a service by the National Research Council of
+          Canada"".
+          They would appreciate a preprint
+          or at least a reference if you use the data URL is http://www.spaceweather.ca/solarflux/sx-4-eng.php ."
+"Solar Flux (10.7cm)*","ftp://ftp.ngdc.noaa.gov/STP/space-weather/solar-data/solar-features/solar-radio/noontime-flux/penticton/penticton_observed/listings/listing_drao_noontime-flux-observed_monthly.txt","Solar_Flux_(10.7cm)_listing_drao_noontime-flux-observed_monthly.asc","ftp://ftp.ngdc.noaa.gov/STP/space-weather/solar-data/solar-features/solar-radio/noontime-flux/penticton/penticton_observed/listings/listing_drao_noontime-flux-observed_monthly.txt",None,None,11137,"Solar Flux (10.7cm) ftp://ftp.ngdc.noaa.gov/STP/space-weather/solar-data/solar-features/solar-radio/noontime-flux/penticton/penticton_observed/listings/listing_drao_noontime-flux-observed_monthly.txt To cite, ""The 10.7cm Solar Flux Data are provided as a service by the National Research Council of
+          Canada"".
+          They would appreciate a preprint
+          or at least a reference if you use the data URL is http://www.spaceweather.ca/solarflux/sx-4-eng.php ."
+"Global Mean Land/Ocean Temperature Index","Global Mean Land/Ocean Temperature Index","Global_Mean_Land_Ocean_Temperature_Index_gmsst.asc","https://psl.noaa.gov/data/correlation/gmsst.data",1948,2026,8219,"Global Mean Land/Ocean Temperature Values change over time! Data values are from NASA/GISS .
+          Please read and refer to this web page plus the main web page describing various temperature indices at the
+          main NASA/GISTEMP webpage . Note, the index is an anomaly index. They have comments in the datafile and the
+          writeup on obtaining an absolute global mean temperatures. Please reference the papers: Christy, J.R., R.W. Spencer, and W.D. Braswell 2000. J. Atmos. Oceanic Tech. 17, 1153. Hansen, J., R. Ruedy, M. Sato and R. Reynolds 1996. Global surface air temperature in 1995: Return to
+              pre-Pinatubo level. Geophys. Res. Lett. 23, 1665-1668. Hansen, J., M. Sato, J. Glascoe and R. Ruedy 1998. A common-sense climate index: Is climate changing
+              noticeably? Proc. Natl. Acad. Sci. 95, 4113-4120. Hansen, J., R. Ruedy, J. Glascoe, and M. Sato 1999. GISS analysis of surface temperature change. J.
+              Geophys. Res. 104, 30997-31022. Hansen, J., R. Ruedy, M. Sato, M. Imhoff, W. Lawrence, D. Easterling, T. Peterson, and T. Karl 2001. A
+              closer look at United States and global surface temperature change. J. Geophys. Res. 106, 23947-23963 Intergovernmental Panel on Climate Change 2001. Climate Change 2001 (J.T. Houghton et al., Eds.),
+              Cambridge Univ. Press, New York. National Research Council 2000. Reconciling Observations of Global Temperature Change. National Academy
+              Press, Washington, DC, 85 pp. Peterson, T.C., and R.S. Vose 1997. An overview of the Global Historical Climatology Network temperature
+            database. Bull. Amer. Meteorol. Soc. 78, 2837-2849. Rayner, N. 2000. HadISST1 Seaice and sea surface temperature files. Hadley Center, Bracknell, U.K. Reynolds, R.W., N.A. Rayner, T.M. Smith, D.C. Stokes, and W. Wang 2002. An improved in situ and
+              satellite SST analysis for climate. J. Climate 15, 1609-1625, doi:10.1175/1520-0442(2002)015<1609:AIISAS>
+                2.0.CO;2. Reynolds, R.W., and T.M. Smith 1994. Improved global sea surface temperature analyses. J. Climate 7,
+              929-948, doi:10.1175/1520-0442(1994)007<0929:IGSSTA>2.0.CO;2 Smith, T.M., R.W. Reynolds, R.E. Livesay, and D.C. Stokes 1996. Reconstruction of historical sea surface
+              temperature using empirical orthogonal functions. J. Climate 9, 1403-1420."
+"Global Mean Land/Ocean Temperature Index","NASA/GISS","GLB.Ts+dSST.asc","https://data.giss.nasa.gov/gistemp/tabledata_v3/GLB.Ts+dSST.txt",None,None,16198,"Global Mean Land/Ocean Temperature Values change over time! Data values are from NASA/GISS .
+          Please read and refer to this web page plus the main web page describing various temperature indices at the
+          main NASA/GISTEMP webpage . Note, the index is an anomaly index. They have comments in the datafile and the
+          writeup on obtaining an absolute global mean temperatures. Please reference the papers: Christy, J.R., R.W. Spencer, and W.D. Braswell 2000. J. Atmos. Oceanic Tech. 17, 1153. Hansen, J., R. Ruedy, M. Sato and R. Reynolds 1996. Global surface air temperature in 1995: Return to
+              pre-Pinatubo level. Geophys. Res. Lett. 23, 1665-1668. Hansen, J., M. Sato, J. Glascoe and R. Ruedy 1998. A common-sense climate index: Is climate changing
+              noticeably? Proc. Natl. Acad. Sci. 95, 4113-4120. Hansen, J., R. Ruedy, J. Glascoe, and M. Sato 1999. GISS analysis of surface temperature change. J.
+              Geophys. Res. 104, 30997-31022. Hansen, J., R. Ruedy, M. Sato, M. Imhoff, W. Lawrence, D. Easterling, T. Peterson, and T. Karl 2001. A
+              closer look at United States and global surface temperature change. J. Geophys. Res. 106, 23947-23963 Intergovernmental Panel on Climate Change 2001. Climate Change 2001 (J.T. Houghton et al., Eds.),
+              Cambridge Univ. Press, New York. National Research Council 2000. Reconciling Observations of Global Temperature Change. National Academy
+              Press, Washington, DC, 85 pp. Peterson, T.C., and R.S. Vose 1997. An overview of the Global Historical Climatology Network temperature
+            database. Bull. Amer. Meteorol. Soc. 78, 2837-2849. Rayner, N. 2000. HadISST1 Seaice and sea surface temperature files. Hadley Center, Bracknell, U.K. Reynolds, R.W., N.A. Rayner, T.M. Smith, D.C. Stokes, and W. Wang 2002. An improved in situ and
+              satellite SST analysis for climate. J. Climate 15, 1609-1625, doi:10.1175/1520-0442(2002)015<1609:AIISAS>
+                2.0.CO;2. Reynolds, R.W., and T.M. Smith 1994. Improved global sea surface temperature analyses. J. Climate 7,
+              929-948, doi:10.1175/1520-0442(1994)007<0929:IGSSTA>2.0.CO;2 Smith, T.M., R.W. Reynolds, R.E. Livesay, and D.C. Stokes 1996. Reconstruction of historical sea surface
+              temperature using empirical orthogonal functions. J. Climate 9, 1403-1420."

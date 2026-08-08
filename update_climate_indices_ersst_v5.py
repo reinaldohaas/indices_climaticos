@@ -8,6 +8,7 @@ Sources:
 
 import urllib.request
 import json
+import ssl
 from pathlib import Path
 from collections import defaultdict
 
@@ -45,8 +46,11 @@ def save_as_psl_asc(data_by_year, filepath, description="", missing_val=-99.90):
     print(f"Saved {filepath.name} ({start_yr} - {end_yr})")
 
 def fetch_url(url):
+    ctx = ssl.create_default_context()
+    ctx.check_hostname = False
+    ctx.verify_mode = ssl.CERT_NONE
     req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
-    with urllib.request.urlopen(req) as resp:
+    with urllib.request.urlopen(req, context=ctx) as resp:
         return resp.read().decode('utf-8', errors='replace')
 
 def process_ersst_v5_el_nino_anom():
