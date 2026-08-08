@@ -1,8 +1,9 @@
 """
-Update Climate Indices using NCEI ERSST v5 index directory, NOAA CPC (including MJO), & SILSO SSN up to 2026+
+Update Climate Indices using NCEI ERSST v5 index directory, NOAA PSL MJO, NOAA CPC, & SILSO SSN up to 2026+
 Sources:
 - NCEI ERSST v5: https://www.ncei.noaa.gov/pub/data/cmb/ersst/v5/index/
-- NOAA CPC Teleconnections & MJO: https://www.cpc.ncep.noaa.gov/products/precip/CWlink/daily_mjo_index/proj_norm_order.ascii
+- NOAA PSL MJO Indices: https://psl.noaa.gov/mjo/mjoindex/
+- NOAA CPC Teleconnections: https://www.cpc.ncep.noaa.gov/data/indices/
 - SILSO Sunspot Number (SSN): https://www.sidc.be/SILSO/DATA/SN_m_tot_V2.0.txt
 """
 
@@ -14,8 +15,11 @@ from collections import defaultdict
 
 ASC_DIR = Path("indices_asc")
 ASC_DIR.mkdir(parents=True, exist_ok=True)
-DEFAULT_TIMEOUT = 15  # seconds timeout to prevent hanging
+DEFAULT_TIMEOUT = 10  # 10 seconds timeout per request
 
+# Helper to format data into standard NOAA PSL .asc matrix format:
+# Line 1: start_yr  end_yr
+# Lines: YR Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec
 def save_as_psl_asc(data_by_year, filepath, description="", missing_val=-99.90):
     years = sorted(data_by_year.keys())
     if not years:
@@ -37,7 +41,7 @@ def save_as_psl_asc(data_by_year, filepath, description="", missing_val=-99.90):
     lines.append(f"  {missing_val:.1f}")
     if description:
         lines.append(f"  {description}")
-    lines.append(" Source: NCEI ERSST v5 / NOAA CPC / SILSO (Updated to 2026)")
+    lines.append(" Source: NCEI ERSST v5 / NOAA PSL / NOAA CPC / SILSO (Updated to 2026)")
 
     with open(filepath, "w", encoding="utf-8") as f:
         f.write("\n".join(lines) + "\n")
@@ -201,63 +205,70 @@ def process_cpc_teleconnections():
         except Exception as e:
             print(f"  Error updating {name}: {e}")
 
-def process_cpc_mjo():
-    url = 'https://www.cpc.ncep.noaa.gov/products/precip/CWlink/daily_mjo_index/proj_norm_order.ascii'
-    print("Processing CPC MJO (Madden-Julian Oscillation)...")
-    content = fetch_url(url)
-    
-    # Save raw pentad .asc
-    with open(ASC_DIR / "mjo_pentad.asc", "w", encoding="utf-8") as f:
-        f.write(content)
+def process_psl_mjo():
+    """
+    Fetch MJO indices directly from NOAA PSL (https://psl.noaa.gov/mjo/mjoindex/)
+    Fast, reliable, and avoids CPC network hangs.
+    """
+    mjo_sources = {
+        'omi': ('https://psl.noaa.gov/mjo/mjoindex/omi.1x.txt', 'OLR-based MJO Index (OMI) Amplitude (NOAA PSL)'),
+        'vpm': ('https://psl.noaa.gov/mjo/mjoindex/vpm.1x.txt', 'Velocity Potential MJO Index (VPM) Amplitude (NOAA PSL)'),
+        'romi': ('https://psl.noaa.gov/mjo/mjoindex/romi.cpcolr.1x.txt', 'Real-time OLR MJO Index (ROMI) Amplitude (NOAA PSL)')
+    }
 
-    longitudes = ['20E', '70E', '80E', '100E', '120E', '140E', '160E', '120W', '40W', '10W']
-    mjo_monthly_vals = {l: defaultdict(lambda: defaultdict(list)) for l in longitudes}
+    for name, (url, desc) in mjo_sources.items():
+        print(f"Processing NOAA PSL MJO ({name.upper()})...")
+        try:
+            content = fetch_url(url)
+            # Save raw daily file
+            with open(ASC_DIR / f"mjo_{name}_daily.asc", "w", encoding="utf-8") as f:
+                f.write(content)
 
-    for line in content.strip().splitlines():
-        if '*****' in line or 'INDEX' in line or 'PENTAD' in line:
-            continue
-        parts = line.split()
-        if len(parts) >= 11 and parts[0].isdigit() and len(parts[0]) == 8:
-            date_str = parts[0]
-            yr, m = int(date_str[:4]), int(date_str[4:6])
-            for i, l in enumerate(longitudes):
-                try:
-                    val = float(parts[i+1])
-                    mjo_monthly_vals[l][yr][m].append(val)
-                except ValueError:
-                    pass
+            monthly_vals = defaultdict(lambda: defaultdict(list))
+            for line in content.strip().splitlines():
+                parts = line.split()
+                # OMI format: Year Month Day PC1 PC2 Amplitude
+                # VPM/ROMI format: Year Month Day Hour PC1 PC2 Amplitude
+                if len(parts) >= 6 and parts[0].isdigit() and parts[1].isdigit():
+                    yr, m = int(parts[0]), int(parts[1])
+                    try:
+                        amp = float(parts[5]) if len(parts) == 6 else float(parts[6])
+                        if amp != -99.0 and amp != -999.0:
+                            monthly_vals[yr][m].append(amp)
+                    except (ValueError, IndexError):
+                        pass
 
-    # Save monthly averaged MJO for each longitude band
-    for l in longitudes:
-        avg_dict = defaultdict(dict)
-        for yr in mjo_monthly_vals[l]:
-            for m in mjo_monthly_vals[l][yr]:
-                vals = mjo_monthly_vals[l][yr][m]
-                if vals:
-                    avg_dict[yr][m] = sum(vals) / len(vals)
-        out_name = f"mjo_{l.lower()}.asc"
-        save_as_psl_asc(avg_dict, ASC_DIR / out_name, f"Madden-Julian Oscillation (MJO) {l} Monthly Average (CPC)")
+            avg_dict = defaultdict(dict)
+            for yr in monthly_vals:
+                for m in monthly_vals[yr]:
+                    if monthly_vals[yr][m]:
+                        avg_dict[yr][m] = sum(monthly_vals[yr][m]) / len(monthly_vals[yr][m])
+
+            save_as_psl_asc(avg_dict, ASC_DIR / f"mjo_{name}.asc", desc)
+        except Exception as e:
+            print(f"  Error updating MJO {name}: {e}")
 
 def process_silso_ssn():
     url = 'https://www.sidc.be/SILSO/DATA/SN_m_tot_V2.0.txt'
     print("Processing SILSO SSN (Sunspot Number)...")
-    content = fetch_url(url)
-    
-    # Save raw SILSO text
-    with open(ASC_DIR / "ssn_monthly_raw.asc", "w", encoding="utf-8") as f:
-        f.write(content)
+    try:
+        content = fetch_url(url)
+        with open(ASC_DIR / "ssn_monthly_raw.asc", "w", encoding="utf-8") as f:
+            f.write(content)
 
-    ssn_dict = defaultdict(dict)
-    for line in content.strip().splitlines():
-        parts = line.split()
-        if len(parts) >= 4 and parts[0].isdigit() and parts[1].isdigit():
-            yr, m, val = int(parts[0]), int(parts[1]), float(parts[3])
-            ssn_dict[yr][m] = val
+        ssn_dict = defaultdict(dict)
+        for line in content.strip().splitlines():
+            parts = line.split()
+            if len(parts) >= 4 and parts[0].isdigit() and parts[1].isdigit():
+                yr, m, val = int(parts[0]), int(parts[1]), float(parts[3])
+                ssn_dict[yr][m] = val
 
-    save_as_psl_asc(ssn_dict, ASC_DIR / "ssn.asc", "Sunspot Number (Monthly Total SSN - SILSO)")
+        save_as_psl_asc(ssn_dict, ASC_DIR / "ssn.asc", "Sunspot Number (Monthly Total SSN - SILSO)")
+    except Exception as e:
+        print(f"  Error updating SSN: {e}")
 
 def main():
-    print("=== Updating Climate Indices with NCEI ERSST v5, NOAA CPC (MJO) & SILSO (SSN) (2026+) ===")
+    print("=== Updating Climate Indices with NCEI ERSST v5, NOAA PSL (MJO), NOAA CPC & SILSO (SSN) (2026+) ===")
     process_ersst_v5_el_nino_anom()
     process_ersst_v5_el_nino_sst()
     process_ersst_v5_amo()
@@ -265,7 +276,7 @@ def main():
     process_ersst_v5_iod()
     process_cpc_soi()
     process_cpc_teleconnections()
-    process_cpc_mjo()
+    process_psl_mjo()
     process_silso_ssn()
     print("Done updating .asc files.")
 

@@ -1,614 +1,1136 @@
 [
   {
-    "index_name": "PNA*",
-    "label": "PNA*",
-    "asc_filename": "PNA_pna.asc",
-    "file_path": "indices_asc\\PNA_pna.asc",
-    "file_size_bytes": 7218,
-    "url": "https://psl.noaa.gov/data/correlation/pna.data",
-    "start_year": 1948,
-    "end_year": 2026,
-    "line_count": 83,
-    "description": "Pacific North American Index: From NOAA Climate Prediction Center\n          (CPC)"
-  },
-  {
-    "index_name": "EP/NP",
-    "label": "EP/NP",
-    "asc_filename": "EP_NP_epo.asc",
-    "file_path": "indices_asc\\EP_NP_epo.asc",
-    "file_size_bytes": 7221,
-    "url": "https://psl.noaa.gov/data/correlation/epo.data",
-    "start_year": 1948,
-    "end_year": 2026,
-    "line_count": 83,
-    "description": "East Pacific/North Pacific Oscillation: From NOAA Climate Prediction Center\n          (CPC) . This index replaces the old EP index which is no longer maintained by CPC ."
-  },
-  {
-    "index_name": "WP*",
-    "label": "WP*",
-    "asc_filename": "WP_wp.asc",
-    "file_path": "indices_asc\\WP_wp.asc",
-    "file_size_bytes": 7217,
-    "url": "https://psl.noaa.gov/data/correlation/wp.data",
-    "start_year": 1948,
-    "end_year": 2026,
-    "line_count": 83,
-    "description": "Western Pacific Index: From NOAA Climate Prediction Center (CPC)"
-  },
-  {
-    "index_name": "EA/WR",
-    "label": "EA/WR",
-    "asc_filename": "EA_WR_ea.asc",
-    "file_path": "indices_asc\\EA_WR_ea.asc",
-    "file_size_bytes": 7220,
-    "url": "https://psl.noaa.gov/data/correlation/ea.data",
-    "start_year": 1948,
-    "end_year": 2026,
-    "line_count": 83,
-    "description": "Eastern Atlantic/Western Russia: From NOAA Climate Prediction Center (CPC)"
-  },
-  {
-    "index_name": "NAO*",
-    "label": "NAO*",
-    "asc_filename": "NAO_nao.asc",
-    "file_path": "indices_asc\\NAO_nao.asc",
-    "file_size_bytes": 7218,
-    "url": "https://psl.noaa.gov/data/correlation/nao.data",
-    "start_year": 1948,
-    "end_year": 2026,
-    "line_count": 83,
-    "description": "North Atlantic Oscillation: From NOAA Climate Prediction Center (CPC)"
-  },
-  {
-    "index_name": "NAO (Jones)",
-    "label": "NAO (Jones)",
-    "asc_filename": "NAO_(Jones)_jonesnao.asc",
-    "file_path": "indices_asc\\NAO_(Jones)_jonesnao.asc",
-    "file_size_bytes": 7009,
-    "url": "https://psl.noaa.gov/data/correlation/jonesnao.data",
-    "start_year": 1948,
-    "end_year": 2022,
-    "line_count": 83,
-    "description": "North Atlantic Oscillation: From CRU Hurrell, J.W., 1995: Decadal trends in the North Atlantic Oscillation and\n          relationships to regional temperature and precipitation. Science 269, 676-679. Jones, P.D., Jónsson, T. and Wheeler, D., 1997: Extension to the North Atlantic Oscillation using early\n          instrumental pressure observations from Gibraltar and South-West Iceland. Int. J. Climatol. 17, 1433-1450."
-  },
-  {
-    "index_name": "SOI*",
-    "label": "SOI*",
-    "asc_filename": "SOI_soi.asc",
-    "file_path": "indices_asc\\SOI_soi.asc",
-    "file_size_bytes": 7139,
-    "url": "https://psl.noaa.gov/data/correlation/soi.data",
-    "start_year": 1948,
-    "end_year": 2026,
-    "line_count": 83,
-    "description": "Southern Oscillation Index: From NOAA Climate Prediction Center (CPC)"
-  },
-  {
-    "index_name": "Niño 3*",
-    "label": "Niño 3*",
-    "asc_filename": "Niño_3_nina3_anom.asc",
-    "file_path": "indices_asc\\Niño_3_nina3_anom.asc",
-    "file_size_bytes": 8292,
-    "url": "https://psl.noaa.gov/data/correlation/nina3.anom.data",
-    "start_year": 1948,
-    "end_year": 2026,
-    "line_count": 87,
-    "description": "Eastern Tropical Pacific SST (5N-5S,150W-90W): From NOAA Climate Prediction Center(CPC) CPC uses the NOAA ERSST V5 anomalies . Now uses https://www.cpc.ncep.noaa.gov/data/indices/ersst5.nino.mth.91-20.ascii . Mean values also available."
-  },
-  {
-    "index_name": "Niño 3*",
-    "label": "https://www.cpc.ncep.noaa.gov/data/indices/ersst5.nino.mth.91-20.ascii",
-    "asc_filename": "Niño_3_ersst5.nino.mth.91-20.asc",
-    "file_path": "indices_asc\\Niño_3_ersst5.nino.mth.91-20.asc",
-    "file_size_bytes": 67087,
-    "url": "https://www.cpc.ncep.noaa.gov/data/indices/ersst5.nino.mth.91-20.ascii",
-    "start_year": null,
-    "end_year": null,
-    "line_count": 919,
-    "description": "Eastern Tropical Pacific SST (5N-5S,150W-90W): From NOAA Climate Prediction Center(CPC) CPC uses the NOAA ERSST V5 anomalies . Now uses https://www.cpc.ncep.noaa.gov/data/indices/ersst5.nino.mth.91-20.ascii . Mean values also available."
-  },
-  {
-    "index_name": "Niño 3*",
-    "label": "Mean values also available.",
-    "asc_filename": "Niño_3_nina3.asc",
-    "file_path": "indices_asc\\Niño_3_nina3.asc",
-    "file_size_bytes": 4362,
-    "url": "https://psl.noaa.gov/data/correlation/nina3.data",
-    "start_year": 1948,
-    "end_year": 1994,
-    "line_count": 51,
-    "description": "Eastern Tropical Pacific SST (5N-5S,150W-90W): From NOAA Climate Prediction Center(CPC) CPC uses the NOAA ERSST V5 anomalies . Now uses https://www.cpc.ncep.noaa.gov/data/indices/ersst5.nino.mth.91-20.ascii . Mean values also available."
-  },
-  {
-    "index_name": "BEST*longer\n          version",
-    "label": "BEST*",
-    "asc_filename": "BEST_longer_version_censo.asc",
-    "file_path": "indices_asc\\BEST_longer_version_censo.asc",
-    "file_size_bytes": 7136,
-    "url": "https://psl.noaa.gov/data/correlation/censo.data",
-    "start_year": 1948,
-    "end_year": 2026,
-    "line_count": 82,
-    "description": "Bivariate ENSO Timeseries Calculated from combining a standardized SOI and a standardized Niño3.4 SST timeseries. Uses the\n          dataset (HadISST1.1) is now used to calculate Niño 3.4 timeseries. Most recent data is based on the\n          NOAA OI V2 SST dataset. PSL"
-  },
-  {
-    "index_name": "BEST*longer\n          version",
-    "label": "longer\n          version",
-    "asc_filename": "BEST_longer_version_censo.long.asc",
-    "file_path": "indices_asc\\BEST_longer_version_censo.long.asc",
-    "file_size_bytes": 10467,
-    "url": "https://psl.noaa.gov/data/correlation/censo.long.data",
-    "start_year": 1871,
-    "end_year": 2003,
-    "line_count": 137,
-    "description": "Bivariate ENSO Timeseries Calculated from combining a standardized SOI and a standardized Niño3.4 SST timeseries. Uses the\n          dataset (HadISST1.1) is now used to calculate Niño 3.4 timeseries. Most recent data is based on the\n          NOAA OI V2 SST dataset. PSL"
-  },
-  {
-    "index_name": "TNA*",
-    "label": "TNA*",
-    "asc_filename": "TNA_tna.asc",
-    "file_path": "indices_asc\\TNA_tna.asc",
-    "file_size_bytes": 8332,
-    "url": "https://psl.noaa.gov/data/correlation/tna.data",
-    "start_year": 1948,
-    "end_year": 2026,
-    "line_count": 87,
-    "description": "Tropical Northern Atlantic Index Anomaly of the average of the monthly SST from 5.5N to 23.5N and\n          15W to 57.5W. HadISST and NOAA OI 1x1 datasets are used to create index. Climatology is 1971-2000. Enfield, D.B., A.M. Mestas, D.A. Mayer, and L. Cid-Serrano, 1999: How\n          ubiquitous is the dipole relationship in tropical Atlantic sea surface\n          temperatures? JGR-O, 104, 7841-7848. AOML and PSL"
-  },
-  {
-    "index_name": "TSA*",
-    "label": "TSA*",
-    "asc_filename": "TSA_tsa.asc",
-    "file_path": "indices_asc\\TSA_tsa.asc",
-    "file_size_bytes": 8230,
-    "url": "https://psl.noaa.gov/data/correlation/tsa.data",
-    "start_year": 1948,
-    "end_year": 2026,
-    "line_count": 84,
-    "description": "Tropical Southern Atlantic Index Anomaly of the average of the monthly SST from Eq-20S and 10E-30W.\n          HadISST and NOAA OI 1x1 datasets are used to create index. Climatology is 1971-2000. Enfield, D.B., A.M. Mestas, D.A. Mayer, and L. Cid-Serrano, 1999: How\n          ubiquitous is the dipole relationship in tropical Atlantic sea surface\n          temperatures? JGR-O, 104, 7841-7848. AOML and PSL"
-  },
-  {
-    "index_name": "WHWP*",
-    "label": "WHWP*",
-    "asc_filename": "WHWP_whwp.asc",
-    "file_path": "indices_asc\\WHWP_whwp.asc",
-    "file_size_bytes": 8469,
-    "url": "https://psl.noaa.gov/data/correlation/whwp.data",
-    "start_year": 1948,
-    "end_year": 2026,
-    "line_count": 88,
-    "description": "Western Hemisphere Warm Pool Monthly anomaly of the ocean surface area warmer than 28.5° C in the Atlantic and eastern North Pacific.\n          Based on HadISST and NOAA OI SST (for latest value).\n          Climatology is 1971-2000. Wang, C., and D.B. Enfield, 2001: The tropical Western Hemisphere warm\n          pool, Geophys. Res. Lett., 28, 1635-1638. AOML and PSL"
-  },
-  {
-    "index_name": "ONI",
-    "label": "ONI",
-    "asc_filename": "ONI_oni.asc",
-    "file_path": "indices_asc\\ONI_oni.asc",
-    "file_size_bytes": 7203,
-    "url": "https://psl.noaa.gov/data/correlation/oni.data",
-    "start_year": 1950,
-    "end_year": 2026,
-    "line_count": 86,
-    "description": "Oceanic Niño Index: From NOAA Climate\n          Prediction Center (CPC) Three month running mean of NOAA ERSST.V5 SST anomalies in the Niño 3.4\n          region (5N-5S, 120-170W), based on changing base period which onsist of multiple centered 30-year base\n          periods.\n          These 30-year base periods will be used to calculate the anomalies for successive 5-year periods in the\n          historical record."
-  },
-  {
-    "index_name": "MEI V2",
-    "label": "MEI V2",
-    "asc_filename": "MEI_V2_meiv2.asc",
-    "file_path": "indices_asc\\MEI_V2_meiv2.asc",
-    "file_size_bytes": 5599,
-    "url": "https://psl.noaa.gov/enso/mei/data/meiv2.data",
-    "start_year": 1979,
-    "end_year": 2026,
-    "line_count": 53,
-    "description": "Multivariate ENSO Index (MEI V2) Time series is bimonthly so the Jan\n          value represents the Dec-Jan value and is centered between the months. Details and current values are PSL's MEI webpage ."
-  },
-  {
-    "index_name": "Niño 1+2*",
-    "label": "Niño 1+2*",
-    "asc_filename": "Niño_1_2_nina1_anom.asc",
-    "file_path": "indices_asc\\Niño_1_2_nina1_anom.asc",
-    "file_size_bytes": 8296,
-    "url": "https://psl.noaa.gov/data/correlation/nina1.anom.data",
-    "start_year": 1948,
-    "end_year": 2026,
-    "line_count": 87,
-    "description": "Extreme Eastern Tropical Pacific\n          SST (0-10S, 90W-80W): From CPC CPC uses the\n          NOAA ERSST V5 anomalies. Now uses https://www.cpc.ncep.noaa.gov/data/indices/ersst5.nino.mth.91-20.ascii . Mean values also available."
-  },
-  {
-    "index_name": "Niño 1+2*",
-    "label": "Mean values",
-    "asc_filename": "Niño_1_2_nina1.asc",
-    "file_path": "indices_asc\\Niño_1_2_nina1.asc",
-    "file_size_bytes": 8274,
-    "url": "https://psl.noaa.gov/data/correlation/nina1.data",
-    "start_year": 1948,
-    "end_year": 2026,
-    "line_count": 87,
-    "description": "Extreme Eastern Tropical Pacific\n          SST (0-10S, 90W-80W): From CPC CPC uses the\n          NOAA ERSST V5 anomalies. Now uses https://www.cpc.ncep.noaa.gov/data/indices/ersst5.nino.mth.91-20.ascii . Mean values also available."
-  },
-  {
-    "index_name": "Niño 4*",
-    "label": "Niño 4*",
-    "asc_filename": "Niño_4_nina4_anom.asc",
-    "file_path": "indices_asc\\Niño_4_nina4_anom.asc",
-    "file_size_bytes": 8293,
-    "url": "https://psl.noaa.gov/data/correlation/nina4.anom.data",
-    "start_year": 1948,
-    "end_year": 2026,
-    "line_count": 87,
-    "description": "Central Tropical Pacific SST (5N-5S)\n        (160E-150W): From CPC CPC\n          uses the NOAA ERSST V5\n          anomalies. Now uses https://www.cpc.ncep.noaa.gov/data/indices/ersst5.nino.mth.91-20.ascii . Mean values also available."
-  },
-  {
-    "index_name": "Niño 4*",
-    "label": "Mean values",
-    "asc_filename": "Niño_4_nina4.asc",
-    "file_path": "indices_asc\\Niño_4_nina4.asc",
-    "file_size_bytes": 8270,
-    "url": "https://psl.noaa.gov/data/correlation/nina4.data",
-    "start_year": 1948,
-    "end_year": 2026,
-    "line_count": 87,
-    "description": "Central Tropical Pacific SST (5N-5S)\n        (160E-150W): From CPC CPC\n          uses the NOAA ERSST V5\n          anomalies. Now uses https://www.cpc.ncep.noaa.gov/data/indices/ersst5.nino.mth.91-20.ascii . Mean values also available."
-  },
-  {
-    "index_name": "Niño 3.4*",
-    "label": "Niño 3.4*",
-    "asc_filename": "Niño_3.4_nina34_anom.asc",
-    "file_path": "indices_asc\\Niño_3.4_nina34_anom.asc",
-    "file_size_bytes": 8362,
-    "url": "https://psl.noaa.gov/data/correlation/nina34.anom.data",
-    "start_year": 1948,
-    "end_year": 2026,
-    "line_count": 89,
-    "description": "East Central Tropical Pacific SST (5N-5S)(170-120W): From CPC CPC uses the NOAA ERSST V5\n          anomalies. Now uses https://www.cpc.ncep.noaa.gov/data/indices/ersst5.nino.mth.91-20.ascii . Mean values also available."
-  },
-  {
-    "index_name": "Niño 3.4*",
-    "label": "Mean values",
-    "asc_filename": "Niño_3.4_nina34.asc",
-    "file_path": "indices_asc\\Niño_3.4_nina34.asc",
-    "file_size_bytes": 8205,
-    "url": "https://psl.noaa.gov/data/correlation/nina34.data",
-    "start_year": 1948,
-    "end_year": 2026,
-    "line_count": 84,
-    "description": "East Central Tropical Pacific SST (5N-5S)(170-120W): From CPC CPC uses the NOAA ERSST V5\n          anomalies. Now uses https://www.cpc.ncep.noaa.gov/data/indices/ersst5.nino.mth.91-20.ascii . Mean values also available."
-  },
-  {
-    "index_name": "PDO",
-    "label": "PDO",
-    "asc_filename": "PDO_pdo.asc",
-    "file_path": "indices_asc\\PDO_pdo.asc",
-    "file_size_bytes": 7514,
-    "url": "https://psl.noaa.gov/data/correlation/pdo.data",
-    "start_year": 1948,
-    "end_year": 2025,
-    "line_count": 91,
-    "description": "Pacific Decadal Oscillation PDO is the\n          leading PC of monthly SST anomalies in the North Pacific Ocean. UPDATED: Using data from 1948 to 2002. Details and more information are available."
-  },
-  {
-    "index_name": "TPI(IPO)",
-    "label": "TPI(IPO)",
-    "asc_filename": "TPI(IPO)_ipotpi.hadisst2.asc",
-    "file_path": "indices_asc\\TPI(IPO)_ipotpi.hadisst2.asc",
-    "file_size_bytes": 14794,
-    "url": "https://psl.noaa.gov/data/timeseries/IPOTPI/ipotpi.hadisst2.data",
-    "start_year": 1870,
-    "end_year": 2010,
-    "line_count": 149,
-    "description": "Tripole Index for the Interdecadal Pacific Oscillation Details and more information are available."
-  },
-  {
-    "index_name": "NOI",
-    "label": "NOI",
-    "asc_filename": "NOI_noi.asc",
-    "file_path": "indices_asc\\NOI_noi.asc",
-    "file_size_bytes": 8135,
-    "url": "https://psl.noaa.gov/data/correlation/noi.data",
-    "start_year": 1948,
-    "end_year": 2026,
-    "line_count": 86,
-    "description": "Northern Oscillation Index NOI is an index of climate variability based\n          on the difference in SLP anomalies at the North Pacific High and near Darwin Australia. Schwing, F.B., T.\n          Murphree,\n          and P.M. Green. 2002. The Northern Oscillation Index (NOI): a new climate\n          index for the northeast Pacific. Progress in Oceanography 53: 115-139. The time series and more\n            information are available."
-  },
-  {
-    "index_name": "NP",
-    "label": "NP",
-    "asc_filename": "NP_np.asc",
-    "file_path": "indices_asc\\NP_np.asc",
-    "file_size_bytes": 9873,
-    "url": "https://psl.noaa.gov/data/correlation/np.data",
-    "start_year": 1948,
-    "end_year": 2024,
-    "line_count": 85,
-    "description": "North Pacific Pattern NP is the\n          area-weighted sea level pressure over the region 30N-65N,\n          160E-140W. Time\n            series source Trenberth and Hurrell (1994): Climate Dynamics 9:303-319."
-  },
-  {
-    "index_name": "TNI\n          (Trans-Niño Index)",
-    "label": "TNI\n          (Trans-Niño Index)",
-    "asc_filename": "TNI_(Trans-Niño_Index)_tni.asc",
-    "file_path": "indices_asc\\TNI_(Trans-Niño_Index)_tni.asc",
-    "file_size_bytes": 8446,
-    "url": "https://psl.noaa.gov/data/correlation/tni.data",
-    "start_year": 1948,
-    "end_year": 2026,
-    "line_count": 90,
-    "description": "Indices of El Niño Evolution Calculated at PSL. For longer timeseries, go to http://psl.noaa.gov/Pressure/Timeseries/TNI/ Kevin E. Trenberth and\n          David P. Stepaniak: J. Climate , 14 , 1697-1701."
-  },
-  {
-    "index_name": "Trend",
-    "label": "Trend",
-    "asc_filename": "Trend_trend.asc",
-    "file_path": "indices_asc\\Trend_trend.asc",
-    "file_size_bytes": 6549,
-    "url": "https://psl.noaa.gov/data/correlation/trend.data",
-    "start_year": 1948,
-    "end_year": 2019,
-    "line_count": 78,
-    "description": "A Linear Time Series (1,2,3,...) NOT the linear trend\n          of the variable"
-  },
-  {
-    "index_name": "AO",
-    "label": "AO",
-    "asc_filename": "AO_ao.asc",
-    "file_path": "indices_asc\\AO_ao.asc",
-    "file_size_bytes": 8922,
-    "url": "https://psl.noaa.gov/data/correlation/ao.data",
-    "start_year": 1950,
-    "end_year": 2026,
-    "line_count": 81,
-    "description": "Arctic Oscillation From CPC Note: values are now from CPC as they update their data\n            through the present The loading pattern of AO (AAO) is defined as the first leading mode from the EOF analysis of\n          monthly mean height anomalies at 1000-hPa (NH) or 700-hPa (SH). Note that year-round monthly mean anomaly data\n          has been used to obtain the loading patterns. Since the AO and AAO have the largest variability during the\n          cold sesaon (variance of AO/AAO), the loading patterns primarily capture characteristics of the cold season\n          patterns. Daily and monthly AO (AAO) indices are constructed by projecting the daily and monthly mean 1000-hPa (700-hPa)\n          height anomalies onto the leading EOF mode. Both time series are normalized by the standard deviation of the\n          monthly index (1979-2000 base period). Since the loading pattern of AO (AAO) is obtained using the monthly\n          mean height anomaly dataset, the index corresponding to each loading pattern becomes one when it is normalized\n          by the standard deviation of the monthly index. Values and\n            description"
-  },
-  {
-    "index_name": "AAO",
-    "label": "AAO",
-    "asc_filename": "AAO_aao.asc",
-    "file_path": "indices_asc\\AAO_aao.asc",
-    "file_size_bytes": 3991,
-    "url": "https://psl.noaa.gov/data/correlation/aao.data",
+    "asc_filename": "aao.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\aao.asc",
+    "file_size_bytes": 5072,
     "start_year": 1979,
     "end_year": 2026,
     "line_count": 52,
-    "description": "Antarctic Oscillation Values\n            and\n            references Data from NOAA CPC"
+    "description": "Antarctic Oscillation (CPC) Source: NCEI ERSST v5 / NOAA PSL / NOAA CPC / SILSO (Updated to 2026)"
   },
   {
-    "index_name": "Pacific Warmpool Region",
-    "label": "Pacific Warmpool Region",
-    "asc_filename": "Pacific_Warmpool_Region_pacwarm.asc",
-    "file_path": "indices_asc\\Pacific_Warmpool_Region_pacwarm.asc",
-    "file_size_bytes": 10027,
-    "url": "https://psl.noaa.gov/data/correlation/pacwarm.data",
-    "start_year": 1948,
+    "asc_filename": "AAO_aao.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\AAO_aao.asc",
+    "file_size_bytes": 4043,
+    "start_year": 1979,
     "end_year": 2026,
-    "line_count": 87,
-    "description": "Pacific Warmpool Area Average Definition: area averaged SST: 60E-170E, 15S-15N\n          Dataset: NOAA ERSSTV5 1948-present Climatology: 1981-2020 Also available: Long version (1854-present) . Reference:\n          Martin P. Hoerling, Jon Eischeid, and Judith Perlwitz, 2010: Regional Precipitation Trends: Distinguishing\n          Natural Variability from Anthropogenic Forcing. J. Climate, Vol. 23, 2131-2145."
+    "line_count": 52,
+    "description": "from AAO Obtained at NOAA PSL"
   },
   {
-    "index_name": "Pacific Warmpool Region",
-    "label": "Long version (1854-present)",
-    "asc_filename": "Pacific_Warmpool_Region_pacwarmpool.ersst.asc",
-    "file_path": "indices_asc\\Pacific_Warmpool_Region_pacwarmpool.ersst.asc",
-    "file_size_bytes": 21777,
-    "url": "https://psl.noaa.gov/gcos_wgsp/Timeseries/Data/pacwarmpool.ersst.data",
-    "start_year": 1854,
-    "end_year": 2026,
-    "line_count": 181,
-    "description": "Pacific Warmpool Area Average Definition: area averaged SST: 60E-170E, 15S-15N\n          Dataset: NOAA ERSSTV5 1948-present Climatology: 1981-2020 Also available: Long version (1854-present) . Reference:\n          Martin P. Hoerling, Jon Eischeid, and Judith Perlwitz, 2010: Regional Precipitation Trends: Distinguishing\n          Natural Variability from Anthropogenic Forcing. J. Climate, Vol. 23, 2131-2145."
-  },
-  {
-    "index_name": "Tropical Pacific SST EOF",
-    "label": "Tropical Pacific SST EOF",
-    "asc_filename": "Tropical_Pacific_SST_EOF_eofpac.asc",
-    "file_path": "indices_asc\\Tropical_Pacific_SST_EOF_eofpac.asc",
-    "file_size_bytes": 5519,
-    "url": "https://psl.noaa.gov/data/correlation/eofpac.data",
-    "start_year": 1948,
-    "end_year": 2008,
-    "line_count": 65,
-    "description": "1st EOF of SST (20N-20S, 120E-60W) GISST 1948-1949 Reconstructed Reynolds 1950-1981 OI 1982-present Reference:\n          Martin P. Hoerling, Arun Kumar, and Taiyi Xu, 2001: Robustness of the nonlinear\n          climate response to ENSO's extreme phases. Journal of Climate, Vol.14, No.6,\n          1277-1293"
-  },
-  {
-    "index_name": "Atlantic Tripole SST EOF",
-    "label": "Atlantic Tripole SST EOF",
-    "asc_filename": "Atlantic_Tripole_SST_EOF_atltri.asc",
-    "file_path": "indices_asc\\Atlantic_Tripole_SST_EOF_atltri.asc",
-    "file_size_bytes": 5536,
-    "url": "https://psl.noaa.gov/data/correlation/atltri.data",
-    "start_year": 1948,
-    "end_year": 2008,
-    "line_count": 65,
-    "description": "1st EOF of SST (10N-70N, 0-80W) GISST 1948-1949 Reconstructed Reynolds 1950-1981 r\n          OI 1982-present Deser, Clara, Michael S. Timlin, 1997: Atmosphere-Ocean Interaction on Weekly Timescales in the North\n          Atlantic and Pacific. Journal of Climate: Vol. 10, No. 3, pp.393-408."
-  },
-  {
-    "index_name": "Atlantic Multidecadal OscillationLong Version",
-    "label": "Atlantic Multidecadal Oscillation",
-    "asc_filename": "Atlantic_Multidecadal_OscillationLong_Version_amon.us.asc",
-    "file_path": "indices_asc\\Atlantic_Multidecadal_OscillationLong_Version_amon.us.asc",
-    "file_size_bytes": 8817,
-    "url": "https://psl.noaa.gov/data/correlation/amon.us.data",
-    "start_year": 1948,
-    "end_year": 2023,
-    "line_count": 81,
-    "description": "AMO, unsmoothed Note: this index is newly computed from a new dataset. Please use it and note that it supersedes the old\n          indices. The data is calculated\n          from the Kalplan SST. See the AMO webpage for more details. Enfield, D.B., A. M. Mestas-Nunez and P.J. Trimble, 2001: The Atlantic multidecadal oscillation and it's\n          relation to rainfall and river flows in the continental U.S.. Geophysical Research Letters, Vol. 28,\n          2077-2080."
-  },
-  {
-    "index_name": "Atlantic Multidecadal OscillationLong Version",
-    "label": "Long Version",
-    "asc_filename": "Atlantic_Multidecadal_OscillationLong_Version_amon.us.long.asc",
-    "file_path": "indices_asc\\Atlantic_Multidecadal_OscillationLong_Version_amon.us.long.asc",
-    "file_size_bytes": 19294,
-    "url": "https://psl.noaa.gov/data/correlation/amon.us.long.data",
-    "start_year": 1856,
-    "end_year": 2023,
-    "line_count": 173,
-    "description": "AMO, unsmoothed Note: this index is newly computed from a new dataset. Please use it and note that it supersedes the old\n          indices. The data is calculated\n          from the Kalplan SST. See the AMO webpage for more details. Enfield, D.B., A. M. Mestas-Nunez and P.J. Trimble, 2001: The Atlantic multidecadal oscillation and it's\n          relation to rainfall and river flows in the continental U.S.. Geophysical Research Letters, Vol. 28,\n          2077-2080."
-  },
-  {
-    "index_name": "Atlantic Meridional Mode",
-    "label": "Atlantic Meridional Mode",
-    "asc_filename": "Atlantic_Meridional_Mode_ammsst.asc",
-    "file_path": "indices_asc\\Atlantic_Meridional_Mode_ammsst.asc",
-    "file_size_bytes": 8080,
-    "url": "https://psl.noaa.gov/data/timeseries/monthly/AMM/ammsst.data",
+    "asc_filename": "ammsst.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\ammsst.asc",
+    "file_size_bytes": 8163,
     "start_year": 1948,
     "end_year": 2024,
     "line_count": 83,
-    "description": "AMM Note: this index is computed from a new dataset. See the AMM webpage for more details. 2004 Chiang, J. C. H., and D. J. Vimont: Analogous meridional modes of atmosphere-ocean variability in the\n          tropical Pacific and tropical Atlantic. J. Climate,17(21), 4143-4158."
+    "description": "SST AMM https://psl.noaa.gov/data/timeseries/month/AMM/ orig from https://www.aos.wisc.edu/dvimont/MModes/Data.html"
   },
   {
-    "index_name": "North Tropical Atlantic Index (NTA)",
-    "label": "North Tropical Atlantic Index (NTA)",
-    "asc_filename": "North_Tropical_Atlantic_Index_(NTA)_NTA_ersst.asc",
-    "file_path": "indices_asc\\North_Tropical_Atlantic_Index_(NTA)_NTA_ersst.asc",
-    "file_size_bytes": 7575,
-    "url": "https://psl.noaa.gov/data/correlation/NTA_ersst.data",
+    "asc_filename": "amon.sm.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\amon.sm.asc",
+    "file_size_bytes": 17978,
+    "start_year": 1854,
+    "end_year": 2026,
+    "line_count": 177,
+    "description": "Atlantic Multidecadal Oscillation Smoothed (ERSST v5 SSTA) Source: NCEI ERSST v5 / NOAA PSL / NOAA CPC / SILSO (Updated to 2026)"
+  },
+  {
+    "asc_filename": "amon.sm.long.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\amon.sm.long.asc",
+    "file_size_bytes": 17983,
+    "start_year": 1854,
+    "end_year": 2026,
+    "line_count": 177,
+    "description": "Atlantic Multidecadal Oscillation Smoothed Long (ERSST v5 SSTA) Source: NCEI ERSST v5 / NOAA PSL / NOAA CPC / SILSO (Updated to 2026)"
+  },
+  {
+    "asc_filename": "amon.us.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\amon.us.asc",
+    "file_size_bytes": 17969,
+    "start_year": 1854,
+    "end_year": 2026,
+    "line_count": 177,
+    "description": "Atlantic Multidecadal Oscillation (ERSST v5 SSTA) Source: NCEI ERSST v5 / NOAA PSL / NOAA CPC / SILSO (Updated to 2026)"
+  },
+  {
+    "asc_filename": "amon.us.long.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\amon.us.long.asc",
+    "file_size_bytes": 17974,
+    "start_year": 1854,
+    "end_year": 2026,
+    "line_count": 177,
+    "description": "Atlantic Multidecadal Oscillation Long (ERSST v5 SSTA) Source: NCEI ERSST v5 / NOAA PSL / NOAA CPC / SILSO (Updated to 2026)"
+  },
+  {
+    "asc_filename": "ao.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\ao.asc",
+    "file_size_bytes": 8056,
     "start_year": 1950,
-    "end_year": 2020,
-    "line_count": 79,
-    "description": "NTA:North Tropical Atlantic SST Index ( Source dataset changed: old version available ).The timeseries of SST anomalies averaged\n          over 60W to 20W, 6N to 18N and 20W to 10W, 6N to 10N map . Data is obtained from the ERSST V3b dataset. Anomalies\n          were calculated relative to the 1981-2010 climatology, smoothed by three months running mean procedure and\n          projected onto 20 leading EOFs. Month of data is the center of the 3 months that are smoothed. More\n          information and the indexes forecasted values are available . Penland, C., and L. Matrosova, 1998: \"Prediction of tropical Atlantic sea surface temperatures using Linear\n          Inverse Modeling,\" J. Climate, March, 483-496 pp."
+    "end_year": 2026,
+    "line_count": 81,
+    "description": "Arctic Oscillation (CPC) Source: NCEI ERSST v5 / NOAA PSL / NOAA CPC / SILSO (Updated to 2026)"
   },
   {
-    "index_name": "Caribbean Index (CAR)",
-    "label": "Caribbean Index (CAR)",
-    "asc_filename": "Caribbean_Index_(CAR)_CAR_ersst.asc",
-    "file_path": "indices_asc\\Caribbean_Index_(CAR)_CAR_ersst.asc",
-    "file_size_bytes": 7575,
-    "url": "https://psl.noaa.gov/data/correlation/CAR_ersst.data",
+    "asc_filename": "AO_ao.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\AO_ao.asc",
+    "file_size_bytes": 9002,
     "start_year": 1950,
-    "end_year": 2020,
-    "line_count": 79,
-    "description": "CAR:Caribbean SST Index The timeseries of SST anomalies averaged over the the Caribbean . Data is obtained from the NOAA ERSST V3b\n          dataset. Anomalies were calculated relative to the 1981-2010 climatology, smoothed by three months running\n          mean procedure and projected onto 20 leading EOFs. More information and the indexes forecasted values are available . Penland, C., and L. Matrosova, 1998: \"Prediction of tropical Atlantic sea surface temperatures using Linear\n          Inverse Modeling,\" J. Climate, March, 483-496 pp."
+    "end_year": 2026,
+    "line_count": 81,
+    "description": "from https://www.cpc.ncep.noaa.gov/products/precip/CWlink/daily_ao_index/monthly.ao.index.b50.current.ascii Obtained at NOAA PSL"
   },
   {
-    "index_name": "Atlantic multidecadal OscillationLong Version",
-    "label": "Atlantic multidecadal Oscillation",
+    "asc_filename": "Atlantic_Meridional_Mode_ammsst.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\Atlantic_Meridional_Mode_ammsst.asc",
+    "file_size_bytes": 8163,
+    "start_year": 1948,
+    "end_year": 2024,
+    "line_count": 83,
+    "description": "SST AMM https://psl.noaa.gov/data/timeseries/month/AMM/ orig from https://www.aos.wisc.edu/dvimont/MModes/Data.html"
+  },
+  {
     "asc_filename": "Atlantic_multidecadal_OscillationLong_Version_amon.sm.asc",
-    "file_path": "indices_asc\\Atlantic_multidecadal_OscillationLong_Version_amon.sm.asc",
-    "file_size_bytes": 8814,
-    "url": "https://psl.noaa.gov/data/correlation/amon.sm.data",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\Atlantic_multidecadal_OscillationLong_Version_amon.sm.asc",
+    "file_size_bytes": 8895,
     "start_year": 1948,
     "end_year": 2023,
     "line_count": 81,
-    "description": "AMO, smoothed Note: this index is newly computed from a new dataset. Please use it and note that it supersedes the old\n          indices. The data is calculated\n          from the Kalplan SST. See the AMO webpage for more details. Enfield, D.B., A. M. Mestas-Nunez and P.J. Trimble, 2001: The Atlantic multidecadal oscillation and it's\n          relation to rainfall and river flows in the continental U.S.. Geophysical Research Letters, Vol. 28,\n          2077-2080."
+    "description": "AMO smoothed/detrended from the Kaplan SST V2 Calculated at NOAA PSL1 http://www.psl.noaa.gov/data/timeseries/AMO/"
   },
   {
-    "index_name": "Atlantic multidecadal OscillationLong Version",
-    "label": "Long Version",
     "asc_filename": "Atlantic_multidecadal_OscillationLong_Version_amon.sm.long.asc",
-    "file_path": "indices_asc\\Atlantic_multidecadal_OscillationLong_Version_amon.sm.long.asc",
-    "file_size_bytes": 19292,
-    "url": "https://psl.noaa.gov/data/correlation/amon.sm.long.data",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\Atlantic_multidecadal_OscillationLong_Version_amon.sm.long.asc",
+    "file_size_bytes": 19465,
     "start_year": 1856,
     "end_year": 2023,
     "line_count": 173,
-    "description": "AMO, smoothed Note: this index is newly computed from a new dataset. Please use it and note that it supersedes the old\n          indices. The data is calculated\n          from the Kalplan SST. See the AMO webpage for more details. Enfield, D.B., A. M. Mestas-Nunez and P.J. Trimble, 2001: The Atlantic multidecadal oscillation and it's\n          relation to rainfall and river flows in the continental U.S.. Geophysical Research Letters, Vol. 28,\n          2077-2080."
+    "description": "AMO smoothed from the Kaplan SST V2 Calculated at NOAA PSL1 http://www.psl.noaa.gov/data/timeseries/AMO/"
   },
   {
-    "index_name": "QBO*",
-    "label": "QBO*",
-    "asc_filename": "QBO_qbo.asc",
-    "file_path": "indices_asc\\QBO_qbo.asc",
-    "file_size_bytes": 8152,
-    "url": "https://psl.noaa.gov/data/correlation/qbo.data",
+    "asc_filename": "Atlantic_Multidecadal_OscillationLong_Version_amon.us.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\Atlantic_Multidecadal_OscillationLong_Version_amon.us.asc",
+    "file_size_bytes": 8898,
+    "start_year": 1948,
+    "end_year": 2023,
+    "line_count": 81,
+    "description": "AMO unsmoothed, detrended from the Kaplan SST V2 Calculated at NOAA PSL1 http://www.psl.noaa.gov/data/timeseries/AMO/"
+  },
+  {
+    "asc_filename": "Atlantic_Multidecadal_OscillationLong_Version_amon.us.long.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\Atlantic_Multidecadal_OscillationLong_Version_amon.us.long.asc",
+    "file_size_bytes": 19467,
+    "start_year": 1856,
+    "end_year": 2023,
+    "line_count": 173,
+    "description": "AMO unsmoothed from the Kaplan SST V2 Calculated at NOAA PSL1 http://www.psl.noaa.gov/data/timeseries/AMO/"
+  },
+  {
+    "asc_filename": "Atlantic_Tripole_SST_EOF_atltri.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\Atlantic_Tripole_SST_EOF_atltri.asc",
+    "file_size_bytes": 5600,
+    "start_year": 1948,
+    "end_year": 2008,
+    "line_count": 65,
+    "description": "-9.0 ATLTRI pattern psl noaa"
+  },
+  {
+    "asc_filename": "atltri.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\atltri.asc",
+    "file_size_bytes": 5600,
+    "start_year": 1948,
+    "end_year": 2008,
+    "line_count": 65,
+    "description": "-9.0 ATLTRI pattern psl noaa"
+  },
+  {
+    "asc_filename": "BEST_longer_version_censo.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\BEST_longer_version_censo.asc",
+    "file_size_bytes": 7217,
     "start_year": 1948,
     "end_year": 2026,
-    "line_count": 86,
-    "description": "Quasi-Biennial Oscillation Calculated at PSL (from the zonal average of the 30mb zonal wind at the equator as computed from the NCEP/NCAR\n          Reanalysis)."
+    "line_count": 82,
+    "description": "-9.99 BEST: Bivariate enso timeserieshttps://psl.noaa.gov/data/timeseries/month/from NOAA/PSL"
   },
   {
-    "index_name": "Globally Integrated Angular Momentum*",
-    "label": "Globally Integrated Angular Momentum*",
-    "asc_filename": "Globally_Integrated_Angular_Momentum_glaam.asc",
-    "file_path": "indices_asc\\Globally_Integrated_Angular_Momentum_glaam.asc",
-    "file_size_bytes": 5283,
-    "url": "https://psl.noaa.gov/data/correlation/glaam.data.scaled",
-    "start_year": 1958,
-    "end_year": 2014,
-    "line_count": 62,
-    "description": "Globally Integrated Angular Momentum Data is not being updated after Feb 2014. It is not known when or if it will be\n            updated (due\n            to resource issues). .Note that time series is scaled by 1e25. Values\n            are\n            3-month running means except for the last month which is a 2-month average . Weickmann, K.M., W.A. Robinson and M.C. Penland, 2000: Stochastic and\n          oscillatory forcing of global atmospheric angular momentum. J. Geophys. Res., 105 , D12, 15543-15557."
+    "asc_filename": "BEST_longer_version_censo.long.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\BEST_longer_version_censo.long.asc",
+    "file_size_bytes": 10604,
+    "start_year": 1871,
+    "end_year": 2003,
+    "line_count": 137,
+    "description": "-9.99 best index: long version http://psl.noaa.gov/data/climateindices/list/"
   },
   {
-    "index_name": "ENSO Precipitation Index",
-    "label": "ENSO Precipitation Index",
-    "asc_filename": "ENSO_Precipitation_Index_espi.asc",
-    "file_path": "indices_asc\\ENSO_Precipitation_Index_espi.asc",
-    "file_size_bytes": 5304,
-    "url": "https://psl.noaa.gov/data/correlation/espi.data",
-    "start_year": 1979,
-    "end_year": 2023,
-    "line_count": 54,
-    "description": "ENSO Precipitation Index http://precip.gsfc.nasa.gov/ESPItable.html Please\n          cite \"ENSO Indices Based on Patterns\n          of Satellite-Derived Precipitation\" Curtis and Adler in J. of Climate, 13,2786 (2000). Time series\n          that uses rainfall data in the\n          Tropical Pacific to describe ENSO events."
-  },
-  {
-    "index_name": "Central Indian Precipitation (core monsoon\n          region)",
-    "label": "Central Indian Precipitation (core monsoon\n          region)",
-    "asc_filename": "Central_Indian_Precipitation_(core_monsoon_region)_indiamon.asc",
-    "file_path": "indices_asc\\Central_Indian_Precipitation_(core_monsoon_region)_indiamon.asc",
-    "file_size_bytes": 3490,
-    "url": "https://psl.noaa.gov/data/correlation/indiamon.data",
-    "start_year": 1948,
-    "end_year": 1999,
-    "line_count": 57,
-    "description": "Central Indian Precipitation http://www.tropmet.res.in/ Please cite the Indian Institute of\n          Tropical Meteorology.\n          CORE-MONSOON INDIA RAINFALL (1871-1999) 7 SUB 776,942 SQ.KM."
-  },
-  {
-    "index_name": "Sahel Rainfall",
-    "label": "Sahel Rainfall",
-    "asc_filename": "Sahel_Rainfall_sahelrain.asc",
-    "file_path": "indices_asc\\Sahel_Rainfall_sahelrain.asc",
-    "file_size_bytes": 5041,
-    "url": "https://psl.noaa.gov/data/correlation/sahelrain.data",
-    "start_year": 1948,
-    "end_year": 2017,
-    "line_count": 80,
-    "description": "Sahel Standardized Rainfall (20-8N, 20W-10E) http://jisao.washington.edu/data_sets/sahel/ From\n          Mitchell:\n          The averaging region is based on the rotated principal component analysis of average June through September\n          African rainfall presented\n          in Janowiak (1988, J. Climate, 1, 240-255). Stations within 20-8N, 20W-10E are obtained from the National\n          Center for Atmospheric\n          Research World Monthly Surface Station Climatology (WMSSC), and 14 retained which had complete or almost\n          complete records for\n          1950-93. See link for stations."
-  },
-  {
-    "index_name": "SW Monsoon Region rainfall",
-    "label": "SW Monsoon Region rainfall",
-    "asc_filename": "SW_Monsoon_Region_rainfall_swmonsoon.asc",
-    "file_path": "indices_asc\\SW_Monsoon_Region_rainfall_swmonsoon.asc",
-    "file_size_bytes": 5036,
-    "url": "https://psl.noaa.gov/data/correlation/swmonsoon.data",
-    "start_year": 1948,
-    "end_year": 2010,
-    "line_count": 67,
-    "description": "Area Averaged Precipitation for Arizona and New Mexico Calculated using NCDC's climate division dataset. Monthly precipitation values for each of the climate\n          divisions in Arizona and New\n          Mexico are are averaged to produce a single monthly value. Reference:\n          personal communication, Catherine Smith. Also, NCDC, 1994, Time Bias Corrected Divisional\n          Temperature-Precipitation-Drought Index. Documentation for dataset TD-9640.\n          Available from DBMB, NCDC, NOAA, Federal Building, 37 Battery Park Ave. Asheville, NC 28801-2733. 12pp."
-  },
-  {
-    "index_name": "Northeast Brazil Rainfall Anomaly",
-    "label": "Northeast Brazil Rainfall Anomaly",
-    "asc_filename": "Northeast_Brazil_Rainfall_Anomaly_brazilrain.asc",
-    "file_path": "indices_asc\\Northeast_Brazil_Rainfall_Anomaly_brazilrain.asc",
-    "file_size_bytes": 3592,
-    "url": "https://psl.noaa.gov/data/correlation/brazilrain.data",
+    "asc_filename": "brazilrain.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\brazilrain.asc",
+    "file_size_bytes": 3649,
     "start_year": 1948,
     "end_year": 2000,
     "line_count": 57,
-    "description": "Northeast Brazil Rainfall Anomaly http://jisao.washington.edu/data_sets/brazil/ From Mitchell: The northeast Brazil rainfall index is calculated from data for Fortaleza (3.7S, 38.5W) and\n          Quixeramobim\n          (5.3S, 39.3W) Brazil obtained from the NCAR World Monthly Surface Station Climatology. Climatological mean is\n          for 1950-79."
+    "description": "Northeast Brazil Rainfall Anomaly Info at Northeast Brazil Rainfall Anomaly"
   },
   {
-    "index_name": "Solar Flux (10.7cm)*",
-    "label": "Solar Flux (10.7cm)*",
-    "asc_filename": "Solar_Flux_(10.7cm)_solar.asc",
-    "file_path": "indices_asc\\Solar_Flux_(10.7cm)_solar.asc",
-    "file_size_bytes": 5344,
-    "url": "https://psl.noaa.gov/data/correlation/solar.data",
+    "asc_filename": "CAR_ersst.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\CAR_ersst.asc",
+    "file_size_bytes": 7654,
+    "start_year": 1950,
+    "end_year": 2020,
+    "line_count": 79,
+    "description": "CAR_ersst produced at https://psl.noaa.gov/forecasts/sstlim/ 260-300E, 10N-25N minus Pacific At NOAA PSL. Please cite forecast pubs and acquired at website YYYY/MM/DD SST is NOAA ERSST V3"
+  },
+  {
+    "asc_filename": "Caribbean_Index_(CAR)_CAR_ersst.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\Caribbean_Index_(CAR)_CAR_ersst.asc",
+    "file_size_bytes": 7654,
+    "start_year": 1950,
+    "end_year": 2020,
+    "line_count": 79,
+    "description": "CAR_ersst produced at https://psl.noaa.gov/forecasts/sstlim/ 260-300E, 10N-25N minus Pacific At NOAA PSL. Please cite forecast pubs and acquired at website YYYY/MM/DD SST is NOAA ERSST V3"
+  },
+  {
+    "asc_filename": "censo.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\censo.asc",
+    "file_size_bytes": 7217,
     "start_year": 1948,
-    "end_year": 2024,
-    "line_count": 84,
-    "description": "Solar Flux (10.7cm) ftp://ftp.ngdc.noaa.gov/STP/space-weather/solar-data/solar-features/solar-radio/noontime-flux/penticton/penticton_observed/listings/listing_drao_noontime-flux-observed_monthly.txt To cite, \"The 10.7cm Solar Flux Data are provided as a service by the National Research Council of\n          Canada\".\n          They would appreciate a preprint\n          or at least a reference if you use the data URL is http://www.spaceweather.ca/solarflux/sx-4-eng.php ."
+    "end_year": 2026,
+    "line_count": 82,
+    "description": "-9.99 BEST: Bivariate enso timeserieshttps://psl.noaa.gov/data/timeseries/month/from NOAA/PSL"
   },
   {
-    "index_name": "Global Mean Land/Ocean Temperature Index",
-    "label": "Global Mean Land/Ocean Temperature Index",
+    "asc_filename": "censo.long.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\censo.long.asc",
+    "file_size_bytes": 10604,
+    "start_year": 1871,
+    "end_year": 2003,
+    "line_count": 137,
+    "description": "-9.99 best index: long version http://psl.noaa.gov/data/climateindices/list/"
+  },
+  {
+    "asc_filename": "Central_Indian_Precipitation_(core_monsoon_region)_indiamon.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\Central_Indian_Precipitation_(core_monsoon_region)_indiamon.asc",
+    "file_size_bytes": 3547,
+    "start_year": 1948,
+    "end_year": 1999,
+    "line_count": 56,
+    "description": "Central Indian Precipitation info at http://psl.noaa.gov/data/climateindices/list/"
+  },
+  {
+    "asc_filename": "ea.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\ea.asc",
+    "file_size_bytes": 7303,
+    "start_year": 1948,
+    "end_year": 2026,
+    "line_count": 83,
+    "description": "EA/WR Index from CPC https://psl.noaa.gov/data/timeseries/month/for info"
+  },
+  {
+    "asc_filename": "EA_WR_ea.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\EA_WR_ea.asc",
+    "file_size_bytes": 7303,
+    "start_year": 1948,
+    "end_year": 2026,
+    "line_count": 83,
+    "description": "EA/WR Index from CPC https://psl.noaa.gov/data/timeseries/month/for info"
+  },
+  {
+    "asc_filename": "ENSO_Precipitation_Index_espi.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\ENSO_Precipitation_Index_espi.asc",
+    "file_size_bytes": 5358,
+    "start_year": 1979,
+    "end_year": 2023,
+    "line_count": 54,
+    "description": "ESPI From UMD http://eagle1.umd.edu/GPCP_ICDR/Data/ESPI.txt Stored at NOAA/PSL Values are now based on V2.3 updated with new values froim source. Recent older values subject to change"
+  },
+  {
+    "asc_filename": "eofpac.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\eofpac.asc",
+    "file_size_bytes": 5583,
+    "start_year": 1948,
+    "end_year": 2008,
+    "line_count": 65,
+    "description": "-9.0 eofpac psl"
+  },
+  {
+    "asc_filename": "EP_NP_epo.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\EP_NP_epo.asc",
+    "file_size_bytes": 7304,
+    "start_year": 1948,
+    "end_year": 2026,
+    "line_count": 83,
+    "description": "EP/NP Index  from CPC https://psl.noaa.gov/data/timeseries/month/for info"
+  },
+  {
+    "asc_filename": "epo.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\epo.asc",
+    "file_size_bytes": 7304,
+    "start_year": 1948,
+    "end_year": 2026,
+    "line_count": 83,
+    "description": "EP/NP Index  from CPC https://psl.noaa.gov/data/timeseries/month/for info"
+  },
+  {
+    "asc_filename": "ersst5.nino.mth.91-20.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\ersst5.nino.mth.91-20.asc",
+    "file_size_bytes": 68006,
+    "start_year": null,
+    "end_year": null,
+    "line_count": 919,
+    "description": ""
+  },
+  {
+    "asc_filename": "espi.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\espi.asc",
+    "file_size_bytes": 5358,
+    "start_year": 1979,
+    "end_year": 2023,
+    "line_count": 54,
+    "description": "ESPI From UMD http://eagle1.umd.edu/GPCP_ICDR/Data/ESPI.txt Stored at NOAA/PSL Values are now based on V2.3 updated with new values froim source. Recent older values subject to change"
+  },
+  {
+    "asc_filename": "glaam.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\glaam.asc",
+    "file_size_bytes": 5345,
+    "start_year": 1958,
+    "end_year": 2014,
+    "line_count": 62,
+    "description": "GLAAM: globally averaged angular momentum. Scaled by 1e25 For info  http://psl.noaa.gov/data/climateindices/list"
+  },
+  {
+    "asc_filename": "GLB.Ts+dSST.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\GLB.Ts+dSST.asc",
+    "file_size_bytes": 16364,
+    "start_year": null,
+    "end_year": null,
+    "line_count": 157,
+    "description": "sources:  GHCN-v3 1880-07/2019 + SST: ERSST v5 1880-07/2019 using elimination of outliers and homogeneity adjustment Notes: 1950 DJF = Dec 1949 - Feb 1950 ;  ***** = missing AnnMean Year   Jan  Feb  Mar  Apr  May  Jun  Jul  Aug  Sep  Oct  Nov  Dec    J-D D-N    DJF  MAM  JJA  SON  Year Year   Jan  Feb  Mar  Apr  May  Jun  Jul  Aug  Sep  Oct  Nov  Dec    J-D D-N    DJF  MAM  JJA  SON  Year Year   Jan  Feb  Mar  Apr  May  Jun  Jul  Aug  Sep  Oct  Nov  Dec    J-D D-N    DJF  MAM  JJA  SON  Year Year   Jan  Feb  Mar  Apr  May  Jun  Jul  Aug  Sep  Oct  Nov  Dec    J-D D-N    DJF  MAM  JJA  SON  Year Year   Jan  Feb  Mar  Apr  May  Jun  Jul  Aug  Sep  Oct  Nov  Dec    J-D D-N    DJF  MAM  JJA  SON  Year Year   Jan  Feb  Mar  Apr  May  Jun  Jul  Aug  Sep  Oct  Nov  Dec    J-D D-N    DJF  MAM  JJA  SON  Year Year   Jan  Feb  Mar  Apr  May  Jun  Jul  Aug  Sep  Oct  Nov  Dec    J-D D-N    DJF  MAM  JJA  SON  Year Year   Jan  Feb  Mar  Apr  May  Jun  Jul  Aug  Sep  Oct  Nov  Dec    J-D D-N    DJF  MAM  JJA  SON  Year Divide by 100 to get changes in degrees Celsius (deg-C). Multiply that result by 1.8(=9/5) to get changes in degrees Fahrenheit (deg-F). Example      --      Table Value :      40 change :    0.40 deg-C  or  0.72 deg-F"
+  },
+  {
+    "asc_filename": "Global_Mean_Land_Ocean_Temperature_Index_GLB.Ts+dSST.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\Global_Mean_Land_Ocean_Temperature_Index_GLB.Ts+dSST.asc",
+    "file_size_bytes": 16364,
+    "start_year": null,
+    "end_year": null,
+    "line_count": 157,
+    "description": "sources:  GHCN-v3 1880-07/2019 + SST: ERSST v5 1880-07/2019 using elimination of outliers and homogeneity adjustment Notes: 1950 DJF = Dec 1949 - Feb 1950 ;  ***** = missing AnnMean Year   Jan  Feb  Mar  Apr  May  Jun  Jul  Aug  Sep  Oct  Nov  Dec    J-D D-N    DJF  MAM  JJA  SON  Year Year   Jan  Feb  Mar  Apr  May  Jun  Jul  Aug  Sep  Oct  Nov  Dec    J-D D-N    DJF  MAM  JJA  SON  Year Year   Jan  Feb  Mar  Apr  May  Jun  Jul  Aug  Sep  Oct  Nov  Dec    J-D D-N    DJF  MAM  JJA  SON  Year Year   Jan  Feb  Mar  Apr  May  Jun  Jul  Aug  Sep  Oct  Nov  Dec    J-D D-N    DJF  MAM  JJA  SON  Year Year   Jan  Feb  Mar  Apr  May  Jun  Jul  Aug  Sep  Oct  Nov  Dec    J-D D-N    DJF  MAM  JJA  SON  Year Year   Jan  Feb  Mar  Apr  May  Jun  Jul  Aug  Sep  Oct  Nov  Dec    J-D D-N    DJF  MAM  JJA  SON  Year Year   Jan  Feb  Mar  Apr  May  Jun  Jul  Aug  Sep  Oct  Nov  Dec    J-D D-N    DJF  MAM  JJA  SON  Year Year   Jan  Feb  Mar  Apr  May  Jun  Jul  Aug  Sep  Oct  Nov  Dec    J-D D-N    DJF  MAM  JJA  SON  Year Divide by 100 to get changes in degrees Celsius (deg-C). Multiply that result by 1.8(=9/5) to get changes in degrees Fahrenheit (deg-F). Example      --      Table Value :      40 change :    0.40 deg-C  or  0.72 deg-F"
+  },
+  {
     "asc_filename": "Global_Mean_Land_Ocean_Temperature_Index_gmsst.asc",
-    "file_path": "indices_asc\\Global_Mean_Land_Ocean_Temperature_Index_gmsst.asc",
-    "file_size_bytes": 8219,
-    "url": "https://psl.noaa.gov/data/correlation/gmsst.data",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\Global_Mean_Land_Ocean_Temperature_Index_gmsst.asc",
+    "file_size_bytes": 8303,
     "start_year": 1948,
     "end_year": 2026,
     "line_count": 84,
-    "description": "Global Mean Land/Ocean Temperature Values change over time! Data values are from NASA/GISS .\n          Please read and refer to this web page plus the main web page describing various temperature indices at the\n          main NASA/GISTEMP webpage . Note, the index is an anomaly index. They have comments in the datafile and the\n          writeup on obtaining an absolute global mean temperatures. Please reference the papers: Christy, J.R., R.W. Spencer, and W.D. Braswell 2000. J. Atmos. Oceanic Tech. 17, 1153. Hansen, J., R. Ruedy, M. Sato and R. Reynolds 1996. Global surface air temperature in 1995: Return to\n              pre-Pinatubo level. Geophys. Res. Lett. 23, 1665-1668. Hansen, J., M. Sato, J. Glascoe and R. Ruedy 1998. A common-sense climate index: Is climate changing\n              noticeably? Proc. Natl. Acad. Sci. 95, 4113-4120. Hansen, J., R. Ruedy, J. Glascoe, and M. Sato 1999. GISS analysis of surface temperature change. J.\n              Geophys. Res. 104, 30997-31022. Hansen, J., R. Ruedy, M. Sato, M. Imhoff, W. Lawrence, D. Easterling, T. Peterson, and T. Karl 2001. A\n              closer look at United States and global surface temperature change. J. Geophys. Res. 106, 23947-23963 Intergovernmental Panel on Climate Change 2001. Climate Change 2001 (J.T. Houghton et al., Eds.),\n              Cambridge Univ. Press, New York. National Research Council 2000. Reconciling Observations of Global Temperature Change. National Academy\n              Press, Washington, DC, 85 pp. Peterson, T.C., and R.S. Vose 1997. An overview of the Global Historical Climatology Network temperature\n            database. Bull. Amer. Meteorol. Soc. 78, 2837-2849. Rayner, N. 2000. HadISST1 Seaice and sea surface temperature files. Hadley Center, Bracknell, U.K. Reynolds, R.W., N.A. Rayner, T.M. Smith, D.C. Stokes, and W. Wang 2002. An improved in situ and\n              satellite SST analysis for climate. J. Climate 15, 1609-1625, doi:10.1175/1520-0442(2002)015<1609:AIISAS>\n                2.0.CO;2. Reynolds, R.W., and T.M. Smith 1994. Improved global sea surface temperature analyses. J. Climate 7,\n              929-948, doi:10.1175/1520-0442(1994)007<0929:IGSSTA>2.0.CO;2 Smith, T.M., R.W. Reynolds, R.E. Livesay, and D.C. Stokes 1996. Reconstruction of historical sea surface\n              temperature using empirical orthogonal functions. J. Climate 9, 1403-1420."
+    "description": "originally from from https://data.giss.nasa.gov/gistemp/tabledata/GLB.Ts.txt https://psl.noaa.gov/data/timeseries/month/ Available at NOAA/PSL"
+  },
+  {
+    "asc_filename": "Globally_Integrated_Angular_Momentum_glaam.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\Globally_Integrated_Angular_Momentum_glaam.asc",
+    "file_size_bytes": 5345,
+    "start_year": 1958,
+    "end_year": 2014,
+    "line_count": 62,
+    "description": "GLAAM: globally averaged angular momentum. Scaled by 1e25 For info  http://psl.noaa.gov/data/climateindices/list"
+  },
+  {
+    "asc_filename": "gmsst.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\gmsst.asc",
+    "file_size_bytes": 8303,
+    "start_year": 1948,
+    "end_year": 2026,
+    "line_count": 84,
+    "description": "originally from from https://data.giss.nasa.gov/gistemp/tabledata/GLB.Ts.txt https://psl.noaa.gov/data/timeseries/month/ Available at NOAA/PSL"
+  },
+  {
+    "asc_filename": "indiamon.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\indiamon.asc",
+    "file_size_bytes": 3547,
+    "start_year": 1948,
+    "end_year": 1999,
+    "line_count": 56,
+    "description": "Central Indian Precipitation info at http://psl.noaa.gov/data/climateindices/list/"
+  },
+  {
+    "asc_filename": "iod.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\iod.asc",
+    "file_size_bytes": 17956,
+    "start_year": 1854,
+    "end_year": 2026,
+    "line_count": 177,
+    "description": "Indian Ocean Dipole (DMI) (ERSST v5) Source: NCEI ERSST v5 / NOAA PSL / NOAA CPC / SILSO (Updated to 2026)"
+  },
+  {
+    "asc_filename": "ipotpi.hadisst2.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\ipotpi.hadisst2.asc",
+    "file_size_bytes": 14943,
+    "start_year": 1870,
+    "end_year": 2010,
+    "line_count": 149,
+    "description": "TPI unfiltered (IPO Tripole Index) of Henley et al. (2015) HadISST2.1Median_of_10_rsns Please cite this data if you use it: Henley, B.J., Gergis, J., Karoly, D.J., Power, S.B., Kennedy, J., & Folland, C.K. (2015). A Tripole Index for the Interdecadal Pacific Oscillation. Climate Dynamics, 1?14. doi:10.1007/s00382-015-2525-1 See http://www.esrl.noaa.gov/psd/data/timeseries/IPOTPI/"
+  },
+  {
+    "asc_filename": "jonesnao.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\jonesnao.asc",
+    "file_size_bytes": 7093,
+    "start_year": 1948,
+    "end_year": 2022,
+    "line_count": 83,
+    "description": "NAO from CRU https://crudata.uea.ac.uk/cru/data/nao/nao.dat This time series crested at NOAA/PSL. updated irregularly. https://psl.noaa.gov/gcos_wgsp/Timeseries/NAO/ last update feb 2023. This is short (1948-->) version to match R1."
+  },
+  {
+    "asc_filename": "listing_drao_noontime-flux-observed_monthly.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\listing_drao_noontime-flux-observed_monthly.asc",
+    "file_size_bytes": 11994,
+    "start_year": 1947,
+    "end_year": 1,
+    "line_count": 857,
+    "description": ""
+  },
+  {
+    "asc_filename": "MEI_V2_meiv2.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\MEI_V2_meiv2.asc",
+    "file_size_bytes": 5652,
+    "start_year": 1979,
+    "end_year": 2026,
+    "line_count": 53,
+    "description": "Multivariate ENSO Index Version 2 (MEI.v2) https://www.psl.noaa.gov/enso/mei Row values are 2 month seasons (YEAR DJ JF FM MA AM MJ JJ JA AS SO ON ND)"
+  },
+  {
+    "asc_filename": "meiv2.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\meiv2.asc",
+    "file_size_bytes": 5652,
+    "start_year": 1979,
+    "end_year": 2026,
+    "line_count": 53,
+    "description": "Multivariate ENSO Index Version 2 (MEI.v2) https://www.psl.noaa.gov/enso/mei Row values are 2 month seasons (YEAR DJ JF FM MA AM MJ JJ JA AS SO ON ND)"
+  },
+  {
+    "asc_filename": "mjo_100e.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\mjo_100e.asc",
+    "file_size_bytes": 5195,
+    "start_year": 1978,
+    "end_year": 2026,
+    "line_count": 53,
+    "description": "Madden-Julian Oscillation (MJO) 100E Monthly Average (CPC) Source: NCEI ERSST v5 / NOAA CPC / SILSO (Updated to 2026)"
+  },
+  {
+    "asc_filename": "mjo_10w.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\mjo_10w.asc",
+    "file_size_bytes": 5194,
+    "start_year": 1978,
+    "end_year": 2026,
+    "line_count": 53,
+    "description": "Madden-Julian Oscillation (MJO) 10W Monthly Average (CPC) Source: NCEI ERSST v5 / NOAA CPC / SILSO (Updated to 2026)"
+  },
+  {
+    "asc_filename": "mjo_120e.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\mjo_120e.asc",
+    "file_size_bytes": 5195,
+    "start_year": 1978,
+    "end_year": 2026,
+    "line_count": 53,
+    "description": "Madden-Julian Oscillation (MJO) 120E Monthly Average (CPC) Source: NCEI ERSST v5 / NOAA CPC / SILSO (Updated to 2026)"
+  },
+  {
+    "asc_filename": "mjo_120w.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\mjo_120w.asc",
+    "file_size_bytes": 5195,
+    "start_year": 1978,
+    "end_year": 2026,
+    "line_count": 53,
+    "description": "Madden-Julian Oscillation (MJO) 120W Monthly Average (CPC) Source: NCEI ERSST v5 / NOAA CPC / SILSO (Updated to 2026)"
+  },
+  {
+    "asc_filename": "mjo_140e.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\mjo_140e.asc",
+    "file_size_bytes": 5195,
+    "start_year": 1978,
+    "end_year": 2026,
+    "line_count": 53,
+    "description": "Madden-Julian Oscillation (MJO) 140E Monthly Average (CPC) Source: NCEI ERSST v5 / NOAA CPC / SILSO (Updated to 2026)"
+  },
+  {
+    "asc_filename": "mjo_160e.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\mjo_160e.asc",
+    "file_size_bytes": 5195,
+    "start_year": 1978,
+    "end_year": 2026,
+    "line_count": 53,
+    "description": "Madden-Julian Oscillation (MJO) 160E Monthly Average (CPC) Source: NCEI ERSST v5 / NOAA CPC / SILSO (Updated to 2026)"
+  },
+  {
+    "asc_filename": "mjo_20e.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\mjo_20e.asc",
+    "file_size_bytes": 5194,
+    "start_year": 1978,
+    "end_year": 2026,
+    "line_count": 53,
+    "description": "Madden-Julian Oscillation (MJO) 20E Monthly Average (CPC) Source: NCEI ERSST v5 / NOAA CPC / SILSO (Updated to 2026)"
+  },
+  {
+    "asc_filename": "mjo_40w.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\mjo_40w.asc",
+    "file_size_bytes": 5194,
+    "start_year": 1978,
+    "end_year": 2026,
+    "line_count": 53,
+    "description": "Madden-Julian Oscillation (MJO) 40W Monthly Average (CPC) Source: NCEI ERSST v5 / NOAA CPC / SILSO (Updated to 2026)"
+  },
+  {
+    "asc_filename": "mjo_70e.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\mjo_70e.asc",
+    "file_size_bytes": 5194,
+    "start_year": 1978,
+    "end_year": 2026,
+    "line_count": 53,
+    "description": "Madden-Julian Oscillation (MJO) 70E Monthly Average (CPC) Source: NCEI ERSST v5 / NOAA CPC / SILSO (Updated to 2026)"
+  },
+  {
+    "asc_filename": "mjo_80e.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\mjo_80e.asc",
+    "file_size_bytes": 5194,
+    "start_year": 1978,
+    "end_year": 2026,
+    "line_count": 53,
+    "description": "Madden-Julian Oscillation (MJO) 80E Monthly Average (CPC) Source: NCEI ERSST v5 / NOAA CPC / SILSO (Updated to 2026)"
+  },
+  {
+    "asc_filename": "mjo_omi.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\mjo_omi.asc",
+    "file_size_bytes": 3855,
+    "start_year": 1991,
+    "end_year": 2026,
+    "line_count": 40,
+    "description": "OLR-based MJO Index (OMI) Amplitude (NOAA PSL) Source: NCEI ERSST v5 / NOAA PSL / NOAA CPC / SILSO (Updated to 2026)"
+  },
+  {
+    "asc_filename": "mjo_omi_daily.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\mjo_omi_daily.asc",
+    "file_size_bytes": 465852,
+    "start_year": 1991,
+    "end_year": 1,
+    "line_count": 12959,
+    "description": ""
+  },
+  {
+    "asc_filename": "mjo_pentad.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\mjo_pentad.asc",
+    "file_size_bytes": 357902,
+    "start_year": null,
+    "end_year": null,
+    "line_count": 3579,
+    "description": "PENTAD       20E      70E      80E     100E     120E     140E     160E     120W      40W      10W"
+  },
+  {
+    "asc_filename": "mjo_romi.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\mjo_romi.asc",
+    "file_size_bytes": 3860,
+    "start_year": 1991,
+    "end_year": 2026,
+    "line_count": 40,
+    "description": "Real-time OLR MJO Index (ROMI) Amplitude (NOAA PSL) Source: NCEI ERSST v5 / NOAA PSL / NOAA CPC / SILSO (Updated to 2026)"
+  },
+  {
+    "asc_filename": "mjo_romi_daily.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\mjo_romi_daily.asc",
+    "file_size_bytes": 662949,
+    "start_year": 1991,
+    "end_year": 1,
+    "line_count": 12999,
+    "description": ""
+  },
+  {
+    "asc_filename": "mjo_vpm.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\mjo_vpm.asc",
+    "file_size_bytes": 5100,
+    "start_year": 1979,
+    "end_year": 2026,
+    "line_count": 52,
+    "description": "Velocity Potential MJO Index (VPM) Amplitude (NOAA PSL) Source: NCEI ERSST v5 / NOAA PSL / NOAA CPC / SILSO (Updated to 2026)"
+  },
+  {
+    "asc_filename": "mjo_vpm_daily.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\mjo_vpm_daily.asc",
+    "file_size_bytes": 873324,
+    "start_year": 1979,
+    "end_year": 4,
+    "line_count": 17124,
+    "description": ""
+  },
+  {
+    "asc_filename": "nao.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\nao.asc",
+    "file_size_bytes": 8064,
+    "start_year": 1950,
+    "end_year": 2026,
+    "line_count": 81,
+    "description": "North Atlantic Oscillation (CPC) Source: NCEI ERSST v5 / NOAA PSL / NOAA CPC / SILSO (Updated to 2026)"
+  },
+  {
+    "asc_filename": "NAO_(Jones)_jonesnao.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\NAO_(Jones)_jonesnao.asc",
+    "file_size_bytes": 7093,
+    "start_year": 1948,
+    "end_year": 2022,
+    "line_count": 83,
+    "description": "NAO from CRU https://crudata.uea.ac.uk/cru/data/nao/nao.dat This time series crested at NOAA/PSL. updated irregularly. https://psl.noaa.gov/gcos_wgsp/Timeseries/NAO/ last update feb 2023. This is short (1948-->) version to match R1."
+  },
+  {
+    "asc_filename": "NAO_nao.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\NAO_nao.asc",
+    "file_size_bytes": 7301,
+    "start_year": 1948,
+    "end_year": 2026,
+    "line_count": 83,
+    "description": "NAO Index from CPC https://psl.noaa.gov/data/timeseries/month/for info"
+  },
+  {
+    "asc_filename": "nina1.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\nina1.asc",
+    "file_size_bytes": 17949,
+    "start_year": 1854,
+    "end_year": 2026,
+    "line_count": 177,
+    "description": "Niño 1+2 Mean SST (ERSST v5) Source: NCEI ERSST v5 / NOAA PSL / NOAA CPC / SILSO (Updated to 2026)"
+  },
+  {
+    "asc_filename": "nina1_anom.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\nina1_anom.asc",
+    "file_size_bytes": 17948,
+    "start_year": 1854,
+    "end_year": 2026,
+    "line_count": 177,
+    "description": "Niño 1+2 Anomaly (ERSST v5) Source: NCEI ERSST v5 / NOAA PSL / NOAA CPC / SILSO (Updated to 2026)"
+  },
+  {
+    "asc_filename": "nina3.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\nina3.asc",
+    "file_size_bytes": 17947,
+    "start_year": 1854,
+    "end_year": 2026,
+    "line_count": 177,
+    "description": "Niño 3 Mean SST (ERSST v5) Source: NCEI ERSST v5 / NOAA PSL / NOAA CPC / SILSO (Updated to 2026)"
+  },
+  {
+    "asc_filename": "nina34.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\nina34.asc",
+    "file_size_bytes": 17949,
+    "start_year": 1854,
+    "end_year": 2026,
+    "line_count": 177,
+    "description": "Niño 3.4 Mean SST (ERSST v5) Source: NCEI ERSST v5 / NOAA PSL / NOAA CPC / SILSO (Updated to 2026)"
+  },
+  {
+    "asc_filename": "nina34_anom.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\nina34_anom.asc",
+    "file_size_bytes": 17948,
+    "start_year": 1854,
+    "end_year": 2026,
+    "line_count": 177,
+    "description": "Niño 3.4 Anomaly (ERSST v5) Source: NCEI ERSST v5 / NOAA PSL / NOAA CPC / SILSO (Updated to 2026)"
+  },
+  {
+    "asc_filename": "nina3_anom.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\nina3_anom.asc",
+    "file_size_bytes": 17946,
+    "start_year": 1854,
+    "end_year": 2026,
+    "line_count": 177,
+    "description": "Niño 3 Anomaly (ERSST v5) Source: NCEI ERSST v5 / NOAA PSL / NOAA CPC / SILSO (Updated to 2026)"
+  },
+  {
+    "asc_filename": "nina4.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\nina4.asc",
+    "file_size_bytes": 17947,
+    "start_year": 1854,
+    "end_year": 2026,
+    "line_count": 177,
+    "description": "Niño 4 Mean SST (ERSST v5) Source: NCEI ERSST v5 / NOAA PSL / NOAA CPC / SILSO (Updated to 2026)"
+  },
+  {
+    "asc_filename": "nina4_anom.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\nina4_anom.asc",
+    "file_size_bytes": 17946,
+    "start_year": 1854,
+    "end_year": 2026,
+    "line_count": 177,
+    "description": "Niño 4 Anomaly (ERSST v5) Source: NCEI ERSST v5 / NOAA PSL / NOAA CPC / SILSO (Updated to 2026)"
+  },
+  {
+    "asc_filename": "Niño_1_2_nina1.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\Niño_1_2_nina1.asc",
+    "file_size_bytes": 8361,
+    "start_year": 1948,
+    "end_year": 2026,
+    "line_count": 86,
+    "description": "NINA12 0N-10S 270W-280E ERSST V6 https://psl.noaa.gov/data/timeseries/month/DS/NINO12/ units=degC"
+  },
+  {
+    "asc_filename": "Niño_1_2_nina1_anom.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\Niño_1_2_nina1_anom.asc",
+    "file_size_bytes": 8383,
+    "start_year": 1948,
+    "end_year": 2026,
+    "line_count": 87,
+    "description": "NINA12 0N-10S 270W-280E ERSST V6 Anomaly from 1981-2010 https://psl.noaa.gov/data/timeseries/month/DS/NINO12/ units=degC"
+  },
+  {
+    "asc_filename": "Niño_3.4_nina34.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\Niño_3.4_nina34.asc",
+    "file_size_bytes": 8290,
+    "start_year": 1948,
+    "end_year": 2026,
+    "line_count": 84,
+    "description": "NINA34 5N-5S 170W-120W ERSST V6"
+  },
+  {
+    "asc_filename": "Niño_3.4_nina34_anom.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\Niño_3.4_nina34_anom.asc",
+    "file_size_bytes": 8451,
+    "start_year": 1948,
+    "end_year": 2026,
+    "line_count": 89,
+    "description": "NINA34 5N-5S 170W-120W ERSST V6 Anomaly from 1981-2010 https://psl.noaa.gov/data/timeseries/month/DS/NINO34/ units=degC https://psl.noaa.gov/data/timeseries/month/DS/NINO34/ units=degC"
+  },
+  {
+    "asc_filename": "Niño_3_ersst5.nino.mth.91-20.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\Niño_3_ersst5.nino.mth.91-20.asc",
+    "file_size_bytes": 68006,
+    "start_year": null,
+    "end_year": null,
+    "line_count": 919,
+    "description": ""
+  },
+  {
+    "asc_filename": "Niño_3_nina3.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\Niño_3_nina3.asc",
+    "file_size_bytes": 4413,
+    "start_year": 1948,
+    "end_year": 1994,
+    "line_count": 51,
+    "description": "Nino 3 Mean using NOAA OISST v2 from NCEI https://psl.noaa.gov/data/timeseries/month/for info"
+  },
+  {
+    "asc_filename": "Niño_3_nina3_anom.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\Niño_3_nina3_anom.asc",
+    "file_size_bytes": 8379,
+    "start_year": 1948,
+    "end_year": 2026,
+    "line_count": 87,
+    "description": "NINA3 5N-5S 150W-90W ERSST V6 Anomaly from 1981-2010 https://psl.noaa.gov/data/timeseries/month/DS/NINO3/ units=degC"
+  },
+  {
+    "asc_filename": "Niño_4_nina4.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\Niño_4_nina4.asc",
+    "file_size_bytes": 8357,
+    "start_year": 1948,
+    "end_year": 2026,
+    "line_count": 86,
+    "description": "NINA4 5N-5S 160E-150W ERSST V6 https://psl.noaa.gov/data/timeseries/month/DS/NINO4/ units=degC"
+  },
+  {
+    "asc_filename": "Niño_4_nina4_anom.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\Niño_4_nina4_anom.asc",
+    "file_size_bytes": 8380,
+    "start_year": 1948,
+    "end_year": 2026,
+    "line_count": 87,
+    "description": "NINA4 5N-5S 160E-150W ERSST V6 Anomaly from 1981-2010 https://psl.noaa.gov/data/timeseries/month/DS/NINO4/ units=degC"
+  },
+  {
+    "asc_filename": "noi.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\noi.asc",
+    "file_size_bytes": 8222,
+    "start_year": 1948,
+    "end_year": 2026,
+    "line_count": 86,
+    "description": "Northern Oscillation Index info at http://psl.noaa.gov/data/timeseries/month/DS/NOI https://upwell.pfeg.noaa.gov/erddap/griddap/erdlasNoix.html http://www.pfeg.noaa.gov/products/PFEL/modeled/indices/NOIx/noix_download.html NOAA/PSL"
+  },
+  {
+    "asc_filename": "NOI_noi.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\NOI_noi.asc",
+    "file_size_bytes": 8222,
+    "start_year": 1948,
+    "end_year": 2026,
+    "line_count": 86,
+    "description": "Northern Oscillation Index info at http://psl.noaa.gov/data/timeseries/month/DS/NOI https://upwell.pfeg.noaa.gov/erddap/griddap/erdlasNoix.html http://www.pfeg.noaa.gov/products/PFEL/modeled/indices/NOIx/noix_download.html NOAA/PSL"
+  },
+  {
+    "asc_filename": "North_Tropical_Atlantic_Index_(NTA)_NTA_ersst.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\North_Tropical_Atlantic_Index_(NTA)_NTA_ersst.asc",
+    "file_size_bytes": 7654,
+    "start_year": 1950,
+    "end_year": 2020,
+    "line_count": 79,
+    "description": "NTA_ersst produced at https://psl.noaa.gov/forecasts/sstlim/ 5N-17N; central Atl At NOAA PSL. Please cite forecast pubs and acquired at website YYYY/MM/DD SST is NOAA ERSST V3"
+  },
+  {
+    "asc_filename": "Northeast_Brazil_Rainfall_Anomaly_brazilrain.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\Northeast_Brazil_Rainfall_Anomaly_brazilrain.asc",
+    "file_size_bytes": 3649,
+    "start_year": 1948,
+    "end_year": 2000,
+    "line_count": 57,
+    "description": "Northeast Brazil Rainfall Anomaly Info at Northeast Brazil Rainfall Anomaly"
+  },
+  {
+    "asc_filename": "np.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\np.asc",
+    "file_size_bytes": 9958,
+    "start_year": 1948,
+    "end_year": 2024,
+    "line_count": 85,
+    "description": "Trenberth and Hurrell North Pacific Index (Monthly) From https://climatedataguide.ucar.edu/sites/default/ Date produced Nov 22 2024 Stored at NOAA/PSL Datasets used 10.1 from NCAR Monthly SLP https://psl.noaa.gov/data/month/DS/NP/"
+  },
+  {
+    "asc_filename": "NP_np.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\NP_np.asc",
+    "file_size_bytes": 9958,
+    "start_year": 1948,
+    "end_year": 2024,
+    "line_count": 85,
+    "description": "Trenberth and Hurrell North Pacific Index (Monthly) From https://climatedataguide.ucar.edu/sites/default/ Date produced Nov 22 2024 Stored at NOAA/PSL Datasets used 10.1 from NCAR Monthly SLP https://psl.noaa.gov/data/month/DS/NP/"
+  },
+  {
+    "asc_filename": "NTA_ersst.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\NTA_ersst.asc",
+    "file_size_bytes": 7654,
+    "start_year": 1950,
+    "end_year": 2020,
+    "line_count": 79,
+    "description": "NTA_ersst produced at https://psl.noaa.gov/forecasts/sstlim/ 5N-17N; central Atl At NOAA PSL. Please cite forecast pubs and acquired at website YYYY/MM/DD SST is NOAA ERSST V3"
+  },
+  {
+    "asc_filename": "oni.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\oni.asc",
+    "file_size_bytes": 8057,
+    "start_year": 1950,
+    "end_year": 2026,
+    "line_count": 81,
+    "description": "Oceanic Niño Index (CPC) Source: NCEI ERSST v5 / NOAA PSL / NOAA CPC / SILSO (Updated to 2026)"
+  },
+  {
+    "asc_filename": "ONI_oni.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\ONI_oni.asc",
+    "file_size_bytes": 7289,
+    "start_year": 1950,
+    "end_year": 2026,
+    "line_count": 86,
+    "description": "ONI from CPC Provided by NOAA/PSL From https://www.cpc.ncep.noaa.gov/data/indices/oni.ascii.txt As of 08/4/2026, uses NOAA ERSST V6 represents 3 month running mean of ERSST.v6 SST anomalies in the Niño 3.4 region (5N-5oS, 120o-170oW)]"
+  },
+  {
+    "asc_filename": "Pacific_Warmpool_Region_pacwarm.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\Pacific_Warmpool_Region_pacwarm.asc",
+    "file_size_bytes": 10114,
+    "start_year": 1948,
+    "end_year": 2026,
+    "line_count": 87,
+    "description": "PACWARMPOOL ERSSTV5 06/2025 empty Timeseries output created at NOAA PSL 60E-170E; 15S-15N area average anomalies Climo is 1991 to 2020"
+  },
+  {
+    "asc_filename": "Pacific_Warmpool_Region_pacwarmpool.ersst.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\Pacific_Warmpool_Region_pacwarmpool.ersst.asc",
+    "file_size_bytes": 21958,
+    "start_year": 1854,
+    "end_year": 2026,
+    "line_count": 181,
+    "description": "PACWARMPOOL ERSSTV5 06/2025 empty Timeseries output created at NOAA PSL 60E-170E; 15S-15N area average anomalies Climo is 1991 to 2020"
+  },
+  {
+    "asc_filename": "pacwarm.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\pacwarm.asc",
+    "file_size_bytes": 10114,
+    "start_year": 1948,
+    "end_year": 2026,
+    "line_count": 87,
+    "description": "PACWARMPOOL ERSSTV5 06/2025 empty Timeseries output created at NOAA PSL 60E-170E; 15S-15N area average anomalies Climo is 1991 to 2020"
+  },
+  {
+    "asc_filename": "pacwarmpool.ersst.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\pacwarmpool.ersst.asc",
+    "file_size_bytes": 21958,
+    "start_year": 1854,
+    "end_year": 2026,
+    "line_count": 181,
+    "description": "PACWARMPOOL ERSSTV5 06/2025 empty Timeseries output created at NOAA PSL 60E-170E; 15S-15N area average anomalies Climo is 1991 to 2020"
+  },
+  {
+    "asc_filename": "pdo.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\pdo.asc",
+    "file_size_bytes": 17964,
+    "start_year": 1854,
+    "end_year": 2026,
+    "line_count": 177,
+    "description": "Pacific Decadal Oscillation Index (ERSST v5) Source: NCEI ERSST v5 / NOAA PSL / NOAA CPC / SILSO (Updated to 2026)"
+  },
+  {
+    "asc_filename": "PDO_pdo.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\PDO_pdo.asc",
+    "file_size_bytes": 7607,
+    "start_year": 1948,
+    "end_year": 2025,
+    "line_count": 89,
+    "description": "-9.90 PDO: pacific decadal oscillation info at https://psl.noaa.gov/data/climateindices/list/ updated 10/2025 https://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_OC_PDO.html used to be http://jisao.washington.edu/pdo/img/v1v2PDOComp.png If you have any questions about this time series, contact Nathan Mantua For question about this file, email cathy.smith@noaa.gov NOAA PSL and CIRES/CU"
+  },
+  {
+    "asc_filename": "pna.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\pna.asc",
+    "file_size_bytes": 8066,
+    "start_year": 1950,
+    "end_year": 2026,
+    "line_count": 81,
+    "description": "Pacific North American Index (CPC) Source: NCEI ERSST v5 / NOAA PSL / NOAA CPC / SILSO (Updated to 2026)"
+  },
+  {
+    "asc_filename": "PNA_pna.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\PNA_pna.asc",
+    "file_size_bytes": 7301,
+    "start_year": 1948,
+    "end_year": 2026,
+    "line_count": 83,
+    "description": "PNA Index from CPC https://psl.noaa.gov/data/timeseries/month/for info"
+  },
+  {
+    "asc_filename": "qbo.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\qbo.asc",
+    "file_size_bytes": 8238,
+    "start_year": 1948,
+    "end_year": 2026,
+    "line_count": 86,
+    "description": "QBO Calculated at NOAA PSL 30mb zonal wind at the equator, zonal average For info https://psl.noaa.gov/data/timeseries/month/ units=ms-1"
+  },
+  {
+    "asc_filename": "QBO_qbo.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\QBO_qbo.asc",
+    "file_size_bytes": 8238,
+    "start_year": 1948,
+    "end_year": 2026,
+    "line_count": 86,
+    "description": "QBO Calculated at NOAA PSL 30mb zonal wind at the equator, zonal average For info https://psl.noaa.gov/data/timeseries/month/ units=ms-1"
+  },
+  {
+    "asc_filename": "Sahel_Rainfall_sahelrain.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\Sahel_Rainfall_sahelrain.asc",
+    "file_size_bytes": 5122,
+    "start_year": 1948,
+    "end_year": 2017,
+    "line_count": 80,
+    "description": "Sahel Standardized Rainfall (20-8N, 20W-10E) Info at https://psl.noaa.gov/data/climateindices/list/ http://research.jisao.washington.edu/data_sets/sahel/#values re-obtained May 28 2019 Averages are in 0.1 mm, so \"-5\" is -0.05 cm precipitation anomaly with respect to 1980-2009. GPCC data was used. Please use the digital object identifier doi:10.6069/H5MW2F2Q in your citation of this index. units=.01mm"
+  },
+  {
+    "asc_filename": "sahelrain.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\sahelrain.asc",
+    "file_size_bytes": 5122,
+    "start_year": 1948,
+    "end_year": 2017,
+    "line_count": 80,
+    "description": "Sahel Standardized Rainfall (20-8N, 20W-10E) Info at https://psl.noaa.gov/data/climateindices/list/ http://research.jisao.washington.edu/data_sets/sahel/#values re-obtained May 28 2019 Averages are in 0.1 mm, so \"-5\" is -0.05 cm precipitation anomaly with respect to 1980-2009. GPCC data was used. Please use the digital object identifier doi:10.6069/H5MW2F2Q in your citation of this index. units=.01mm"
+  },
+  {
+    "asc_filename": "soi.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\soi.asc",
+    "file_size_bytes": 7858,
+    "start_year": 1951,
+    "end_year": 2025,
+    "line_count": 79,
+    "description": "Southern Oscillation Index (CPC) Source: NCEI ERSST v5 / NOAA PSL / NOAA CPC / SILSO (Updated to 2026)"
+  },
+  {
+    "asc_filename": "SOI_soi.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\SOI_soi.asc",
+    "file_size_bytes": 7222,
+    "start_year": 1948,
+    "end_year": 2026,
+    "line_count": 83,
+    "description": "SOI Index from CPC https://psl.noaa.gov/data/timeseries/month/for info"
+  },
+  {
+    "asc_filename": "solar.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\solar.asc",
+    "file_size_bytes": 5429,
+    "start_year": 1948,
+    "end_year": 2024,
+    "line_count": 84,
+    "description": "Date modified: 2024-11 SOLAR Cycle   10.7 flux Recent Values Obtained from  https://www.spaceweather.ca/forecast-prevision/solar-solaire/solarflux/sx-5-mavg-en.php This format from NOAA/PSL https://psl.noaa.gov/data/correlation/solar.data"
+  },
+  {
+    "asc_filename": "Solar_Flux_(10.7cm)_listing_drao_noontime-flux-observed_monthly.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\Solar_Flux_(10.7cm)_listing_drao_noontime-flux-observed_monthly.asc",
+    "file_size_bytes": 11994,
+    "start_year": 1947,
+    "end_year": 1,
+    "line_count": 857,
+    "description": ""
+  },
+  {
+    "asc_filename": "Solar_Flux_(10.7cm)_solar.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\Solar_Flux_(10.7cm)_solar.asc",
+    "file_size_bytes": 5429,
+    "start_year": 1948,
+    "end_year": 2024,
+    "line_count": 84,
+    "description": "Date modified: 2024-11 SOLAR Cycle   10.7 flux Recent Values Obtained from  https://www.spaceweather.ca/forecast-prevision/solar-solaire/solarflux/sx-5-mavg-en.php This format from NOAA/PSL https://psl.noaa.gov/data/correlation/solar.data"
+  },
+  {
+    "asc_filename": "ssn.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\ssn.asc",
+    "file_size_bytes": 28777,
+    "start_year": 1749,
+    "end_year": 2026,
+    "line_count": 282,
+    "description": "Sunspot Number (Monthly Total SSN - SILSO) Source: NCEI ERSST v5 / NOAA PSL / NOAA CPC / SILSO (Updated to 2026)"
+  },
+  {
+    "asc_filename": "ssn_monthly_raw.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\ssn_monthly_raw.asc",
+    "file_size_bytes": 129909,
+    "start_year": 1749,
+    "end_year": 1,
+    "line_count": 3331,
+    "description": ""
+  },
+  {
+    "asc_filename": "SW_Monsoon_Region_rainfall_swmonsoon.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\SW_Monsoon_Region_rainfall_swmonsoon.asc",
+    "file_size_bytes": 5103,
+    "start_year": 1948,
+    "end_year": 2010,
+    "line_count": 67,
+    "description": "-9.90 Area averaged NM and AZ precipitation Info at http://psl.noaa.gov/data/climateindices/"
+  },
+  {
+    "asc_filename": "swmonsoon.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\swmonsoon.asc",
+    "file_size_bytes": 5103,
+    "start_year": 1948,
+    "end_year": 2010,
+    "line_count": 67,
+    "description": "-9.90 Area averaged NM and AZ precipitation Info at http://psl.noaa.gov/data/climateindices/"
+  },
+  {
+    "asc_filename": "tna.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\tna.asc",
+    "file_size_bytes": 8419,
+    "start_year": 1948,
+    "end_year": 2026,
+    "line_count": 87,
+    "description": "TNAa Tropical Northern Atlantic Index SST Anom 5.5N-23.5N; 15W-57.5W Using HadISST1.1: Climo 1991-2020 NOAA/PSL https://psl.noaa.gov/data/timeseries/month/"
+  },
+  {
+    "asc_filename": "TNA_tna.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\TNA_tna.asc",
+    "file_size_bytes": 8419,
+    "start_year": 1948,
+    "end_year": 2026,
+    "line_count": 87,
+    "description": "TNAa Tropical Northern Atlantic Index SST Anom 5.5N-23.5N; 15W-57.5W Using HadISST1.1: Climo 1991-2020 NOAA/PSL https://psl.noaa.gov/data/timeseries/month/"
+  },
+  {
+    "asc_filename": "tni.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\tni.asc",
+    "file_size_bytes": 8536,
+    "start_year": 1948,
+    "end_year": 2026,
+    "line_count": 90,
+    "description": "TNI Nina 1.2-Nino4 standardized HadSST1.1 for entire time-series Reference: Indices of El Nino Evolution Kevin E. Trenberth, and David P. Stepaniak J. Climate, 14, 1697-1701. From NOAA PSL: See url for latest info https://psl.noaa.gov/data/climateindices/List/#TNI"
+  },
+  {
+    "asc_filename": "TNI_(Trans-Niño_Index)_tni.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\TNI_(Trans-Niño_Index)_tni.asc",
+    "file_size_bytes": 8536,
+    "start_year": 1948,
+    "end_year": 2026,
+    "line_count": 90,
+    "description": "TNI Nina 1.2-Nino4 standardized HadSST1.1 for entire time-series Reference: Indices of El Nino Evolution Kevin E. Trenberth, and David P. Stepaniak J. Climate, 14, 1697-1701. From NOAA PSL: See url for latest info https://psl.noaa.gov/data/climateindices/List/#TNI"
+  },
+  {
+    "asc_filename": "TPI(IPO)_ipotpi.hadisst2.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\TPI(IPO)_ipotpi.hadisst2.asc",
+    "file_size_bytes": 14943,
+    "start_year": 1870,
+    "end_year": 2010,
+    "line_count": 149,
+    "description": "TPI unfiltered (IPO Tripole Index) of Henley et al. (2015) HadISST2.1Median_of_10_rsns Please cite this data if you use it: Henley, B.J., Gergis, J., Karoly, D.J., Power, S.B., Kennedy, J., & Folland, C.K. (2015). A Tripole Index for the Interdecadal Pacific Oscillation. Climate Dynamics, 1?14. doi:10.1007/s00382-015-2525-1 See http://www.esrl.noaa.gov/psd/data/timeseries/IPOTPI/"
+  },
+  {
+    "asc_filename": "trend.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\trend.asc",
+    "file_size_bytes": 6627,
+    "start_year": 1948,
+    "end_year": 2019,
+    "line_count": 78,
+    "description": "-9.9 Trend simply a linear timeseries units=\"\" from psl."
+  },
+  {
+    "asc_filename": "Trend_trend.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\Trend_trend.asc",
+    "file_size_bytes": 6627,
+    "start_year": 1948,
+    "end_year": 2019,
+    "line_count": 78,
+    "description": "-9.9 Trend simply a linear timeseries units=\"\" from psl."
+  },
+  {
+    "asc_filename": "Tropical_Pacific_SST_EOF_eofpac.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\Tropical_Pacific_SST_EOF_eofpac.asc",
+    "file_size_bytes": 5583,
+    "start_year": 1948,
+    "end_year": 2008,
+    "line_count": 65,
+    "description": "-9.0 eofpac psl"
+  },
+  {
+    "asc_filename": "tsa.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\tsa.asc",
+    "file_size_bytes": 8314,
+    "start_year": 1948,
+    "end_year": 2026,
+    "line_count": 84,
+    "description": "TSAa NOAA/PSL https://psl.noaa.gov/data/timeseries/month/"
+  },
+  {
+    "asc_filename": "TSA_tsa.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\TSA_tsa.asc",
+    "file_size_bytes": 8314,
+    "start_year": 1948,
+    "end_year": 2026,
+    "line_count": 84,
+    "description": "TSAa NOAA/PSL https://psl.noaa.gov/data/timeseries/month/"
+  },
+  {
+    "asc_filename": "whwp.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\whwp.asc",
+    "file_size_bytes": 8557,
+    "start_year": 1948,
+    "end_year": 2026,
+    "line_count": 88,
+    "description": "WHWPa Area anomaly scaled by 10e6 km**2 Monthly anomaly of the ocean surface area Ocean region >28.5C in the Atlantic and eastern North Pacific. Climatology is now 1991-2020. Wang, C., and D.B. Enfield, Geophys. Res. Lett., 28, 1635-1638."
+  },
+  {
+    "asc_filename": "WHWP_whwp.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\WHWP_whwp.asc",
+    "file_size_bytes": 8557,
+    "start_year": 1948,
+    "end_year": 2026,
+    "line_count": 88,
+    "description": "WHWPa Area anomaly scaled by 10e6 km**2 Monthly anomaly of the ocean surface area Ocean region >28.5C in the Atlantic and eastern North Pacific. Climatology is now 1991-2020. Wang, C., and D.B. Enfield, Geophys. Res. Lett., 28, 1635-1638."
+  },
+  {
+    "asc_filename": "wp.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\wp.asc",
+    "file_size_bytes": 7300,
+    "start_year": 1948,
+    "end_year": 2026,
+    "line_count": 83,
+    "description": "WP Index from CPC https://psl.noaa.gov/data/timeseries/month/for info"
+  },
+  {
+    "asc_filename": "WP_wp.asc",
+    "file_path": "C:\\Users\\haas\\github\\indices_climaticos\\indices_asc\\WP_wp.asc",
+    "file_size_bytes": 7300,
+    "start_year": 1948,
+    "end_year": 2026,
+    "line_count": 83,
+    "description": "WP Index from CPC https://psl.noaa.gov/data/timeseries/month/for info"
   }
 ]
