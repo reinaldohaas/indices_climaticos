@@ -1,0 +1,938 @@
+[
+  {
+    "asc_filename": "aao.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\aao.asc",
+    "file_size_bytes": 5053,
+    "start_year": 1979,
+    "end_year": 2026,
+    "line_count": 52,
+    "description": "Antarctic Oscillation (CPC) Source: NCEI ERSST v5 / NOAA CPC (Updated to 2026)"
+  },
+  {
+    "asc_filename": "AAO_aao.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\AAO_aao.asc",
+    "file_size_bytes": 4043,
+    "start_year": 1979,
+    "end_year": 2026,
+    "line_count": 52,
+    "description": "from AAO Obtained at NOAA PSL"
+  },
+  {
+    "asc_filename": "ammsst.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\ammsst.asc",
+    "file_size_bytes": 8163,
+    "start_year": 1948,
+    "end_year": 2024,
+    "line_count": 83,
+    "description": "SST AMM https://psl.noaa.gov/data/timeseries/month/AMM/ orig from https://www.aos.wisc.edu/dvimont/MModes/Data.html"
+  },
+  {
+    "asc_filename": "amon.sm.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\amon.sm.asc",
+    "file_size_bytes": 17959,
+    "start_year": 1854,
+    "end_year": 2026,
+    "line_count": 177,
+    "description": "Atlantic Multidecadal Oscillation Smoothed (ERSST v5 SSTA) Source: NCEI ERSST v5 / NOAA CPC (Updated to 2026)"
+  },
+  {
+    "asc_filename": "amon.sm.long.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\amon.sm.long.asc",
+    "file_size_bytes": 17964,
+    "start_year": 1854,
+    "end_year": 2026,
+    "line_count": 177,
+    "description": "Atlantic Multidecadal Oscillation Smoothed Long (ERSST v5 SSTA) Source: NCEI ERSST v5 / NOAA CPC (Updated to 2026)"
+  },
+  {
+    "asc_filename": "amon.us.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\amon.us.asc",
+    "file_size_bytes": 17950,
+    "start_year": 1854,
+    "end_year": 2026,
+    "line_count": 177,
+    "description": "Atlantic Multidecadal Oscillation (ERSST v5 SSTA) Source: NCEI ERSST v5 / NOAA CPC (Updated to 2026)"
+  },
+  {
+    "asc_filename": "amon.us.long.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\amon.us.long.asc",
+    "file_size_bytes": 17955,
+    "start_year": 1854,
+    "end_year": 2026,
+    "line_count": 177,
+    "description": "Atlantic Multidecadal Oscillation Long (ERSST v5 SSTA) Source: NCEI ERSST v5 / NOAA CPC (Updated to 2026)"
+  },
+  {
+    "asc_filename": "ao.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\ao.asc",
+    "file_size_bytes": 8037,
+    "start_year": 1950,
+    "end_year": 2026,
+    "line_count": 81,
+    "description": "Arctic Oscillation (CPC) Source: NCEI ERSST v5 / NOAA CPC (Updated to 2026)"
+  },
+  {
+    "asc_filename": "AO_ao.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\AO_ao.asc",
+    "file_size_bytes": 9002,
+    "start_year": 1950,
+    "end_year": 2026,
+    "line_count": 81,
+    "description": "from https://www.cpc.ncep.noaa.gov/products/precip/CWlink/daily_ao_index/monthly.ao.index.b50.current.ascii Obtained at NOAA PSL"
+  },
+  {
+    "asc_filename": "Atlantic_Meridional_Mode_ammsst.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\Atlantic_Meridional_Mode_ammsst.asc",
+    "file_size_bytes": 8163,
+    "start_year": 1948,
+    "end_year": 2024,
+    "line_count": 83,
+    "description": "SST AMM https://psl.noaa.gov/data/timeseries/month/AMM/ orig from https://www.aos.wisc.edu/dvimont/MModes/Data.html"
+  },
+  {
+    "asc_filename": "Atlantic_multidecadal_OscillationLong_Version_amon.sm.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\Atlantic_multidecadal_OscillationLong_Version_amon.sm.asc",
+    "file_size_bytes": 8895,
+    "start_year": 1948,
+    "end_year": 2023,
+    "line_count": 81,
+    "description": "AMO smoothed/detrended from the Kaplan SST V2 Calculated at NOAA PSL1 http://www.psl.noaa.gov/data/timeseries/AMO/"
+  },
+  {
+    "asc_filename": "Atlantic_multidecadal_OscillationLong_Version_amon.sm.long.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\Atlantic_multidecadal_OscillationLong_Version_amon.sm.long.asc",
+    "file_size_bytes": 19465,
+    "start_year": 1856,
+    "end_year": 2023,
+    "line_count": 173,
+    "description": "AMO smoothed from the Kaplan SST V2 Calculated at NOAA PSL1 http://www.psl.noaa.gov/data/timeseries/AMO/"
+  },
+  {
+    "asc_filename": "Atlantic_Multidecadal_OscillationLong_Version_amon.us.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\Atlantic_Multidecadal_OscillationLong_Version_amon.us.asc",
+    "file_size_bytes": 8898,
+    "start_year": 1948,
+    "end_year": 2023,
+    "line_count": 81,
+    "description": "AMO unsmoothed, detrended from the Kaplan SST V2 Calculated at NOAA PSL1 http://www.psl.noaa.gov/data/timeseries/AMO/"
+  },
+  {
+    "asc_filename": "Atlantic_Multidecadal_OscillationLong_Version_amon.us.long.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\Atlantic_Multidecadal_OscillationLong_Version_amon.us.long.asc",
+    "file_size_bytes": 19467,
+    "start_year": 1856,
+    "end_year": 2023,
+    "line_count": 173,
+    "description": "AMO unsmoothed from the Kaplan SST V2 Calculated at NOAA PSL1 http://www.psl.noaa.gov/data/timeseries/AMO/"
+  },
+  {
+    "asc_filename": "Atlantic_Tripole_SST_EOF_atltri.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\Atlantic_Tripole_SST_EOF_atltri.asc",
+    "file_size_bytes": 5600,
+    "start_year": 1948,
+    "end_year": 2008,
+    "line_count": 65,
+    "description": "-9.0 ATLTRI pattern psl noaa"
+  },
+  {
+    "asc_filename": "atltri.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\atltri.asc",
+    "file_size_bytes": 5600,
+    "start_year": 1948,
+    "end_year": 2008,
+    "line_count": 65,
+    "description": "-9.0 ATLTRI pattern psl noaa"
+  },
+  {
+    "asc_filename": "BEST_longer_version_censo.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\BEST_longer_version_censo.asc",
+    "file_size_bytes": 7217,
+    "start_year": 1948,
+    "end_year": 2026,
+    "line_count": 82,
+    "description": "-9.99 BEST: Bivariate enso timeserieshttps://psl.noaa.gov/data/timeseries/month/from NOAA/PSL"
+  },
+  {
+    "asc_filename": "BEST_longer_version_censo.long.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\BEST_longer_version_censo.long.asc",
+    "file_size_bytes": 10604,
+    "start_year": 1871,
+    "end_year": 2003,
+    "line_count": 137,
+    "description": "-9.99 best index: long version http://psl.noaa.gov/data/climateindices/list/"
+  },
+  {
+    "asc_filename": "brazilrain.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\brazilrain.asc",
+    "file_size_bytes": 3649,
+    "start_year": 1948,
+    "end_year": 2000,
+    "line_count": 57,
+    "description": "Northeast Brazil Rainfall Anomaly Info at Northeast Brazil Rainfall Anomaly"
+  },
+  {
+    "asc_filename": "CAR_ersst.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\CAR_ersst.asc",
+    "file_size_bytes": 7654,
+    "start_year": 1950,
+    "end_year": 2020,
+    "line_count": 79,
+    "description": "CAR_ersst produced at https://psl.noaa.gov/forecasts/sstlim/ 260-300E, 10N-25N minus Pacific At NOAA PSL. Please cite forecast pubs and acquired at website YYYY/MM/DD SST is NOAA ERSST V3"
+  },
+  {
+    "asc_filename": "Caribbean_Index_(CAR)_CAR_ersst.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\Caribbean_Index_(CAR)_CAR_ersst.asc",
+    "file_size_bytes": 7654,
+    "start_year": 1950,
+    "end_year": 2020,
+    "line_count": 79,
+    "description": "CAR_ersst produced at https://psl.noaa.gov/forecasts/sstlim/ 260-300E, 10N-25N minus Pacific At NOAA PSL. Please cite forecast pubs and acquired at website YYYY/MM/DD SST is NOAA ERSST V3"
+  },
+  {
+    "asc_filename": "censo.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\censo.asc",
+    "file_size_bytes": 7217,
+    "start_year": 1948,
+    "end_year": 2026,
+    "line_count": 82,
+    "description": "-9.99 BEST: Bivariate enso timeserieshttps://psl.noaa.gov/data/timeseries/month/from NOAA/PSL"
+  },
+  {
+    "asc_filename": "censo.long.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\censo.long.asc",
+    "file_size_bytes": 10604,
+    "start_year": 1871,
+    "end_year": 2003,
+    "line_count": 137,
+    "description": "-9.99 best index: long version http://psl.noaa.gov/data/climateindices/list/"
+  },
+  {
+    "asc_filename": "Central_Indian_Precipitation_(core_monsoon_region)_indiamon.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\Central_Indian_Precipitation_(core_monsoon_region)_indiamon.asc",
+    "file_size_bytes": 3547,
+    "start_year": 1948,
+    "end_year": 1999,
+    "line_count": 56,
+    "description": "Central Indian Precipitation info at http://psl.noaa.gov/data/climateindices/list/"
+  },
+  {
+    "asc_filename": "ea.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\ea.asc",
+    "file_size_bytes": 7303,
+    "start_year": 1948,
+    "end_year": 2026,
+    "line_count": 83,
+    "description": "EA/WR Index from CPC https://psl.noaa.gov/data/timeseries/month/for info"
+  },
+  {
+    "asc_filename": "EA_WR_ea.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\EA_WR_ea.asc",
+    "file_size_bytes": 7303,
+    "start_year": 1948,
+    "end_year": 2026,
+    "line_count": 83,
+    "description": "EA/WR Index from CPC https://psl.noaa.gov/data/timeseries/month/for info"
+  },
+  {
+    "asc_filename": "ENSO_Precipitation_Index_espi.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\ENSO_Precipitation_Index_espi.asc",
+    "file_size_bytes": 5358,
+    "start_year": 1979,
+    "end_year": 2023,
+    "line_count": 54,
+    "description": "ESPI From UMD http://eagle1.umd.edu/GPCP_ICDR/Data/ESPI.txt Stored at NOAA/PSL Values are now based on V2.3 updated with new values froim source. Recent older values subject to change"
+  },
+  {
+    "asc_filename": "eofpac.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\eofpac.asc",
+    "file_size_bytes": 5583,
+    "start_year": 1948,
+    "end_year": 2008,
+    "line_count": 65,
+    "description": "-9.0 eofpac psl"
+  },
+  {
+    "asc_filename": "EP_NP_epo.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\EP_NP_epo.asc",
+    "file_size_bytes": 7304,
+    "start_year": 1948,
+    "end_year": 2026,
+    "line_count": 83,
+    "description": "EP/NP Index  from CPC https://psl.noaa.gov/data/timeseries/month/for info"
+  },
+  {
+    "asc_filename": "epo.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\epo.asc",
+    "file_size_bytes": 7304,
+    "start_year": 1948,
+    "end_year": 2026,
+    "line_count": 83,
+    "description": "EP/NP Index  from CPC https://psl.noaa.gov/data/timeseries/month/for info"
+  },
+  {
+    "asc_filename": "ersst5.nino.mth.91-20.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\ersst5.nino.mth.91-20.asc",
+    "file_size_bytes": 68006,
+    "start_year": null,
+    "end_year": null,
+    "line_count": 919,
+    "description": ""
+  },
+  {
+    "asc_filename": "espi.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\espi.asc",
+    "file_size_bytes": 5358,
+    "start_year": 1979,
+    "end_year": 2023,
+    "line_count": 54,
+    "description": "ESPI From UMD http://eagle1.umd.edu/GPCP_ICDR/Data/ESPI.txt Stored at NOAA/PSL Values are now based on V2.3 updated with new values froim source. Recent older values subject to change"
+  },
+  {
+    "asc_filename": "glaam.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\glaam.asc",
+    "file_size_bytes": 5345,
+    "start_year": 1958,
+    "end_year": 2014,
+    "line_count": 62,
+    "description": "GLAAM: globally averaged angular momentum. Scaled by 1e25 For info  http://psl.noaa.gov/data/climateindices/list"
+  },
+  {
+    "asc_filename": "Globally_Integrated_Angular_Momentum_glaam.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\Globally_Integrated_Angular_Momentum_glaam.asc",
+    "file_size_bytes": 5345,
+    "start_year": 1958,
+    "end_year": 2014,
+    "line_count": 62,
+    "description": "GLAAM: globally averaged angular momentum. Scaled by 1e25 For info  http://psl.noaa.gov/data/climateindices/list"
+  },
+  {
+    "asc_filename": "gmsst.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\gmsst.asc",
+    "file_size_bytes": 8303,
+    "start_year": 1948,
+    "end_year": 2026,
+    "line_count": 84,
+    "description": "originally from from https://data.giss.nasa.gov/gistemp/tabledata/GLB.Ts.txt https://psl.noaa.gov/data/timeseries/month/ Available at NOAA/PSL"
+  },
+  {
+    "asc_filename": "indiamon.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\indiamon.asc",
+    "file_size_bytes": 3547,
+    "start_year": 1948,
+    "end_year": 1999,
+    "line_count": 56,
+    "description": "Central Indian Precipitation info at http://psl.noaa.gov/data/climateindices/list/"
+  },
+  {
+    "asc_filename": "iod.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\iod.asc",
+    "file_size_bytes": 17937,
+    "start_year": 1854,
+    "end_year": 2026,
+    "line_count": 177,
+    "description": "Indian Ocean Dipole (DMI) (ERSST v5) Source: NCEI ERSST v5 / NOAA CPC (Updated to 2026)"
+  },
+  {
+    "asc_filename": "ipotpi.hadisst2.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\ipotpi.hadisst2.asc",
+    "file_size_bytes": 14943,
+    "start_year": 1870,
+    "end_year": 2010,
+    "line_count": 149,
+    "description": "TPI unfiltered (IPO Tripole Index) of Henley et al. (2015) HadISST2.1Median_of_10_rsns Please cite this data if you use it: Henley, B.J., Gergis, J., Karoly, D.J., Power, S.B., Kennedy, J., & Folland, C.K. (2015). A Tripole Index for the Interdecadal Pacific Oscillation. Climate Dynamics, 1?14. doi:10.1007/s00382-015-2525-1 See http://www.esrl.noaa.gov/psd/data/timeseries/IPOTPI/"
+  },
+  {
+    "asc_filename": "jonesnao.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\jonesnao.asc",
+    "file_size_bytes": 7093,
+    "start_year": 1948,
+    "end_year": 2022,
+    "line_count": 83,
+    "description": "NAO from CRU https://crudata.uea.ac.uk/cru/data/nao/nao.dat This time series crested at NOAA/PSL. updated irregularly. https://psl.noaa.gov/gcos_wgsp/Timeseries/NAO/ last update feb 2023. This is short (1948-->) version to match R1."
+  },
+  {
+    "asc_filename": "listing_drao_noontime-flux-observed_monthly.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\listing_drao_noontime-flux-observed_monthly.asc",
+    "file_size_bytes": 11994,
+    "start_year": 1947,
+    "end_year": 1,
+    "line_count": 857,
+    "description": ""
+  },
+  {
+    "asc_filename": "MEI_V2_meiv2.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\MEI_V2_meiv2.asc",
+    "file_size_bytes": 5652,
+    "start_year": 1979,
+    "end_year": 2026,
+    "line_count": 53,
+    "description": "Multivariate ENSO Index Version 2 (MEI.v2) https://www.psl.noaa.gov/enso/mei Row values are 2 month seasons (YEAR DJ JF FM MA AM MJ JJ JA AS SO ON ND)"
+  },
+  {
+    "asc_filename": "meiv2.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\meiv2.asc",
+    "file_size_bytes": 5652,
+    "start_year": 1979,
+    "end_year": 2026,
+    "line_count": 53,
+    "description": "Multivariate ENSO Index Version 2 (MEI.v2) https://www.psl.noaa.gov/enso/mei Row values are 2 month seasons (YEAR DJ JF FM MA AM MJ JJ JA AS SO ON ND)"
+  },
+  {
+    "asc_filename": "nao.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\nao.asc",
+    "file_size_bytes": 8045,
+    "start_year": 1950,
+    "end_year": 2026,
+    "line_count": 81,
+    "description": "North Atlantic Oscillation (CPC) Source: NCEI ERSST v5 / NOAA CPC (Updated to 2026)"
+  },
+  {
+    "asc_filename": "NAO_(Jones)_jonesnao.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\NAO_(Jones)_jonesnao.asc",
+    "file_size_bytes": 7093,
+    "start_year": 1948,
+    "end_year": 2022,
+    "line_count": 83,
+    "description": "NAO from CRU https://crudata.uea.ac.uk/cru/data/nao/nao.dat This time series crested at NOAA/PSL. updated irregularly. https://psl.noaa.gov/gcos_wgsp/Timeseries/NAO/ last update feb 2023. This is short (1948-->) version to match R1."
+  },
+  {
+    "asc_filename": "NAO_nao.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\NAO_nao.asc",
+    "file_size_bytes": 7301,
+    "start_year": 1948,
+    "end_year": 2026,
+    "line_count": 83,
+    "description": "NAO Index from CPC https://psl.noaa.gov/data/timeseries/month/for info"
+  },
+  {
+    "asc_filename": "nina1.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\nina1.asc",
+    "file_size_bytes": 17930,
+    "start_year": 1854,
+    "end_year": 2026,
+    "line_count": 177,
+    "description": "Niño 1+2 Mean SST (ERSST v5) Source: NCEI ERSST v5 / NOAA CPC (Updated to 2026)"
+  },
+  {
+    "asc_filename": "nina1_anom.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\nina1_anom.asc",
+    "file_size_bytes": 17929,
+    "start_year": 1854,
+    "end_year": 2026,
+    "line_count": 177,
+    "description": "Niño 1+2 Anomaly (ERSST v5) Source: NCEI ERSST v5 / NOAA CPC (Updated to 2026)"
+  },
+  {
+    "asc_filename": "nina3.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\nina3.asc",
+    "file_size_bytes": 17928,
+    "start_year": 1854,
+    "end_year": 2026,
+    "line_count": 177,
+    "description": "Niño 3 Mean SST (ERSST v5) Source: NCEI ERSST v5 / NOAA CPC (Updated to 2026)"
+  },
+  {
+    "asc_filename": "nina34.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\nina34.asc",
+    "file_size_bytes": 17930,
+    "start_year": 1854,
+    "end_year": 2026,
+    "line_count": 177,
+    "description": "Niño 3.4 Mean SST (ERSST v5) Source: NCEI ERSST v5 / NOAA CPC (Updated to 2026)"
+  },
+  {
+    "asc_filename": "nina34_anom.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\nina34_anom.asc",
+    "file_size_bytes": 17929,
+    "start_year": 1854,
+    "end_year": 2026,
+    "line_count": 177,
+    "description": "Niño 3.4 Anomaly (ERSST v5) Source: NCEI ERSST v5 / NOAA CPC (Updated to 2026)"
+  },
+  {
+    "asc_filename": "nina3_anom.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\nina3_anom.asc",
+    "file_size_bytes": 17927,
+    "start_year": 1854,
+    "end_year": 2026,
+    "line_count": 177,
+    "description": "Niño 3 Anomaly (ERSST v5) Source: NCEI ERSST v5 / NOAA CPC (Updated to 2026)"
+  },
+  {
+    "asc_filename": "nina4.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\nina4.asc",
+    "file_size_bytes": 17928,
+    "start_year": 1854,
+    "end_year": 2026,
+    "line_count": 177,
+    "description": "Niño 4 Mean SST (ERSST v5) Source: NCEI ERSST v5 / NOAA CPC (Updated to 2026)"
+  },
+  {
+    "asc_filename": "nina4_anom.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\nina4_anom.asc",
+    "file_size_bytes": 17927,
+    "start_year": 1854,
+    "end_year": 2026,
+    "line_count": 177,
+    "description": "Niño 4 Anomaly (ERSST v5) Source: NCEI ERSST v5 / NOAA CPC (Updated to 2026)"
+  },
+  {
+    "asc_filename": "Niño_1_2_nina1.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\Niño_1_2_nina1.asc",
+    "file_size_bytes": 4414,
+    "start_year": 1948,
+    "end_year": 1994,
+    "line_count": 51,
+    "description": "Nino1+2 Mean using NOAA OISST v2 from NCEI https://psl.noaa.gov/data/timeseries/month/for info"
+  },
+  {
+    "asc_filename": "Niño_1_2_nina1_anom.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\Niño_1_2_nina1_anom.asc",
+    "file_size_bytes": 8383,
+    "start_year": 1948,
+    "end_year": 2026,
+    "line_count": 87,
+    "description": "NINA12 0N-10S 270W-280E ERSST V6 Anomaly from 1951-2000 https://psl.noaa.gov/data/timeseries/month/DS/NINO12/ units=degC"
+  },
+  {
+    "asc_filename": "Niño_3.4_nina34.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\Niño_3.4_nina34.asc",
+    "file_size_bytes": 4415,
+    "start_year": 1948,
+    "end_year": 1994,
+    "line_count": 51,
+    "description": "Nino 3.4 Mean using NOAA OISST v2 from NCEI https://psl.noaa.gov/data/timeseries/month/for info"
+  },
+  {
+    "asc_filename": "Niño_3.4_nina34_anom.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\Niño_3.4_nina34_anom.asc",
+    "file_size_bytes": 8382,
+    "start_year": 1948,
+    "end_year": 2026,
+    "line_count": 87,
+    "description": "NINA34 5N-5S 170W-120W ERSST V6 Anomaly from 1951-2000 https://psl.noaa.gov/data/timeseries/month/DS/NINO34/ units=degC"
+  },
+  {
+    "asc_filename": "Niño_3_ersst5.nino.mth.91-20.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\Niño_3_ersst5.nino.mth.91-20.asc",
+    "file_size_bytes": 68006,
+    "start_year": null,
+    "end_year": null,
+    "line_count": 919,
+    "description": ""
+  },
+  {
+    "asc_filename": "Niño_3_nina3.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\Niño_3_nina3.asc",
+    "file_size_bytes": 4413,
+    "start_year": 1948,
+    "end_year": 1994,
+    "line_count": 51,
+    "description": "Nino 3 Mean using NOAA OISST v2 from NCEI https://psl.noaa.gov/data/timeseries/month/for info"
+  },
+  {
+    "asc_filename": "Niño_3_nina3_anom.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\Niño_3_nina3_anom.asc",
+    "file_size_bytes": 8379,
+    "start_year": 1948,
+    "end_year": 2026,
+    "line_count": 87,
+    "description": "NINA3 5N-5S 150W-90W ERSST V6 Anomaly from 1951-2000 https://psl.noaa.gov/data/timeseries/month/DS/NINO3/ units=degC"
+  },
+  {
+    "asc_filename": "Niño_4_nina4.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\Niño_4_nina4.asc",
+    "file_size_bytes": 4413,
+    "start_year": 1948,
+    "end_year": 1994,
+    "line_count": 51,
+    "description": "Nino 4 Mean using NOAA OISST v2 from NCEI https://psl.noaa.gov/data/timeseries/month/for info"
+  },
+  {
+    "asc_filename": "Niño_4_nina4_anom.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\Niño_4_nina4_anom.asc",
+    "file_size_bytes": 8380,
+    "start_year": 1948,
+    "end_year": 2026,
+    "line_count": 87,
+    "description": "NINA4 5N-5S 160E-150W ERSST V6 Anomaly from 1951-2000 https://psl.noaa.gov/data/timeseries/month/DS/NINO4/ units=degC"
+  },
+  {
+    "asc_filename": "noi.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\noi.asc",
+    "file_size_bytes": 8222,
+    "start_year": 1948,
+    "end_year": 2026,
+    "line_count": 86,
+    "description": "Northern Oscillation Index info at http://psl.noaa.gov/data/timeseries/month/DS/NOI https://upwell.pfeg.noaa.gov/erddap/griddap/erdlasNoix.html http://www.pfeg.noaa.gov/products/PFEL/modeled/indices/NOIx/noix_download.html NOAA/PSL"
+  },
+  {
+    "asc_filename": "NOI_noi.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\NOI_noi.asc",
+    "file_size_bytes": 8222,
+    "start_year": 1948,
+    "end_year": 2026,
+    "line_count": 86,
+    "description": "Northern Oscillation Index info at http://psl.noaa.gov/data/timeseries/month/DS/NOI https://upwell.pfeg.noaa.gov/erddap/griddap/erdlasNoix.html http://www.pfeg.noaa.gov/products/PFEL/modeled/indices/NOIx/noix_download.html NOAA/PSL"
+  },
+  {
+    "asc_filename": "North_Tropical_Atlantic_Index_(NTA)_NTA_ersst.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\North_Tropical_Atlantic_Index_(NTA)_NTA_ersst.asc",
+    "file_size_bytes": 7654,
+    "start_year": 1950,
+    "end_year": 2020,
+    "line_count": 79,
+    "description": "NTA_ersst produced at https://psl.noaa.gov/forecasts/sstlim/ 5N-17N; central Atl At NOAA PSL. Please cite forecast pubs and acquired at website YYYY/MM/DD SST is NOAA ERSST V3"
+  },
+  {
+    "asc_filename": "Northeast_Brazil_Rainfall_Anomaly_brazilrain.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\Northeast_Brazil_Rainfall_Anomaly_brazilrain.asc",
+    "file_size_bytes": 3649,
+    "start_year": 1948,
+    "end_year": 2000,
+    "line_count": 57,
+    "description": "Northeast Brazil Rainfall Anomaly Info at Northeast Brazil Rainfall Anomaly"
+  },
+  {
+    "asc_filename": "np.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\np.asc",
+    "file_size_bytes": 9958,
+    "start_year": 1948,
+    "end_year": 2024,
+    "line_count": 85,
+    "description": "Trenberth and Hurrell North Pacific Index (Monthly) From https://climatedataguide.ucar.edu/sites/default/ Date produced Nov 22 2024 Stored at NOAA/PSL Datasets used 10.1 from NCAR Monthly SLP https://psl.noaa.gov/data/month/DS/NP/"
+  },
+  {
+    "asc_filename": "NP_np.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\NP_np.asc",
+    "file_size_bytes": 9958,
+    "start_year": 1948,
+    "end_year": 2024,
+    "line_count": 85,
+    "description": "Trenberth and Hurrell North Pacific Index (Monthly) From https://climatedataguide.ucar.edu/sites/default/ Date produced Nov 22 2024 Stored at NOAA/PSL Datasets used 10.1 from NCAR Monthly SLP https://psl.noaa.gov/data/month/DS/NP/"
+  },
+  {
+    "asc_filename": "NTA_ersst.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\NTA_ersst.asc",
+    "file_size_bytes": 7654,
+    "start_year": 1950,
+    "end_year": 2020,
+    "line_count": 79,
+    "description": "NTA_ersst produced at https://psl.noaa.gov/forecasts/sstlim/ 5N-17N; central Atl At NOAA PSL. Please cite forecast pubs and acquired at website YYYY/MM/DD SST is NOAA ERSST V3"
+  },
+  {
+    "asc_filename": "oni.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\oni.asc",
+    "file_size_bytes": 8038,
+    "start_year": 1950,
+    "end_year": 2026,
+    "line_count": 81,
+    "description": "Oceanic Niño Index (CPC) Source: NCEI ERSST v5 / NOAA CPC (Updated to 2026)"
+  },
+  {
+    "asc_filename": "ONI_oni.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\ONI_oni.asc",
+    "file_size_bytes": 7289,
+    "start_year": 1950,
+    "end_year": 2026,
+    "line_count": 86,
+    "description": "ONI from CPC Provided by NOAA/PSL From https://www.cpc.ncep.noaa.gov/data/indices/oni.ascii.txt As of 08/4/2026, uses NOAA ERSST V6 represents 3 month running mean of ERSST.v6 SST anomalies in the Niño 3.4 region (5N-5oS, 120o-170oW)]"
+  },
+  {
+    "asc_filename": "Pacific_Warmpool_Region_pacwarm.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\Pacific_Warmpool_Region_pacwarm.asc",
+    "file_size_bytes": 10114,
+    "start_year": 1948,
+    "end_year": 2026,
+    "line_count": 87,
+    "description": "PACWARMPOOL ERSSTV5 06/2025 empty Timeseries output created at NOAA PSL 60E-170E; 15S-15N area average anomalies Climo is 1991 to 2020"
+  },
+  {
+    "asc_filename": "Pacific_Warmpool_Region_pacwarmpool.ersst.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\Pacific_Warmpool_Region_pacwarmpool.ersst.asc",
+    "file_size_bytes": 21958,
+    "start_year": 1854,
+    "end_year": 2026,
+    "line_count": 181,
+    "description": "PACWARMPOOL ERSSTV5 06/2025 empty Timeseries output created at NOAA PSL 60E-170E; 15S-15N area average anomalies Climo is 1991 to 2020"
+  },
+  {
+    "asc_filename": "pacwarm.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\pacwarm.asc",
+    "file_size_bytes": 10114,
+    "start_year": 1948,
+    "end_year": 2026,
+    "line_count": 87,
+    "description": "PACWARMPOOL ERSSTV5 06/2025 empty Timeseries output created at NOAA PSL 60E-170E; 15S-15N area average anomalies Climo is 1991 to 2020"
+  },
+  {
+    "asc_filename": "pacwarmpool.ersst.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\pacwarmpool.ersst.asc",
+    "file_size_bytes": 21958,
+    "start_year": 1854,
+    "end_year": 2026,
+    "line_count": 181,
+    "description": "PACWARMPOOL ERSSTV5 06/2025 empty Timeseries output created at NOAA PSL 60E-170E; 15S-15N area average anomalies Climo is 1991 to 2020"
+  },
+  {
+    "asc_filename": "pdo.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\pdo.asc",
+    "file_size_bytes": 17945,
+    "start_year": 1854,
+    "end_year": 2026,
+    "line_count": 177,
+    "description": "Pacific Decadal Oscillation Index (ERSST v5) Source: NCEI ERSST v5 / NOAA CPC (Updated to 2026)"
+  },
+  {
+    "asc_filename": "PDO_pdo.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\PDO_pdo.asc",
+    "file_size_bytes": 7607,
+    "start_year": 1948,
+    "end_year": 2025,
+    "line_count": 89,
+    "description": "-9.90 PDO: pacific decadal oscillation info at https://psl.noaa.gov/data/climateindices/list/ updated 10/2025 https://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_OC_PDO.html used to be http://jisao.washington.edu/pdo/img/v1v2PDOComp.png If you have any questions about this time series, contact Nathan Mantua For question about this file, email cathy.smith@noaa.gov NOAA PSL and CIRES/CU"
+  },
+  {
+    "asc_filename": "pna.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\pna.asc",
+    "file_size_bytes": 8047,
+    "start_year": 1950,
+    "end_year": 2026,
+    "line_count": 81,
+    "description": "Pacific North American Index (CPC) Source: NCEI ERSST v5 / NOAA CPC (Updated to 2026)"
+  },
+  {
+    "asc_filename": "PNA_pna.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\PNA_pna.asc",
+    "file_size_bytes": 7301,
+    "start_year": 1948,
+    "end_year": 2026,
+    "line_count": 83,
+    "description": "PNA Index from CPC https://psl.noaa.gov/data/timeseries/month/for info"
+  },
+  {
+    "asc_filename": "qbo.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\qbo.asc",
+    "file_size_bytes": 8238,
+    "start_year": 1948,
+    "end_year": 2026,
+    "line_count": 86,
+    "description": "QBO Calculated at NOAA PSL 30mb zonal wind at the equator, zonal average For info https://psl.noaa.gov/data/timeseries/month/ units=ms-1"
+  },
+  {
+    "asc_filename": "QBO_qbo.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\QBO_qbo.asc",
+    "file_size_bytes": 8238,
+    "start_year": 1948,
+    "end_year": 2026,
+    "line_count": 86,
+    "description": "QBO Calculated at NOAA PSL 30mb zonal wind at the equator, zonal average For info https://psl.noaa.gov/data/timeseries/month/ units=ms-1"
+  },
+  {
+    "asc_filename": "Sahel_Rainfall_sahelrain.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\Sahel_Rainfall_sahelrain.asc",
+    "file_size_bytes": 5122,
+    "start_year": 1948,
+    "end_year": 2017,
+    "line_count": 80,
+    "description": "Sahel Standardized Rainfall (20-8N, 20W-10E) Info at https://psl.noaa.gov/data/climateindices/list/ http://research.jisao.washington.edu/data_sets/sahel/#values re-obtained May 28 2019 Averages are in 0.1 mm, so \"-5\" is -0.05 cm precipitation anomaly with respect to 1980-2009. GPCC data was used. Please use the digital object identifier doi:10.6069/H5MW2F2Q in your citation of this index. units=.01mm"
+  },
+  {
+    "asc_filename": "sahelrain.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\sahelrain.asc",
+    "file_size_bytes": 5122,
+    "start_year": 1948,
+    "end_year": 2017,
+    "line_count": 80,
+    "description": "Sahel Standardized Rainfall (20-8N, 20W-10E) Info at https://psl.noaa.gov/data/climateindices/list/ http://research.jisao.washington.edu/data_sets/sahel/#values re-obtained May 28 2019 Averages are in 0.1 mm, so \"-5\" is -0.05 cm precipitation anomaly with respect to 1980-2009. GPCC data was used. Please use the digital object identifier doi:10.6069/H5MW2F2Q in your citation of this index. units=.01mm"
+  },
+  {
+    "asc_filename": "soi.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\soi.asc",
+    "file_size_bytes": 7839,
+    "start_year": 1951,
+    "end_year": 2025,
+    "line_count": 79,
+    "description": "Southern Oscillation Index (CPC) Source: NCEI ERSST v5 / NOAA CPC (Updated to 2026)"
+  },
+  {
+    "asc_filename": "SOI_soi.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\SOI_soi.asc",
+    "file_size_bytes": 7222,
+    "start_year": 1948,
+    "end_year": 2026,
+    "line_count": 83,
+    "description": "SOI Index from CPC https://psl.noaa.gov/data/timeseries/month/for info"
+  },
+  {
+    "asc_filename": "solar.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\solar.asc",
+    "file_size_bytes": 5429,
+    "start_year": 1948,
+    "end_year": 2024,
+    "line_count": 84,
+    "description": "Date modified: 2024-11 SOLAR Cycle   10.7 flux Recent Values Obtained from  https://www.spaceweather.ca/forecast-prevision/solar-solaire/solarflux/sx-5-mavg-en.php This format from NOAA/PSL https://psl.noaa.gov/data/correlation/solar.data"
+  },
+  {
+    "asc_filename": "Solar_Flux_(10.7cm)_listing_drao_noontime-flux-observed_monthly.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\Solar_Flux_(10.7cm)_listing_drao_noontime-flux-observed_monthly.asc",
+    "file_size_bytes": 11994,
+    "start_year": 1947,
+    "end_year": 1,
+    "line_count": 857,
+    "description": ""
+  },
+  {
+    "asc_filename": "Solar_Flux_(10.7cm)_solar.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\Solar_Flux_(10.7cm)_solar.asc",
+    "file_size_bytes": 5429,
+    "start_year": 1948,
+    "end_year": 2024,
+    "line_count": 84,
+    "description": "Date modified: 2024-11 SOLAR Cycle   10.7 flux Recent Values Obtained from  https://www.spaceweather.ca/forecast-prevision/solar-solaire/solarflux/sx-5-mavg-en.php This format from NOAA/PSL https://psl.noaa.gov/data/correlation/solar.data"
+  },
+  {
+    "asc_filename": "SW_Monsoon_Region_rainfall_swmonsoon.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\SW_Monsoon_Region_rainfall_swmonsoon.asc",
+    "file_size_bytes": 5103,
+    "start_year": 1948,
+    "end_year": 2010,
+    "line_count": 67,
+    "description": "-9.90 Area averaged NM and AZ precipitation Info at http://psl.noaa.gov/data/climateindices/"
+  },
+  {
+    "asc_filename": "swmonsoon.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\swmonsoon.asc",
+    "file_size_bytes": 5103,
+    "start_year": 1948,
+    "end_year": 2010,
+    "line_count": 67,
+    "description": "-9.90 Area averaged NM and AZ precipitation Info at http://psl.noaa.gov/data/climateindices/"
+  },
+  {
+    "asc_filename": "tna.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\tna.asc",
+    "file_size_bytes": 8419,
+    "start_year": 1948,
+    "end_year": 2026,
+    "line_count": 87,
+    "description": "TNAa Tropical Northern Atlantic Index SST Anom 5.5N-23.5N; 15W-57.5W Using HadISST1.1: Climo 1991-2020 NOAA/PSL https://psl.noaa.gov/data/timeseries/month/"
+  },
+  {
+    "asc_filename": "TNA_tna.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\TNA_tna.asc",
+    "file_size_bytes": 8419,
+    "start_year": 1948,
+    "end_year": 2026,
+    "line_count": 87,
+    "description": "TNAa Tropical Northern Atlantic Index SST Anom 5.5N-23.5N; 15W-57.5W Using HadISST1.1: Climo 1991-2020 NOAA/PSL https://psl.noaa.gov/data/timeseries/month/"
+  },
+  {
+    "asc_filename": "tni.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\tni.asc",
+    "file_size_bytes": 8536,
+    "start_year": 1948,
+    "end_year": 2026,
+    "line_count": 90,
+    "description": "TNI Nina 1.2-Nino4 standardized HadSST1.1 for entire time-series Reference: Indices of El Nino Evolution Kevin E. Trenberth, and David P. Stepaniak J. Climate, 14, 1697-1701. From NOAA PSL: See url for latest info https://psl.noaa.gov/data/climateindices/List/#TNI"
+  },
+  {
+    "asc_filename": "TNI_(Trans-Niño_Index)_tni.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\TNI_(Trans-Niño_Index)_tni.asc",
+    "file_size_bytes": 8536,
+    "start_year": 1948,
+    "end_year": 2026,
+    "line_count": 90,
+    "description": "TNI Nina 1.2-Nino4 standardized HadSST1.1 for entire time-series Reference: Indices of El Nino Evolution Kevin E. Trenberth, and David P. Stepaniak J. Climate, 14, 1697-1701. From NOAA PSL: See url for latest info https://psl.noaa.gov/data/climateindices/List/#TNI"
+  },
+  {
+    "asc_filename": "TPI(IPO)_ipotpi.hadisst2.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\TPI(IPO)_ipotpi.hadisst2.asc",
+    "file_size_bytes": 14943,
+    "start_year": 1870,
+    "end_year": 2010,
+    "line_count": 149,
+    "description": "TPI unfiltered (IPO Tripole Index) of Henley et al. (2015) HadISST2.1Median_of_10_rsns Please cite this data if you use it: Henley, B.J., Gergis, J., Karoly, D.J., Power, S.B., Kennedy, J., & Folland, C.K. (2015). A Tripole Index for the Interdecadal Pacific Oscillation. Climate Dynamics, 1?14. doi:10.1007/s00382-015-2525-1 See http://www.esrl.noaa.gov/psd/data/timeseries/IPOTPI/"
+  },
+  {
+    "asc_filename": "trend.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\trend.asc",
+    "file_size_bytes": 6627,
+    "start_year": 1948,
+    "end_year": 2019,
+    "line_count": 78,
+    "description": "-9.9 Trend simply a linear timeseries units=\"\" from psl."
+  },
+  {
+    "asc_filename": "Trend_trend.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\Trend_trend.asc",
+    "file_size_bytes": 6627,
+    "start_year": 1948,
+    "end_year": 2019,
+    "line_count": 78,
+    "description": "-9.9 Trend simply a linear timeseries units=\"\" from psl."
+  },
+  {
+    "asc_filename": "Tropical_Pacific_SST_EOF_eofpac.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\Tropical_Pacific_SST_EOF_eofpac.asc",
+    "file_size_bytes": 5583,
+    "start_year": 1948,
+    "end_year": 2008,
+    "line_count": 65,
+    "description": "-9.0 eofpac psl"
+  },
+  {
+    "asc_filename": "tsa.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\tsa.asc",
+    "file_size_bytes": 8314,
+    "start_year": 1948,
+    "end_year": 2026,
+    "line_count": 84,
+    "description": "TSAa NOAA/PSL https://psl.noaa.gov/data/timeseries/month/"
+  },
+  {
+    "asc_filename": "TSA_tsa.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\TSA_tsa.asc",
+    "file_size_bytes": 8314,
+    "start_year": 1948,
+    "end_year": 2026,
+    "line_count": 84,
+    "description": "TSAa NOAA/PSL https://psl.noaa.gov/data/timeseries/month/"
+  },
+  {
+    "asc_filename": "whwp.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\whwp.asc",
+    "file_size_bytes": 8557,
+    "start_year": 1948,
+    "end_year": 2026,
+    "line_count": 88,
+    "description": "WHWPa Area anomaly scaled by 10e6 km**2 Monthly anomaly of the ocean surface area Ocean region >28.5C in the Atlantic and eastern North Pacific. Climatology is now 1991-2020. Wang, C., and D.B. Enfield, Geophys. Res. Lett., 28, 1635-1638."
+  },
+  {
+    "asc_filename": "WHWP_whwp.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\WHWP_whwp.asc",
+    "file_size_bytes": 8557,
+    "start_year": 1948,
+    "end_year": 2026,
+    "line_count": 88,
+    "description": "WHWPa Area anomaly scaled by 10e6 km**2 Monthly anomaly of the ocean surface area Ocean region >28.5C in the Atlantic and eastern North Pacific. Climatology is now 1991-2020. Wang, C., and D.B. Enfield, Geophys. Res. Lett., 28, 1635-1638."
+  },
+  {
+    "asc_filename": "wp.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\wp.asc",
+    "file_size_bytes": 7300,
+    "start_year": 1948,
+    "end_year": 2026,
+    "line_count": 83,
+    "description": "WP Index from CPC https://psl.noaa.gov/data/timeseries/month/for info"
+  },
+  {
+    "asc_filename": "WP_wp.asc",
+    "file_path": "C:\\Users\\haas\\.gemini\\antigravity\\scratch\\noaa_climate_indices\\indices_asc\\WP_wp.asc",
+    "file_size_bytes": 7300,
+    "start_year": 1948,
+    "end_year": 2026,
+    "line_count": 83,
+    "description": "WP Index from CPC https://psl.noaa.gov/data/timeseries/month/for info"
+  }
+]
