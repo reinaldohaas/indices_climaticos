@@ -6,6 +6,7 @@ Columns: Index_Name, Year, Month, Value, Date
 import os
 import glob
 import pandas as pd
+import numpy as np
 from pathlib import Path
 
 ASC_DIR = Path("indices_asc")
@@ -15,36 +16,47 @@ def parse_asc_file(filepath):
     lines = []
     with open(filepath, 'r', encoding='utf-8', errors='replace') as f:
         for line in f:
-            lines.append(line.strip())
+            if line.strip():
+                lines.append(line.strip())
             
     if not lines:
         return []
 
-    # NOAA PSL format starts with start_year end_year on line 1
-    # followed by rows: Year Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec
-    # followed by missing value line (e.g. -99.9 or -99.90)
-    
     first_split = lines[0].split()
     if len(first_split) != 2 or not (first_split[0].isdigit() and first_split[1].isdigit()):
-        # Not standard matrix format, try to parse line by line
         return []
 
     start_yr = int(first_split[0])
     end_yr = int(first_split[1])
     
-    index_code = filepath.stem
+    # Try to extract explicit missing value code from line after data rows
+    data_row_count = end_yr - start_yr + 1
+    footer_idx = 1 + data_row_count
+    missing_codes = {-99.9, -99.90, -99.0, -99.00, -999.0, -999.00, -99.99, -9999.0, -9999.00, -999, -9999, 99.99, 999.0}
     
+    if footer_idx < len(lines):
+        try:
+            code = float(lines[footer_idx].split()[0])
+            missing_codes.add(code)
+            missing_codes.add(round(code, 2))
+            missing_codes.add(round(code, 1))
+        except (ValueError, IndexError):
+            pass
+
+    index_code = filepath.stem
     records = []
-    for line in lines[1:]:
+
+    for line in lines[1:1 + data_row_count]:
         parts = line.split()
         if len(parts) >= 13 and parts[0].isdigit():
             yr = int(parts[0])
-            if start_yr <= yr <= end_yr + 5: # allow current year
+            if start_yr <= yr <= end_yr + 5:
                 for m in range(1, 13):
                     val_str = parts[m]
                     try:
                         val = float(val_str)
-                        if val in [-99.9, -99.90, -999.0, -999.00, -99.99]:
+                        # Check missing value conditions: explicit code or unphysical anomaly magnitudes
+                        if val in missing_codes or abs(val) >= 80.0:
                             val = None
                         records.append({
                             'index': index_code,
@@ -53,7 +65,7 @@ def parse_asc_file(filepath):
                             'value': val,
                             'date': f"{yr:04d}-{m:02d}-01"
                         })
-                    except ValueError:
+                    except (ValueError, IndexError):
                         continue
     return records
 
