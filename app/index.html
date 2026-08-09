@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explorador Interativo de Índices Climáticos</title>
+  <!-- Google Fonts: Outfit & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Plotly.js CDN -->
+  <script src="https://cdn.plot.ly/plotly-2.30.0.min.js"></script>
+  <!-- FontAwesome Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Navbar Header -->
+    <header class="navbar">
+      <div class="nav-brand">
+        <div class="logo-icon"><i class="fa-solid fa-earth-americas"></i></div>
+        <div class="brand-text">
+          <h1>Explorador de Índices Climáticos</h1>
+          <p>Análise temporal, suavização, sobreposição e correlação estatística</p>
+        </div>
+      </div>
+      <div class="nav-actions">
+        <span class="badge" id="total-indices-badge"><i class="fa-solid fa-database"></i> 136 Índices</span>
+        <a href="https://github.com/reinaldohaas/indices_climaticos" target="_blank" class="btn btn-outline">
+          <i class="fa-brands fa-github"></i> GitHub
+        </a>
+      </div>
+    </header>
+
+    <!-- Presets Bar -->
+    <section class="presets-bar">
+      <span class="presets-title"><i class="fa-solid fa-wand-magic-sparkles"></i> Atalhos Temáticos:</span>
+      <div class="presets-buttons">
+        <button class="preset-btn" onclick="applyPreset('enso_sam')">
+          <i class="fa-solid fa-water"></i> ENSO & SAM (ONI, SAM, PSA1)
+        </button>
+        <button class="preset-btn" onclick="applyPreset('atlantic_dipole')">
+          <i class="fa-solid fa-cloud-showers-heavy"></i> Atlântico Sul & ZCAS (SAD, SASDI, SACZ)
+        </button>
+        <button class="preset-btn" onclick="applyPreset('pacific_modes')">
+          <i class="fa-solid fa-compass"></i> Modos do Pacífico (PDO, PMM, ONI)
+        </button>
+        <button class="preset-btn" onclick="applyPreset('monsoon_sacz')">
+          <i class="fa-solid fa-bolt"></i> Monção & Convecção (SAMI, SACZ, MJO OMI)
+        </button>
+        <button class="preset-btn" onclick="applyPreset('solar_climate')">
+          <i class="fa-solid fa-sun"></i> Sol & Clima (SSN, AO, NAO)
+        </button>
+      </div>
+    </section>
+
+    <!-- Main Content Layout: Sidebar Controls + Charts View -->
+    <main class="main-layout">
+      <!-- Sidebar Controls -->
+      <aside class="sidebar">
+        <!-- Index Selection Panel -->
+        <div class="control-card">
+          <div class="card-header">
+            <h3><i class="fa-solid fa-list-check"></i> Seleção de Índices</h3>
+            <button class="btn-text" onclick="clearSelectedIndices()">Limpar</button>
+          </div>
+          
+          <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="index-search-input" placeholder="Buscar índice (ex: ONI, SAM, SACZ)..." oninput="filterIndexList()">
+          </div>
+
+          <div class="category-pills" id="category-pills">
+            <button class="pill active" onclick="filterCategory('all')">Todos</button>
+            <button class="pill" onclick="filterCategory('ENSO')">ENSO</button>
+            <button class="pill" onclick="filterCategory('Hemisfério Sul')">Hemisfério Sul</button>
+            <button class="pill" onclick="filterCategory('Atlântico Sul')">Atlântico Sul</button>
+            <button class="pill" onclick="filterCategory('Pacífico')">Pacífico</button>
+            <button class="pill" onclick="filterCategory('Teleconexões')">Teleconexões</button>
+            <button class="pill" onclick="filterCategory('Convecção')">ZCAS / Monção</button>
+          </div>
+
+          <div class="indices-checkbox-list" id="indices-checkbox-list">
+            <!-- Dynamic checkboxes injected here -->
+          </div>
+        </div>
+
+        <!-- Date Range Panel -->
+        <div class="control-card">
+          <h3><i class="fa-solid fa-calendar-days"></i> Período Histórico</h3>
+          <div class="range-quick-buttons">
+            <button class="btn-chip" onclick="setQuickDateRange(1749, 2026)">Todos</button>
+            <button class="btn-chip" onclick="setQuickDateRange(1950, 2026)">1950+</button>
+            <button class="btn-chip" onclick="setQuickDateRange(1979, 2026)">1979+</button>
+            <button class="btn-chip" onclick="setQuickDateRange(1996, 2026)">Últimos 30 Anos</button>
+          </div>
+          <div class="year-inputs-row">
+            <div class="input-group">
+              <label for="start-year-input">Ano Inicial</label>
+              <input type="number" id="start-year-input" min="1749" max="2026" value="1950" onchange="updateDashboard()">
+            </div>
+            <div class="input-group">
+              <label for="end-year-input">Ano Final</label>
+              <input type="number" id="end-year-input" min="1749" max="2026" value="2026" onchange="updateDashboard()">
+            </div>
+          </div>
+        </div>
+
+        <!-- Smoothing & Options Panel -->
+        <div class="control-card">
+          <h3><i class="fa-solid fa-sliders"></i> Suavização & Opções</h3>
+          
+          <div class="control-group">
+            <div class="label-with-val">
+              <label for="smoothing-window-slider">Média Móvel (Janela)</label>
+              <span id="smoothing-val-badge" class="val-badge">1 mês (Sem suavização)</span>
+            </div>
+            <input type="range" id="smoothing-window-slider" min="1" max="60" value="1" step="1" oninput="onSmoothingChange(this.value)">
+            <div class="smoothing-presets">
+              <button class="btn-chip-sm" onclick="setSmoothing(1)">1m (Bruto)</button>
+              <button class="btn-chip-sm" onclick="setSmoothing(3)">3m</button>
+              <button class="btn-chip-sm" onclick="setSmoothing(6)">6m</button>
+              <button class="btn-chip-sm" onclick="setSmoothing(12)">12m (Anual)</button>
+              <button class="btn-chip-sm" onclick="setSmoothing(24)">24m</button>
+              <button class="btn-chip-sm" onclick="setSmoothing(60)">60m (5 Anos)</button>
+            </div>
+          </div>
+
+          <div class="toggles-group">
+            <label class="toggle-switch">
+              <input type="checkbox" id="normalize-zscore-toggle" onchange="updateDashboard()" checked>
+              <span class="slider-round"></span>
+              <span class="toggle-label">Padronizar por Z-Score (\(\sigma\))</span>
+            </label>
+            <label class="toggle-switch">
+              <input type="checkbox" id="dual-yaxis-toggle" onchange="updateDashboard()">
+              <span class="slider-round"></span>
+              <span class="toggle-label">Eixo Y Duplo (para 2 índices)</span>
+            </label>
+          </div>
+        </div>
+      </aside>
+
+      <!-- View Area (Tabs + Interactive Plots) -->
+      <section class="view-area">
+        <!-- Navigation Tabs -->
+        <div class="tabs-header">
+          <button class="tab-btn active" onclick="switchTab('timeseries')">
+            <i class="fa-solid fa-chart-line"></i> Séries Temporais & Sobreposição
+          </button>
+          <button class="tab-btn" onclick="switchTab('correlation')">
+            <i class="fa-solid fa-table-cells"></i> Matriz de Correlação
+          </button>
+          <button class="tab-btn" onclick="switchTab('cross-corr')">
+            <i class="fa-solid fa-chart-column"></i> Lagged Cross-Correlation
+          </button>
+          <button class="tab-btn" onclick="switchTab('scatter')">
+            <i class="fa-solid fa-chart-scatter"></i> Regressão & Dispersão
+          </button>
+          <button class="tab-btn" onclick="switchTab('catalog')">
+            <i class="fa-solid fa-book-open"></i> Catálogo de Fontes
+          </button>
+        </div>
+
+        <!-- Tab 1: Time Series Plot -->
+        <div class="tab-content active" id="tab-timeseries">
+          <div class="chart-card">
+            <div class="chart-card-header">
+              <h2 id="timeseries-title"><i class="fa-solid fa-chart-line"></i> Sobreposição de Séries Temporais</h2>
+              <div class="chart-actions">
+                <button class="btn btn-sm btn-outline" onclick="exportDataCSV()"><i class="fa-solid fa-download"></i> Exportar Dados CSV</button>
+              </div>
+            </div>
+            <div id="timeseries-plotly-chart" class="plotly-container"></div>
+          </div>
+        </div>
+
+        <!-- Tab 2: Correlation Matrix -->
+        <div class="tab-content" id="tab-correlation">
+          <div class="chart-card">
+            <div class="chart-card-header">
+              <h2><i class="fa-solid fa-table-cells"></i> Matriz de Correlação Linear (Pearson)</h2>
+              <span class="sub-text">Cálculo das correlações par a par para o período selecionado</span>
+            </div>
+            <div id="correlation-matrix-chart" class="plotly-container"></div>
+          </div>
+        </div>
+
+        <!-- Tab 3: Lagged Cross Correlation -->
+        <div class="tab-content" id="tab-cross-corr">
+          <div class="chart-card">
+            <div class="chart-card-header">
+              <h2><i class="fa-solid fa-clock-rotate-left"></i> Análise de Defasagem Temporal (Cross-Correlation Lag)</h2>
+              <span class="sub-text">Mede a correlação de -24 a +24 meses entre os dois primeiros índices selecionados</span>
+            </div>
+            <div class="lag-selector-row">
+              <div class="select-group">
+                <label for="lag-index-a">Índice A (Líder / Causa):</label>
+                <select id="lag-index-a" onchange="renderLagChart()"></select>
+              </div>
+              <div class="select-group">
+                <label for="lag-index-b">Índice B (Resposta):</label>
+                <select id="lag-index-b" onchange="renderLagChart()"></select>
+              </div>
+            </div>
+            <div id="lag-plotly-chart" class="plotly-container"></div>
+            <div class="info-callout" id="lag-info-box">
+              <i class="fa-solid fa-circle-info"></i> Selecione dois índices acima para calcular a defasagem temporal ideal.
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 4: Scatter Plot & Regression -->
+        <div class="tab-content" id="tab-scatter">
+          <div class="chart-card">
+            <div class="chart-card-header">
+              <h2><i class="fa-solid fa-chart-scatter"></i> Diagrama de Dispersão e Regressão Linear</h2>
+              <span class="sub-text">Relação bi-variada e modelo de regressão</span>
+            </div>
+            <div class="lag-selector-row">
+              <div class="select-group">
+                <label for="scatter-index-x">Eixo X:</label>
+                <select id="scatter-index-x" onchange="renderScatterChart()"></select>
+              </div>
+              <div class="select-group">
+                <label for="scatter-index-y">Eixo Y:</label>
+                <select id="scatter-index-y" onchange="renderScatterChart()"></select>
+              </div>
+            </div>
+            <div id="scatter-plotly-chart" class="plotly-container"></div>
+            <div class="stats-summary-grid" id="scatter-stats-grid">
+              <!-- Slope, Intercept, R², P-value injected here -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 5: Catalog View -->
+        <div class="tab-content" id="tab-catalog">
+          <div class="chart-card">
+            <div class="chart-card-header">
+              <h2><i class="fa-solid fa-book-open"></i> Catálogo Completo dos 136 Índices Climáticos</h2>
+              <div class="search-box text-search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="catalog-search" placeholder="Filtrar catálogo por nome, fonte ou região..." oninput="filterCatalogTable()">
+              </div>
+            </div>
+            <div class="table-responsive">
+              <table class="catalog-table" id="catalog-table">
+                <thead>
+                  <tr>
+                    <th>Índice</th>
+                    <th>Nome / Descrição</th>
+                    <th>Categoria</th>
+                    <th>Fonte Oficial</th>
+                    <th>Período</th>
+                    <th>Unidades</th>
+                    <th>Referência</th>
+                  </tr>
+                </thead>
+                <tbody id="catalog-table-body">
+                  <!-- Dynamic catalog rows injected here -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
