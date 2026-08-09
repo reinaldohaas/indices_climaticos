@@ -72,6 +72,23 @@ async function loadDataAndMetadata() {
   }
 }
 
+// Get clean sigla for index key
+function getSigla(idxKey) {
+  const metaItem = metadata.find(m => m.index === idxKey);
+  if (metaItem && metaItem.sigla) return metaItem.sigla;
+  return idxKey.toUpperCase();
+}
+
+// Get clean display label for sidebar checkbox
+function getDisplayLabel(idxKey) {
+  const metaItem = metadata.find(m => m.index === idxKey);
+  const sigla = getSigla(idxKey);
+  if (metaItem && metaItem.description && metaItem.description !== sigla) {
+    return `${sigla} - ${metaItem.description}`;
+  }
+  return sigla;
+}
+
 // Populate Index Checkboxes in Sidebar
 function populateIndexCheckboxes(filteredList = null) {
   const container = document.getElementById('indices-checkbox-list');
@@ -82,7 +99,8 @@ function populateIndexCheckboxes(filteredList = null) {
 
   listToRender.sort().forEach(idxKey => {
     const metaItem = metadata.find(m => m.index === idxKey) || {};
-    const label = metaItem.description || idxKey.toUpperCase();
+    const sigla = getSigla(idxKey);
+    const label = getDisplayLabel(idxKey);
     const category = metaItem.category || 'Outros';
     const isChecked = selectedIndices.includes(idxKey);
 
@@ -98,7 +116,7 @@ function populateIndexCheckboxes(filteredList = null) {
 
     item.innerHTML = `
       <input type="checkbox" id="chk-${idxKey}" ${isChecked ? 'checked' : ''} onchange="toggleIndexSelection('${idxKey}', this.checked)">
-      <span class="checkbox-label-text" title="${label}">${idxKey.toUpperCase()} - ${label}</span>
+      <span class="checkbox-label-text" title="${label}">${label}</span>
       <span class="badge-tag">${category.split(' ')[0]}</span>
     `;
 
@@ -138,7 +156,7 @@ function populateSelectDropdowns() {
     list.forEach(k => {
       const opt = document.createElement('option');
       opt.value = k;
-      opt.textContent = k.toUpperCase();
+      opt.textContent = getSigla(k);
       elem.appendChild(opt);
     });
 
@@ -177,8 +195,10 @@ function filterCategory(catName) {
 function filterIndexList() {
   const query = document.getElementById('index-search-input').value.toLowerCase();
   const matchingKeys = Object.keys(rawData).filter(k => {
+    const sigla = getSigla(k).toLowerCase();
     const metaItem = metadata.find(m => m.index === k) || {};
-    return k.toLowerCase().includes(query) || (metaItem.description && metaItem.description.toLowerCase().includes(query));
+    const desc = (metaItem.description || '').toLowerCase();
+    return k.toLowerCase().includes(query) || sigla.includes(query) || desc.includes(query);
   });
   populateIndexCheckboxes(matchingKeys);
 }
@@ -271,12 +291,28 @@ function calculateZScore(values) {
 // Render Plotly Time Series Chart
 function renderTimeSeriesChart() {
   const container = document.getElementById('timeseries-plotly-chart');
+  const titleElem = document.getElementById('timeseries-title');
   if (!container) return;
 
   if (selectedIndices.length === 0) {
     Plotly.purge(container);
     container.innerHTML = '<div class="info-callout"><i class="fa-solid fa-circle-exclamation"></i> Nenhum índice selecionado. Escolha pelo menos um índice no painel lateral.</div>';
+    if (titleElem) titleElem.innerHTML = '<i class="fa-solid fa-chart-line"></i> Sobreposição de Séries Temporais';
     return;
+  }
+
+  // Update Dynamic Chart Title with Clean Siglas
+  const selectedSiglas = selectedIndices.map(k => getSigla(k));
+  if (titleElem) {
+    let titleStr = '';
+    if (selectedSiglas.length === 1) {
+      titleStr = `Série Temporal: ${selectedSiglas[0]}`;
+    } else if (selectedSiglas.length === 2) {
+      titleStr = `Sobreposição: ${selectedSiglas[0]} vs ${selectedSiglas[1]}`;
+    } else {
+      titleStr = `Sobreposição: ${selectedSiglas.join(', ')}`;
+    }
+    titleElem.innerHTML = `<i class="fa-solid fa-chart-line"></i> ${titleStr}`;
   }
 
   const traces = [];
@@ -301,14 +337,13 @@ function renderTimeSeriesChart() {
       processedVals = calculateZScore(processedVals);
     }
 
-    const metaItem = metadata.find(m => m.index === idxKey) || {};
-    const label = `${idxKey.toUpperCase()} - ${metaItem.description || ''}`;
+    const sigla = getSigla(idxKey);
 
     const trace = {
       x: filteredDates,
       y: processedVals,
       mode: 'lines',
-      name: label,
+      name: sigla,
       line: {
         color: TRACE_COLORS[colorIdx % TRACE_COLORS.length],
         width: 2.2
@@ -348,7 +383,7 @@ function renderTimeSeriesChart() {
 
   if (dualYAxis && selectedIndices.length === 2) {
     layout.yaxis2 = {
-      title: `${selectedIndices[1].toUpperCase()} (Eixo Secundário)`,
+      title: `${getSigla(selectedIndices[1])} (Eixo Secundário)`,
       overlaying: 'y',
       side: 'right',
       gridcolor: '#1f293d',
@@ -371,7 +406,7 @@ function renderCorrelationMatrix() {
   }
 
   const matrix = [];
-  const labels = selectedIndices.map(k => k.toUpperCase());
+  const labels = selectedIndices.map(k => getSigla(k));
 
   selectedIndices.forEach((keyA) => {
     const row = [];
@@ -484,6 +519,9 @@ function renderLagChart() {
     return;
   }
 
+  const siglaA = getSigla(keyA);
+  const siglaB = getSigla(keyB);
+
   const lags = [];
   const corrs = [];
 
@@ -502,7 +540,7 @@ function renderLagChart() {
     infoBox.innerHTML = `
       <i class="fa-solid fa-bullseye"></i> 
       <strong>Pico de Correlação:</strong> Correlação máxima de <strong>r = ${peakVal}</strong> ocorre na defasagem de <strong>${peakLag} meses</strong> 
-      (${keyA.toUpperCase()} antecede ${keyB.toUpperCase()} em ${peakLag} meses).
+      (${siglaA} antecede ${siglaB} em ${peakLag} meses).
     `;
   }
 
@@ -520,7 +558,7 @@ function renderLagChart() {
     plot_bgcolor: 'rgba(0,0,0,0)',
     font: { color: '#9ca3af', family: 'Inter, sans-serif' },
     margin: { l: 50, r: 20, t: 20, b: 50 },
-    xaxis: { title: `Defasagem em Meses (${keyA.toUpperCase()} vs ${keyB.toUpperCase()})`, gridcolor: '#1f293d' },
+    xaxis: { title: `Defasagem em Meses (${siglaA} vs ${siglaB})`, gridcolor: '#1f293d' },
     yaxis: { title: 'Coeficiente de Correlação (r)', gridcolor: '#1f293d', range: [-1, 1] }
   };
 
@@ -542,6 +580,9 @@ function renderScatterChart() {
     Plotly.purge(container);
     return;
   }
+
+  const siglaX = getSigla(keyX);
+  const siglaY = getSigla(keyY);
 
   const sX = rawData[keyX];
   const sY = rawData[keyY];
@@ -630,8 +671,8 @@ function renderScatterChart() {
     plot_bgcolor: 'rgba(0,0,0,0)',
     font: { color: '#9ca3af', family: 'Inter, sans-serif' },
     margin: { l: 50, r: 20, t: 20, b: 50 },
-    xaxis: { title: `${keyX.toUpperCase()}`, gridcolor: '#1f293d' },
-    yaxis: { title: `${keyY.toUpperCase()}`, gridcolor: '#1f293d' }
+    xaxis: { title: `${siglaX}`, gridcolor: '#1f293d' },
+    yaxis: { title: `${siglaY}`, gridcolor: '#1f293d' }
   };
 
   Plotly.react(container, [tracePoints, traceLine], layout, { responsive: true });
@@ -661,8 +702,9 @@ function renderCatalogTable(filteredData = null) {
 
   list.forEach(m => {
     const tr = document.createElement('tr');
+    const sigla = m.sigla || m.index.toUpperCase();
     tr.innerHTML = `
-      <td><strong>${m.index.toUpperCase()}</strong></td>
+      <td><strong>${sigla}</strong></td>
       <td>${m.description || ''}</td>
       <td><span class="badge-tag">${m.category || ''}</span></td>
       <td><a href="${m.source_url}" target="_blank" style="color:var(--primary-cyan); text-decoration:none;">${m.source || 'Link'}</a></td>
@@ -679,7 +721,9 @@ function filterCatalogTable() {
   if (!input) return;
   const query = input.value.toLowerCase();
   const filtered = metadata.filter(m => {
+    const sigla = (m.sigla || '').toLowerCase();
     return (m.index && m.index.toLowerCase().includes(query)) ||
+           sigla.includes(query) ||
            (m.description && m.description.toLowerCase().includes(query)) ||
            (m.source && m.source.toLowerCase().includes(query)) ||
            (m.category && m.category.toLowerCase().includes(query));
@@ -691,7 +735,7 @@ function filterCatalogTable() {
 function exportDataCSV() {
   if (selectedIndices.length === 0) return;
 
-  const header = ['date', 'year', 'month', ...selectedIndices].join(',');
+  const header = ['date', 'year', 'month', ...selectedIndices.map(k => getSigla(k))].join(',');
   const rows = [header];
 
   const baseSeries = rawData[selectedIndices[0]];
